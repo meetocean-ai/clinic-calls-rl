@@ -1,0 +1,14 @@
+# OpenEnv manifest for the Ocean EHR scheduling environment (roadmap P1-10).
+# The environment needs its FHIR sandbox (Medplum) next to it, so the publishable unit is the Docker image built by
+# tests/behavioral/env/Dockerfile (served with docker-compose-env.yml), not a bare Hugging Face Space: push with
+# `openenv push --registry <registry>` from this directory once an account exists. `openenv validate --level static`
+# checks this manifest.
+spec_version: 1
+name: ehr_scheduling
+type: space
+runtime: fastapi
+app: server.app:app
+port: 8011
+variables:
+  EHR_ENV_SCRIPTED_CALLER: "1"
+  MAX_CONCURRENT_ENVS: "16"

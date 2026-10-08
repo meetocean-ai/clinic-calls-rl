@@ -1,0 +1,58 @@
+{
+ "key": "reschedule-00025-t3",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 6.375,
+   "spoken": "Hi, I need to move my appointment on, um, Wednesday, October 14 at 11 AM to, um, another day.",
+   "text": "Hi, I need to move my appointment on Wednesday, October 14 at 11 AM to another day."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.25,
+   "spoken": "It's November 11, 1975.",
+   "text": "It's 1975-11-11."
+  },
+  {
+   "file": "02.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.325,
+   "spoken": "Yes,, um, that, um, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "03.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 2.5,
+   "spoken": "Thank, um, you,, um, goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "reschedule-00025",
+ "tier": 3,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.01,
+   "gain_wobble_db": 0.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 25,
+   "snr_db": 15.0
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 2,
+   "seed": 25,
+   "self_correction": false
+  },
+  "tts": "kokoro",
+  "voice": "am_liam"
+ }
+}

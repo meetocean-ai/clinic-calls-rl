@@ -1,0 +1,42 @@
+{
+ "agent_turns": [
+  {
+   "caller_so_far": [
+    "Hi, I'd like to book a follow-up visit with Dr. Campos, please."
+   ],
+   "text": "Could I have your date of birth, please?",
+   "verified": false
+  },
+  {
+   "caller_so_far": [
+    "Hi, I'd like to book a follow-up visit with Dr. Campos, please.",
+    "It's 1984-05-19."
+   ],
+   "text": "Could I have your date of birth, please?",
+   "verified": false
+  },
+  {
+   "caller_so_far": [
+    "Hi, I'd like to book a follow-up visit with Dr. Campos, please.",
+    "It's 1984-05-19.",
+    "It's 1984-05-20."
+   ],
+   "text": "There is nothing open with that provider. Shall I put you on the waitlist?",
+   "verified": true
+  },
+  {
+   "caller_so_far": [
+    "Hi, I'd like to book a follow-up visit with Dr. Campos, please.",
+    "It's 1984-05-19.",
+    "It's 1984-05-20.",
+    "Yes, that works."
+   ],
+   "text": "You're on the waitlist. Anything else?",
+   "verified": true
+  }
+ ],
+ "extra": {
+  "env_writes": {},
+  "verify_attempts": 2
+ }
+}

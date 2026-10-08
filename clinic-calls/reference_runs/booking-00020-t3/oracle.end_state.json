@@ -1,0 +1,263 @@
+{
+ "compartment": "Organization/6ff3d21b-9a6e-4e9c-b132-cce376eb4be6",
+ "entry": [
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "1994-07-20",
+    "id": "10f0bf36-6918-46bb-8ea8-ccdf46670092",
+    "managingOrganization": {
+     "reference": "Organization/6ff3d21b-9a6e-4e9c-b132-cce376eb4be6"
+    },
+    "name": [
+     {
+      "family": "Coldbrook",
+      "given": [
+       "Parker"
+      ],
+      "use": "official"
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005550007"
+     },
+     {
+      "system": "email",
+      "value": "gmartinez@example.org"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/6ff3d21b-9a6e-4e9c-b132-cce376eb4be6"
+      }
+     }
+    ],
+    "id": "9a9f657b-9519-4699-adbe-385a9f91c130",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1715046764"
+     }
+    ],
+    "name": [
+     {
+      "family": "Eddins",
+      "given": [
+       "Robin"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/6ff3d21b-9a6e-4e9c-b132-cce376eb4be6"
+      }
+     }
+    ],
+    "id": "ca6efec3-7d44-4750-9fc7-7ba86c55219b",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1296012973"
+     }
+    ],
+    "name": [
+     {
+      "family": "Facchinato",
+      "given": [
+       "Jo"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/6ff3d21b-9a6e-4e9c-b132-cce376eb4be6"
+      }
+     }
+    ],
+    "id": "df786fd1-b756-4413-ae92-e9b1ce6357be",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1946697026"
+     }
+    ],
+    "name": [
+     {
+      "family": "Campos",
+      "given": [
+       "Ana"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "appointmentType": {
+     "coding": [
+      {
+       "code": "follow-up",
+       "display": "Follow Up",
+       "system": "https://ocean-ehr.com/fhir/CodeSystem/appointment-type"
+      }
+     ]
+    },
+    "end": "2026-10-08T08:15:00-07:00",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/6ff3d21b-9a6e-4e9c-b132-cce376eb4be6"
+      }
+     }
+    ],
+    "id": "1fe30e3a-7fcd-4aee-8f9f-0457af1e2a3f",
+    "participant": [
+     {
+      "actor": {
+       "display": "Parker Coldbrook",
+       "reference": "Patient/10f0bf36-6918-46bb-8ea8-ccdf46670092"
+      },
+      "status": "accepted"
+     },
+     {
+      "actor": {
+       "display": "Jo Facchinato",
+       "reference": "Practitioner/ca6efec3-7d44-4750-9fc7-7ba86c55219b"
+      },
+      "status": "accepted"
+     }
+    ],
+    "resourceType": "Appointment",
+    "start": "2026-10-08T08:00:00-07:00",
+    "status": "booked"
+   }
+  },
+  {
+   "resource": {
+    "description": "Follow-up",
+    "end": "2026-10-19T15:30:00-07:00",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/6ff3d21b-9a6e-4e9c-b132-cce376eb4be6"
+      }
+     }
+    ],
+    "id": "78f9e585-16f8-41e9-bd59-bed045f15bc2",
+    "participant": [
+     {
+      "actor": {
+       "display": "Parker Coldbrook",
+       "reference": "Patient/10f0bf36-6918-46bb-8ea8-ccdf46670092"
+      },
+      "status": "accepted"
+     },
+     {
+      "actor": {
+       "display": "Dr. Facchinato",
+       "reference": "Practitioner/ca6efec3-7d44-4750-9fc7-7ba86c55219b"
+      },
+      "status": "accepted"
+     }
+    ],
+    "resourceType": "Appointment",
+    "start": "2026-10-19T15:00:00-07:00",
+    "status": "booked"
+   }
+  }
+ ],
+ "resourceType": "Bundle",
+ "total": 6,
+ "type": "collection",
+ "types": [
+  "Patient",
+  "Practitioner",
+  "PractitionerRole",
+  "Organization",
+  "Appointment",
+  "Encounter",
+  "EpisodeOfCare",
+  "ClinicalImpression",
+  "Observation",
+  "Condition",
+  "Procedure",
+  "CarePlan",
+  "Coverage",
+  "Claim",
+  "ClaimResponse",
+  "Communication",
+  "CommunicationRequest",
+  "Consent",
+  "DocumentReference",
+  "Task"
+ ]
+}

@@ -1,0 +1,82 @@
+{
+ "key": "new_patient_intake-00035-t4",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 7.5,
+   "spoken": "Hi, I'm a new, er, pati\u2014 no, wait, patient and I'd like to, er, book a first visit, uh, with Dr. Campos.",
+   "text": "Hi, I'm a new patient and I'd like to book a first visit with Dr. Campos."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob_misstated",
+   "sample_rate": 8000,
+   "seconds": 3.1,
+   "spoken": "It's August 6, 1995.",
+   "text": "It's 1995-08-06."
+  },
+  {
+   "file": "02.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.2,
+   "spoken": "It's August 5, 1995.",
+   "text": "It's 1995-08-05."
+  },
+  {
+   "file": "03.wav",
+   "kind": "name",
+   "sample_rate": 8000,
+   "seconds": 4.45,
+   "spoken": "My, er, name, er, is, er, Reese Thornb\u2014 no, wait, Thornbury.",
+   "text": "My name is Reese Thornbury."
+  },
+  {
+   "file": "04.wav",
+   "kind": "name_and_dob",
+   "sample_rate": 8000,
+   "seconds": 8.8,
+   "spoken": "My name is Reese, er, Thornb\u2014 no, wait, Thornbury,, er, and my date of, er, birth is August 5, 1995.",
+   "text": "My name is Reese Thornbury, and my date of birth is 1995-08-05."
+  },
+  {
+   "file": "05.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.475,
+   "spoken": "Yes,, er, that, er, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "06.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 3.475,
+   "spoken": "Thank, er, you,, er, good\u2014 sorry, I mean goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "new_patient_intake-00035",
+ "tier": 4,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.02,
+   "gain_wobble_db": 6.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 35,
+   "snr_db": 15.0
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 3,
+   "seed": 35,
+   "self_correction": true
+  },
+  "tts": "kokoro",
+  "voice": "af_bella"
+ }
+}

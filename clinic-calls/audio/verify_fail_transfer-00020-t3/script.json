@@ -1,0 +1,58 @@
+{
+ "key": "verify_fail_transfer-00020-t3",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 6.375,
+   "spoken": "Hi, can, let me think, you tell me when, um, my next appointment is? I want to cancel it.",
+   "text": "Hi, can you tell me when my next appointment is? I want to cancel it."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.45,
+   "spoken": "It's March 23, 1982.",
+   "text": "It's 1982-03-23."
+  },
+  {
+   "file": "02.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.975,
+   "spoken": "Yes,, let me think, that, um, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "03.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 3.175,
+   "spoken": "Thank, let me think, you,, um, goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "verify_fail_transfer-00020",
+ "tier": 3,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.0,
+   "gain_wobble_db": 0.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 20,
+   "snr_db": 25.0
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 2,
+   "seed": 20,
+   "self_correction": false
+  },
+  "tts": "kokoro",
+  "voice": "am_michael"
+ }
+}

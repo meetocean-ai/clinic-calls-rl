@@ -1,0 +1,257 @@
+{
+ "compartment": "Organization/c3e6716f-2b9a-4729-9c1b-5f813a84ca71",
+ "entry": [
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "1981-06-13",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/c3e6716f-2b9a-4729-9c1b-5f813a84ca71"
+      }
+     }
+    ],
+    "id": "12a2bd4e-d24d-44da-ae26-6d1bb6425130",
+    "name": [
+     {
+      "family": "Coldbrook",
+      "given": [
+       "Kendall"
+      ]
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005550007"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "1955-04-21",
+    "id": "20a085e5-d068-4a24-bfe7-b19af4397b8b",
+    "managingOrganization": {
+     "reference": "Organization/c3e6716f-2b9a-4729-9c1b-5f813a84ca71"
+    },
+    "name": [
+     {
+      "family": "Coldbrook",
+      "given": [
+       "Morgan"
+      ],
+      "use": "official"
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005550007"
+     },
+     {
+      "system": "email",
+      "value": "tyler97@example.org"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/c3e6716f-2b9a-4729-9c1b-5f813a84ca71"
+      }
+     }
+    ],
+    "id": "1a843a8c-535c-42d0-bf22-9d96e4d3b71c",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1946697026"
+     }
+    ],
+    "name": [
+     {
+      "family": "Campos",
+      "given": [
+       "Ana"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/c3e6716f-2b9a-4729-9c1b-5f813a84ca71"
+      }
+     }
+    ],
+    "id": "1b649381-2be5-42de-a87f-f54694800b3d",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1296012973"
+     }
+    ],
+    "name": [
+     {
+      "family": "Facchinato",
+      "given": [
+       "Jo"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/c3e6716f-2b9a-4729-9c1b-5f813a84ca71"
+      }
+     }
+    ],
+    "id": "855851e8-d695-47b5-9d39-b702cf4253f1",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1715046764"
+     }
+    ],
+    "name": [
+     {
+      "family": "Eddins",
+      "given": [
+       "Robin"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "authoredOn": "2026-10-08T00:57:17.270114+00:00",
+    "code": {
+     "coding": [
+      {
+       "code": "waitlist",
+       "display": "Waitlist",
+       "system": "https://ocean-ehr.com/fhir/CodeSystem/task-type"
+      }
+     ]
+    },
+    "description": "Waitlist: follow-up appointment",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/Extension/waitlist-appointment-type",
+      "valueString": "follow-up"
+     },
+     {
+      "url": "https://ocean-ehr.com/fhir/Extension/waitlist-preferred-practitioner",
+      "valueString": "1a843a8c-535c-42d0-bf22-9d96e4d3b71c"
+     },
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/c3e6716f-2b9a-4729-9c1b-5f813a84ca71"
+      }
+     }
+    ],
+    "for": {
+     "display": "Kendall Coldbrook",
+     "reference": "Patient/12a2bd4e-d24d-44da-ae26-6d1bb6425130"
+    },
+    "id": "c0097ec4-90f9-4f71-ae73-6a19d95f6477",
+    "intent": "order",
+    "resourceType": "Task",
+    "status": "requested"
+   }
+  }
+ ],
+ "resourceType": "Bundle",
+ "total": 6,
+ "type": "collection",
+ "types": [
+  "Patient",
+  "Practitioner",
+  "PractitionerRole",
+  "Organization",
+  "Appointment",
+  "Encounter",
+  "EpisodeOfCare",
+  "ClinicalImpression",
+  "Observation",
+  "Condition",
+  "Procedure",
+  "CarePlan",
+  "Coverage",
+  "Claim",
+  "ClaimResponse",
+  "Communication",
+  "CommunicationRequest",
+  "Consent",
+  "DocumentReference",
+  "Task"
+ ]
+}

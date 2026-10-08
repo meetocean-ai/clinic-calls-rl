@@ -1,0 +1,229 @@
+{
+ "compartment": "Organization/dc1a78ec-230f-414e-bf18-4904a61e1532",
+ "entry": [
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "2000-11-27",
+    "id": "48b1f2a0-7025-4304-92ab-4abb7542eece",
+    "managingOrganization": {
+     "reference": "Organization/dc1a78ec-230f-414e-bf18-4904a61e1532"
+    },
+    "name": [
+     {
+      "family": "Oakhurst",
+      "given": [
+       "Taylor"
+      ],
+      "use": "official"
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005550004"
+     },
+     {
+      "system": "email",
+      "value": "brian38@example.org"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/dc1a78ec-230f-414e-bf18-4904a61e1532"
+      }
+     }
+    ],
+    "id": "6d0f6733-4d2d-4d62-a103-001b50bffc05",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1715046764"
+     }
+    ],
+    "name": [
+     {
+      "family": "Eddins",
+      "given": [
+       "Robin"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/dc1a78ec-230f-414e-bf18-4904a61e1532"
+      }
+     }
+    ],
+    "id": "adda9577-48b1-4679-8d53-6d82e0166f25",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1296012973"
+     }
+    ],
+    "name": [
+     {
+      "family": "Facchinato",
+      "given": [
+       "Jo"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/dc1a78ec-230f-414e-bf18-4904a61e1532"
+      }
+     }
+    ],
+    "id": "b080cea4-b4f7-4bc3-97ce-41ec003d2df9",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1946697026"
+     }
+    ],
+    "name": [
+     {
+      "family": "Campos",
+      "given": [
+       "Ana"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "cancelationReason": {
+     "coding": [
+      {
+       "display": "patient request",
+       "system": "http://terminology.hl7.org/CodeSystem/appointment-cancellation-reason"
+      }
+     ]
+    },
+    "description": "Follow-up",
+    "end": "2026-10-12T14:30:00-07:00",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/dc1a78ec-230f-414e-bf18-4904a61e1532"
+      }
+     }
+    ],
+    "id": "3c856d0d-751b-48b9-8915-c671f75f1d60",
+    "participant": [
+     {
+      "actor": {
+       "display": "Taylor Oakhurst",
+       "reference": "Patient/48b1f2a0-7025-4304-92ab-4abb7542eece"
+      },
+      "status": "accepted"
+     },
+     {
+      "actor": {
+       "display": "Dr. Campos",
+       "reference": "Practitioner/b080cea4-b4f7-4bc3-97ce-41ec003d2df9"
+      },
+      "status": "accepted"
+     }
+    ],
+    "resourceType": "Appointment",
+    "start": "2026-10-12T14:00:00-07:00",
+    "status": "cancelled"
+   }
+  }
+ ],
+ "resourceType": "Bundle",
+ "total": 5,
+ "type": "collection",
+ "types": [
+  "Patient",
+  "Practitioner",
+  "PractitionerRole",
+  "Organization",
+  "Appointment",
+  "Encounter",
+  "EpisodeOfCare",
+  "ClinicalImpression",
+  "Observation",
+  "Condition",
+  "Procedure",
+  "CarePlan",
+  "Coverage",
+  "Claim",
+  "ClaimResponse",
+  "Communication",
+  "CommunicationRequest",
+  "Consent",
+  "DocumentReference",
+  "Task"
+ ]
+}

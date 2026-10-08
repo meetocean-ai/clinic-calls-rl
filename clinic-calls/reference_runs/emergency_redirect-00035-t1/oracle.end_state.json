@@ -1,0 +1,222 @@
+{
+ "compartment": "Organization/f76043b0-25ec-4b20-bf6d-077919668b4d",
+ "entry": [
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "1984-07-18",
+    "id": "5a600128-bd04-44ad-9b5e-05b728712adb",
+    "managingOrganization": {
+     "reference": "Organization/f76043b0-25ec-4b20-bf6d-077919668b4d"
+    },
+    "name": [
+     {
+      "family": "Ironwood",
+      "given": [
+       "Blake"
+      ],
+      "use": "official"
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005550008"
+     },
+     {
+      "system": "email",
+      "value": "dmelton@example.net"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/f76043b0-25ec-4b20-bf6d-077919668b4d"
+      }
+     }
+    ],
+    "id": "246a71d8-b1a6-4084-909e-ff3c943bf7f4",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1296012973"
+     }
+    ],
+    "name": [
+     {
+      "family": "Facchinato",
+      "given": [
+       "Jo"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/f76043b0-25ec-4b20-bf6d-077919668b4d"
+      }
+     }
+    ],
+    "id": "dabbcd07-8b14-45c7-a8ce-16514d3aaca2",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1946697026"
+     }
+    ],
+    "name": [
+     {
+      "family": "Campos",
+      "given": [
+       "Ana"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/f76043b0-25ec-4b20-bf6d-077919668b4d"
+      }
+     }
+    ],
+    "id": "dfab489c-a96e-40cc-984f-934a512f24fb",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1715046764"
+     }
+    ],
+    "name": [
+     {
+      "family": "Eddins",
+      "given": [
+       "Robin"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "authoredOn": "2026-10-08T00:54:03.454935+00:00",
+    "code": {
+     "coding": [
+      {
+       "code": "warm-transfer",
+       "display": "Warm transfer to staff",
+       "system": "https://ocean-ehr.com/fhir/CodeSystem/agent-action"
+      }
+     ]
+    },
+    "description": "urgent: caller reports one-sided numbness and slurred speech; told to call 911",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/f76043b0-25ec-4b20-bf6d-077919668b4d"
+      }
+     }
+    ],
+    "for": {
+     "display": "Blake Ironwood",
+     "reference": "Patient/5a600128-bd04-44ad-9b5e-05b728712adb"
+    },
+    "id": "33cbd9bb-2a00-425c-bdd5-ea9444d7867b",
+    "intent": "order",
+    "owner": {
+     "display": "Ocean AI Agent"
+    },
+    "priority": "routine",
+    "resourceType": "Task",
+    "status": "requested"
+   }
+  }
+ ],
+ "resourceType": "Bundle",
+ "total": 5,
+ "type": "collection",
+ "types": [
+  "Patient",
+  "Practitioner",
+  "PractitionerRole",
+  "Organization",
+  "Appointment",
+  "Encounter",
+  "EpisodeOfCare",
+  "ClinicalImpression",
+  "Observation",
+  "Condition",
+  "Procedure",
+  "CarePlan",
+  "Coverage",
+  "Claim",
+  "ClaimResponse",
+  "Communication",
+  "CommunicationRequest",
+  "Consent",
+  "DocumentReference",
+  "Task"
+ ]
+}

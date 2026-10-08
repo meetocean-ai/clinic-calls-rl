@@ -1,0 +1,96 @@
+{
+ "asr": null,
+ "audio_scores": null,
+ "caller_events": null,
+ "chaos": [],
+ "dataset_version": "tasks-v3+gen-c605a9eb4c",
+ "diffs": [],
+ "environment": "ehr",
+ "error": "",
+ "family": "cancel",
+ "json_verifier": {
+  "checks_run": [
+   "cancel_targeted_right_id",
+   "no_extra_mutations",
+   "transfer_matches"
+  ],
+  "diffs": [],
+  "patient_id": "a79390df-b729-4837-bac8-adaab8289e29",
+  "reward": 1,
+  "verifier_version": "clinic-calls-verify-1"
+ },
+ "latency_ms": {
+  "max": null,
+  "p50": null,
+  "p95": null,
+  "p99": null,
+  "ttft_p50": null,
+  "ttft_p95": null,
+  "turns": []
+ },
+ "method_version": "verify-5b517a1f4e",
+ "policy_id": "oracle",
+ "provenance": [
+  "services/agent/agents/tools_fhir.py::cancel_appointment"
+ ],
+ "reward": 1,
+ "safety_flags": [],
+ "schema_version": 1,
+ "seconds": 0.152,
+ "seed": 25,
+ "simulator": {
+  "class": "ScriptedCaller"
+ },
+ "split": "heldout",
+ "steps": 6,
+ "steps_hash": "60f3d1dce37322c2bfe0edff14ef7c76ec7aead7950e9caa96dcc5757b4b27ab",
+ "stopped_reason": "end_call",
+ "task_hash": "36e548ac7508ef5739c9ebbf6dcf6a3983b53b9c47b9384e4af2dc0ee3a3d6c8",
+ "task_id": "cancel-00025",
+ "tier": 1,
+ "tool_calls": 4,
+ "turn_scores": {
+  "judges": [
+   "claim_without_tool"
+  ],
+  "summary": {
+   "claim_without_tool": {
+    "errors": 0,
+    "failed_turns": [],
+    "pass_rate": 1.0,
+    "turns": 2
+   }
+  },
+  "turns": [
+   {
+    "judgments": {
+     "claim_without_tool": {
+      "reasoning": "no claim",
+      "verdict": "pass"
+     }
+    },
+    "text": "Could I have your date of birth, please?",
+    "tools": [],
+    "turn": 1
+   },
+   {
+    "judgments": {
+     "claim_without_tool": {
+      "reasoning": "no claim",
+      "verdict": "pass"
+     }
+    },
+    "text": "It's cancelled. Anything else?",
+    "tools": [
+     "verify_patient",
+     "get_appointments",
+     "cancel_appointment"
+    ],
+    "turn": 2
+   }
+  ]
+ },
+ "turn_taking": null,
+ "turns": 2,
+ "voice": null
+}

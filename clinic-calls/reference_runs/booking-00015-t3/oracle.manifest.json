@@ -1,0 +1,111 @@
+{
+ "asr": null,
+ "audio_scores": null,
+ "caller_events": null,
+ "chaos": [
+  "no_availability"
+ ],
+ "dataset_version": "tasks-v3+gen-c605a9eb4c",
+ "diffs": [],
+ "environment": "ehr",
+ "error": "",
+ "family": "booking",
+ "json_verifier": {
+  "checks_run": [
+   "waitlisted_not_booked",
+   "no_extra_mutations",
+   "transfer_matches"
+  ],
+  "diffs": [],
+  "patient_id": "b3087227-d67f-4a61-8dff-c2ed96438600",
+  "reward": 1,
+  "verifier_version": "clinic-calls-verify-1"
+ },
+ "latency_ms": {
+  "max": null,
+  "p50": null,
+  "p95": null,
+  "p99": null,
+  "ttft_p50": null,
+  "ttft_p95": null,
+  "turns": []
+ },
+ "method_version": "verify-5b517a1f4e",
+ "policy_id": "oracle",
+ "provenance": [
+  "services/agent/agents/tools_fhir.py::book_appointment",
+  "services/agent/agents/specialists/scheduler.py::book_appointment"
+ ],
+ "reward": 1,
+ "safety_flags": [],
+ "schema_version": 1,
+ "seconds": 0.2,
+ "seed": 15,
+ "simulator": {
+  "class": "ScriptedCaller"
+ },
+ "split": "heldout",
+ "steps": 7,
+ "steps_hash": "97bc506cbd4d369e65bca0d0ee70f68c3f841f127f666faa2ef819a9585d3e52",
+ "stopped_reason": "end_call",
+ "task_hash": "9b663b080bc6b0209a4a88ffd0d388db118ddaa9324b0ea02cf8cc17c45cc148",
+ "task_id": "booking-00015",
+ "tier": 3,
+ "tool_calls": 4,
+ "turn_scores": {
+  "judges": [
+   "claim_without_tool"
+  ],
+  "summary": {
+   "claim_without_tool": {
+    "errors": 0,
+    "failed_turns": [],
+    "pass_rate": 1.0,
+    "turns": 3
+   }
+  },
+  "turns": [
+   {
+    "judgments": {
+     "claim_without_tool": {
+      "reasoning": "no claim",
+      "verdict": "pass"
+     }
+    },
+    "text": "Could I have your date of birth, please?",
+    "tools": [],
+    "turn": 1
+   },
+   {
+    "judgments": {
+     "claim_without_tool": {
+      "reasoning": "no claim",
+      "verdict": "pass"
+     }
+    },
+    "text": "There is nothing open with that provider. Shall I put you on the waitlist?",
+    "tools": [
+     "verify_patient",
+     "look_up_availability"
+    ],
+    "turn": 2
+   },
+   {
+    "judgments": {
+     "claim_without_tool": {
+      "reasoning": "no claim",
+      "verdict": "pass"
+     }
+    },
+    "text": "You're on the waitlist. Anything else?",
+    "tools": [
+     "enroll_in_waitlist"
+    ],
+    "turn": 3
+   }
+  ]
+ },
+ "turn_taking": null,
+ "turns": 3,
+ "voice": null
+}

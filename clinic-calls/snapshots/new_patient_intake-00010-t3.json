@@ -1,0 +1,280 @@
+{
+ "bundle": {
+  "compartment": "Organization/1cc5b396-0c36-424f-a1f5-9b0734d67701",
+  "entry": [
+   {
+    "resource": {
+     "active": true,
+     "birthDate": "1953-02-11",
+     "id": "fa90076c-0085-4ed9-b5aa-970079b53629",
+     "managingOrganization": {
+      "reference": "Organization/1cc5b396-0c36-424f-a1f5-9b0734d67701"
+     },
+     "name": [
+      {
+       "family": "Kingsley",
+       "given": [
+        "Casey"
+       ],
+       "use": "official"
+      }
+     ],
+     "resourceType": "Patient",
+     "telecom": [
+      {
+       "system": "phone",
+       "use": "mobile",
+       "value": "+15005550011"
+      },
+      {
+       "system": "email",
+       "value": "burgessderek@example.net"
+      }
+     ]
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/1cc5b396-0c36-424f-a1f5-9b0734d67701"
+       }
+      }
+     ],
+     "id": "c680d729-d7c2-4474-a7d3-bc9edeb4b98f",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1715046764"
+      }
+     ],
+     "name": [
+      {
+       "family": "Eddins",
+       "given": [
+        "Robin"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/1cc5b396-0c36-424f-a1f5-9b0734d67701"
+       }
+      }
+     ],
+     "id": "cad4ca70-c94b-4f5b-bd92-521b33b7a2e6",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1296012973"
+      }
+     ],
+     "name": [
+      {
+       "family": "Facchinato",
+       "given": [
+        "Jo"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/1cc5b396-0c36-424f-a1f5-9b0734d67701"
+       }
+      }
+     ],
+     "id": "f51577d7-6190-494f-9d46-e147550ee034",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1946697026"
+      }
+     ],
+     "name": [
+      {
+       "family": "Campos",
+       "given": [
+        "Ana"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   }
+  ],
+  "resourceType": "Bundle",
+  "total": 4,
+  "type": "collection",
+  "types": [
+   "Patient",
+   "Practitioner",
+   "PractitionerRole",
+   "Organization",
+   "Appointment",
+   "Encounter",
+   "EpisodeOfCare",
+   "ClinicalImpression",
+   "Observation",
+   "Condition",
+   "Procedure",
+   "CarePlan",
+   "Coverage",
+   "Claim",
+   "ClaimResponse",
+   "Communication",
+   "CommunicationRequest",
+   "Consent",
+   "DocumentReference",
+   "Task"
+  ]
+ },
+ "schema_version": 1,
+ "task": {
+  "appointment": null,
+  "caller_verifiable": true,
+  "chaos": [
+   "dob_corrected",
+   "shared_phone"
+  ],
+  "claimed_dob": "1983-01-12",
+  "cooperation": 2,
+  "detour_question": null,
+  "duplicate": {
+   "dob": "1953-02-11",
+   "family": "Kingsley",
+   "given": "Casey"
+  },
+  "expect_transfer": false,
+  "family": "new_patient_intake",
+  "goal": "You are a NEW patient \u2014 you have never been to this clinic and have no record there. Book a first visit with whichever provider is available first. When the agent asks, give your full name, Emerson Kingsley, and your date of birth, 1983-01-12. Any day works. Accept the FIRST time the agent offers. When FIRST asked for your date of birth, say 1983-01-14 (you misspeak). The moment the agent repeats it or moves on, correct yourself: 'sorry, I mean 1983-01-12'. If asked again, give 1983-01-12. Once the agent confirms it is done, say thank you and goodbye.",
+  "id": "new_patient_intake-00010",
+  "lookalike": null,
+  "misremembered_date": null,
+  "misstated_dob": "1983-01-14",
+  "names_provider": false,
+  "opening_line": "Hi, I'm a new patient and I'd like to book a first visit.",
+  "patient": {
+   "dob": "1983-01-12",
+   "family": "Kingsley",
+   "given": "Emerson",
+   "phone": "+15005550011"
+  },
+  "payer": null,
+  "persona": "skeptical",
+  "provenance": [
+   "services/agent/agents/specialists/reception.py::register_new_patient",
+   "services/agent/agents/tools_patient.py::register_patient_in_org",
+   "services/agent/agents/tools_fhir.py::book_appointment"
+  ],
+  "provider": {
+   "display": "Dr. Campos",
+   "family": "Campos",
+   "given": "Ana"
+  },
+  "realism": [
+   "fillers",
+   "limited_english"
+  ],
+  "red_flag": null,
+  "requested_slot": null,
+  "schema_version": 3,
+  "seed": 10,
+  "split": "heldout",
+  "switch_to": null,
+  "tier": 3,
+  "today": "2026-10-07",
+  "urgent": false
+ },
+ "world": {
+  "baseline": {
+   "appointments": {},
+   "n_appointments": 0,
+   "n_coverage": 0,
+   "n_patients": 1,
+   "n_tasks": 0,
+   "n_transfers": 0
+  },
+  "bystander_patient_id": null,
+  "clinic_tz": "America/Los_Angeles",
+  "duplicate_patient_id": "fa90076c-0085-4ed9-b5aa-970079b53629",
+  "organization_id": "1cc5b396-0c36-424f-a1f5-9b0734d67701",
+  "patient_id": null,
+  "practitioners": {
+   "Dr. Campos": {
+    "display": "Dr. Campos",
+    "id": "f51577d7-6190-494f-9d46-e147550ee034"
+   },
+   "Dr. Eddins": {
+    "display": "Dr. Eddins",
+    "id": "c680d729-d7c2-4474-a7d3-bc9edeb4b98f"
+   },
+   "Dr. Facchinato": {
+    "display": "Dr. Facchinato",
+    "id": "cad4ca70-c94b-4f5b-bd92-521b33b7a2e6"
+   }
+  },
+  "requested_bystander_id": null,
+  "requested_start": null,
+  "target_appointment_id": null,
+  "today": "2026-10-07",
+  "urgent_window_days": 2
+ }
+}

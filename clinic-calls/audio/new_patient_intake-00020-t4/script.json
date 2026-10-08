@@ -1,0 +1,82 @@
+{
+ "key": "new_patient_intake-00020-t4",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 8.125,
+   "spoken": "Hi,, let me think, I'm, er, a new pati\u2014 sorry, I mean patient and I'd like to book a first visit with Dr. Eddins.",
+   "text": "Hi, I'm a new patient and I'd like to book a first visit with Dr. Eddins."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob_misstated",
+   "sample_rate": 8000,
+   "seconds": 3.0,
+   "spoken": "It's July 12, 1970.",
+   "text": "It's 1970-07-12."
+  },
+  {
+   "file": "02.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.3,
+   "spoken": "It's July 15, 1970.",
+   "text": "It's 1970-07-15."
+  },
+  {
+   "file": "03.wav",
+   "kind": "name",
+   "sample_rate": 8000,
+   "seconds": 5.55,
+   "spoken": "My, er, name, let me think, is Casey Ravensc\u2014 sorry, I mean Ravenscroft.",
+   "text": "My name is Casey Ravenscroft."
+  },
+  {
+   "file": "04.wav",
+   "kind": "name_and_dob",
+   "sample_rate": 8000,
+   "seconds": 9.725,
+   "spoken": "My, let me think, name, er, is Casey Ravensc\u2014 sorry, I mean Ravenscroft, and my date of birth is July 15, 1970.",
+   "text": "My name is Casey Ravenscroft, and my date of birth is 1970-07-15."
+  },
+  {
+   "file": "05.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.85,
+   "spoken": "Yes,, er, that, let me think, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "06.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 4.175,
+   "spoken": "Thank, er, you,, let me think, good\u2014 sorry, I mean goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "new_patient_intake-00020",
+ "tier": 4,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.05,
+   "gain_wobble_db": 6.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 20,
+   "snr_db": 15.0
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 2,
+   "seed": 20,
+   "self_correction": true
+  },
+  "tts": "kokoro",
+  "voice": "am_michael"
+ }
+}

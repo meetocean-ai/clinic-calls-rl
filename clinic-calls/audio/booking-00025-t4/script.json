@@ -1,0 +1,66 @@
+{
+ "key": "booking-00025-t4",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 6.225,
+   "spoken": "So I\u2014 hi, I'd, uh, like, um, to book a, hmm, foll\u2014 sorry, I mean follow-up visit with Dr. Campos, please.",
+   "text": "Hi, I'd like to book a follow-up visit with Dr. Campos, please."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob_misstated",
+   "sample_rate": 8000,
+   "seconds": 3.025,
+   "spoken": "So I\u2014 it's May 19, 1984.",
+   "text": "It's 1984-05-19."
+  },
+  {
+   "file": "02.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.1,
+   "spoken": "So I\u2014 it's May 20, 1984.",
+   "text": "It's 1984-05-20."
+  },
+  {
+   "file": "03.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.65,
+   "spoken": "So I\u2014 yes,, um, that, hmm, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "04.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 3.325,
+   "spoken": "So I\u2014 thank, um, you,, hmm, good\u2014 sorry, I mean goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "booking-00025",
+ "tier": 4,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.05,
+   "gain_wobble_db": 3.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 25,
+   "snr_db": 15.0
+  },
+  "disfluency": {
+   "false_start": true,
+   "fillers": 3,
+   "seed": 25,
+   "self_correction": true
+  },
+  "tts": "kokoro",
+  "voice": "am_liam"
+ }
+}

@@ -1,0 +1,229 @@
+{
+ "compartment": "Organization/13038c6f-f358-4044-a8bb-d607d9ba9b33",
+ "entry": [
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "1992-03-08",
+    "id": "055660d9-08db-477a-81fa-5e946fb4d3bf",
+    "managingOrganization": {
+     "reference": "Organization/13038c6f-f358-4044-a8bb-d607d9ba9b33"
+    },
+    "name": [
+     {
+      "family": "Fairweather",
+      "given": [
+       "Tatum"
+      ],
+      "use": "official"
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005550011"
+     },
+     {
+      "system": "email",
+      "value": "manuelsmith@example.com"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/13038c6f-f358-4044-a8bb-d607d9ba9b33"
+      }
+     }
+    ],
+    "id": "04d8e4b3-a73c-4145-92c1-66fd55406e35",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1296012973"
+     }
+    ],
+    "name": [
+     {
+      "family": "Facchinato",
+      "given": [
+       "Jo"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/13038c6f-f358-4044-a8bb-d607d9ba9b33"
+      }
+     }
+    ],
+    "id": "13b053d9-e65d-4aaf-a475-fc3403678216",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1715046764"
+     }
+    ],
+    "name": [
+     {
+      "family": "Eddins",
+      "given": [
+       "Robin"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/13038c6f-f358-4044-a8bb-d607d9ba9b33"
+      }
+     }
+    ],
+    "id": "cd1e3c6b-d43e-4774-af05-aa5a5a9ce8c2",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1946697026"
+     }
+    ],
+    "name": [
+     {
+      "family": "Campos",
+      "given": [
+       "Ana"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "appointmentType": {
+     "coding": [
+      {
+       "code": "follow-up",
+       "display": "Follow Up",
+       "system": "https://ocean-ehr.com/fhir/CodeSystem/appointment-type"
+      }
+     ]
+    },
+    "end": "2026-10-08T08:15:00-07:00",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/13038c6f-f358-4044-a8bb-d607d9ba9b33"
+      }
+     }
+    ],
+    "id": "dd3cbade-aca4-4e83-8276-a3d3c335b8e8",
+    "participant": [
+     {
+      "actor": {
+       "display": "Tatum Fairweather",
+       "reference": "Patient/055660d9-08db-477a-81fa-5e946fb4d3bf"
+      },
+      "status": "accepted"
+     },
+     {
+      "actor": {
+       "display": "Jo Facchinato",
+       "reference": "Practitioner/04d8e4b3-a73c-4145-92c1-66fd55406e35"
+      },
+      "status": "accepted"
+     }
+    ],
+    "resourceType": "Appointment",
+    "start": "2026-10-08T08:00:00-07:00",
+    "status": "booked"
+   }
+  }
+ ],
+ "resourceType": "Bundle",
+ "total": 5,
+ "type": "collection",
+ "types": [
+  "Patient",
+  "Practitioner",
+  "PractitionerRole",
+  "Organization",
+  "Appointment",
+  "Encounter",
+  "EpisodeOfCare",
+  "ClinicalImpression",
+  "Observation",
+  "Condition",
+  "Procedure",
+  "CarePlan",
+  "Coverage",
+  "Claim",
+  "ClaimResponse",
+  "Communication",
+  "CommunicationRequest",
+  "Consent",
+  "DocumentReference",
+  "Task"
+ ]
+}

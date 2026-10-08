@@ -1,0 +1,58 @@
+{
+ "key": "booking-00050-t4",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 6.4,
+   "spoken": "Hi, I'd, er, like to book a, uh, foll\u2014 sorry, I mean follow-up visit with Dr. Campos, please.",
+   "text": "Hi, I'd like to book a follow-up visit with Dr. Campos, please."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.1,
+   "spoken": "It's May 27, 1993.",
+   "text": "It's 1993-05-27."
+  },
+  {
+   "file": "02.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.15,
+   "spoken": "Yes,, er, that, uh, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "03.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 3.25,
+   "spoken": "Thank, er, you,, uh, good\u2014 sorry, I mean goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "booking-00050",
+ "tier": 4,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.02,
+   "gain_wobble_db": 6.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 50,
+   "snr_db": 15.0
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 2,
+   "seed": 50,
+   "self_correction": true
+  },
+  "tts": "kokoro",
+  "voice": "af_heart"
+ }
+}

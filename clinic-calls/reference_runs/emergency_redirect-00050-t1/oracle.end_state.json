@@ -1,0 +1,222 @@
+{
+ "compartment": "Organization/9012db08-9f7c-45a3-b556-2cf700e7e073",
+ "entry": [
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "1953-06-02",
+    "id": "91b1d7ff-e1a6-4090-bc04-66e2b74ddd06",
+    "managingOrganization": {
+     "reference": "Organization/9012db08-9f7c-45a3-b556-2cf700e7e073"
+    },
+    "name": [
+     {
+      "family": "Stonebridge",
+      "given": [
+       "Kendall"
+      ],
+      "use": "official"
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005550009"
+     },
+     {
+      "system": "email",
+      "value": "nicole33@example.org"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/9012db08-9f7c-45a3-b556-2cf700e7e073"
+      }
+     }
+    ],
+    "id": "30f72e73-5da2-4a35-9a26-d58b613f86d0",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1715046764"
+     }
+    ],
+    "name": [
+     {
+      "family": "Eddins",
+      "given": [
+       "Robin"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/9012db08-9f7c-45a3-b556-2cf700e7e073"
+      }
+     }
+    ],
+    "id": "9f986f8b-8dd0-4a9c-b8d5-7ac19fc9b098",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1296012973"
+     }
+    ],
+    "name": [
+     {
+      "family": "Facchinato",
+      "given": [
+       "Jo"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/9012db08-9f7c-45a3-b556-2cf700e7e073"
+      }
+     }
+    ],
+    "id": "f0eae5e7-0f09-42b8-8374-7a936b19f365",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1946697026"
+     }
+    ],
+    "name": [
+     {
+      "family": "Campos",
+      "given": [
+       "Ana"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "authoredOn": "2026-10-08T00:54:14.982702+00:00",
+    "code": {
+     "coding": [
+      {
+       "code": "warm-transfer",
+       "display": "Warm transfer to staff",
+       "system": "https://ocean-ehr.com/fhir/CodeSystem/agent-action"
+      }
+     ]
+    },
+    "description": "urgent: caller reports sudden worst headache with vision loss; told to call 911",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/9012db08-9f7c-45a3-b556-2cf700e7e073"
+      }
+     }
+    ],
+    "for": {
+     "display": "Kendall Stonebridge",
+     "reference": "Patient/91b1d7ff-e1a6-4090-bc04-66e2b74ddd06"
+    },
+    "id": "87167fb8-396f-49be-8b96-e71b3cbd3890",
+    "intent": "order",
+    "owner": {
+     "display": "Ocean AI Agent"
+    },
+    "priority": "routine",
+    "resourceType": "Task",
+    "status": "requested"
+   }
+  }
+ ],
+ "resourceType": "Bundle",
+ "total": 5,
+ "type": "collection",
+ "types": [
+  "Patient",
+  "Practitioner",
+  "PractitionerRole",
+  "Organization",
+  "Appointment",
+  "Encounter",
+  "EpisodeOfCare",
+  "ClinicalImpression",
+  "Observation",
+  "Condition",
+  "Procedure",
+  "CarePlan",
+  "Coverage",
+  "Claim",
+  "ClaimResponse",
+  "Communication",
+  "CommunicationRequest",
+  "Consent",
+  "DocumentReference",
+  "Task"
+ ]
+}

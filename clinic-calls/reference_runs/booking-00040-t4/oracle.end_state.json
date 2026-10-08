@@ -1,0 +1,305 @@
+{
+ "compartment": "Organization/99dde84b-02db-47fd-b6d4-93ba0ef24621",
+ "entry": [
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "1993-03-13",
+    "id": "2eb92ef3-f6e1-403f-a939-b665feb4818d",
+    "managingOrganization": {
+     "reference": "Organization/99dde84b-02db-47fd-b6d4-93ba0ef24621"
+    },
+    "name": [
+     {
+      "family": "Kingsley",
+      "given": [
+       "Logan"
+      ],
+      "use": "official"
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005550013"
+     },
+     {
+      "system": "email",
+      "value": "xboyd@example.com"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/99dde84b-02db-47fd-b6d4-93ba0ef24621"
+      }
+     }
+    ],
+    "id": "1413f768-adfd-4d08-baab-08bfac791409",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1946697026"
+     }
+    ],
+    "name": [
+     {
+      "family": "Campos",
+      "given": [
+       "Ana"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/99dde84b-02db-47fd-b6d4-93ba0ef24621"
+      }
+     }
+    ],
+    "id": "7ac907ea-e5f9-4161-9775-8772ec752294",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1715046764"
+     }
+    ],
+    "name": [
+     {
+      "family": "Eddins",
+      "given": [
+       "Robin"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/99dde84b-02db-47fd-b6d4-93ba0ef24621"
+      }
+     }
+    ],
+    "id": "9de734d4-1748-4d1d-bc4f-7abf193bbfde",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1201148499"
+     }
+    ],
+    "name": [
+     {
+      "family": "Eddinson",
+      "given": [
+       "Blake"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/99dde84b-02db-47fd-b6d4-93ba0ef24621"
+      }
+     }
+    ],
+    "id": "d98a166a-ee8c-4ee2-bb82-04616e3a0f78",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1296012973"
+     }
+    ],
+    "name": [
+     {
+      "family": "Facchinato",
+      "given": [
+       "Jo"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "description": "Follow-up",
+    "end": "2026-09-07T10:30:00-07:00",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/99dde84b-02db-47fd-b6d4-93ba0ef24621"
+      }
+     }
+    ],
+    "id": "34a8a8be-8ca4-4f4b-9f5a-3c017daf3afa",
+    "participant": [
+     {
+      "actor": {
+       "display": "Logan Kingsley",
+       "reference": "Patient/2eb92ef3-f6e1-403f-a939-b665feb4818d"
+      },
+      "status": "accepted"
+     },
+     {
+      "actor": {
+       "display": "Dr. Eddins",
+       "reference": "Practitioner/7ac907ea-e5f9-4161-9775-8772ec752294"
+      },
+      "status": "accepted"
+     }
+    ],
+    "resourceType": "Appointment",
+    "start": "2026-09-07T10:00:00-07:00",
+    "status": "fulfilled"
+   }
+  },
+  {
+   "resource": {
+    "cancelationReason": {
+     "coding": [
+      {
+       "display": "patient request",
+       "system": "http://terminology.hl7.org/CodeSystem/appointment-cancellation-reason"
+      }
+     ]
+    },
+    "description": "Follow-up",
+    "end": "2026-10-14T09:30:00-07:00",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/99dde84b-02db-47fd-b6d4-93ba0ef24621"
+      }
+     }
+    ],
+    "id": "e7bdce3e-2443-4e3d-869c-0188c2220959",
+    "participant": [
+     {
+      "actor": {
+       "display": "Logan Kingsley",
+       "reference": "Patient/2eb92ef3-f6e1-403f-a939-b665feb4818d"
+      },
+      "status": "accepted"
+     },
+     {
+      "actor": {
+       "display": "Dr. Eddins",
+       "reference": "Practitioner/7ac907ea-e5f9-4161-9775-8772ec752294"
+      },
+      "status": "accepted"
+     }
+    ],
+    "resourceType": "Appointment",
+    "start": "2026-10-14T09:00:00-07:00",
+    "status": "cancelled"
+   }
+  }
+ ],
+ "resourceType": "Bundle",
+ "total": 7,
+ "type": "collection",
+ "types": [
+  "Patient",
+  "Practitioner",
+  "PractitionerRole",
+  "Organization",
+  "Appointment",
+  "Encounter",
+  "EpisodeOfCare",
+  "ClinicalImpression",
+  "Observation",
+  "Condition",
+  "Procedure",
+  "CarePlan",
+  "Coverage",
+  "Claim",
+  "ClaimResponse",
+  "Communication",
+  "CommunicationRequest",
+  "Consent",
+  "DocumentReference",
+  "Task"
+ ]
+}

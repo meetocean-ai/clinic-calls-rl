@@ -1,0 +1,287 @@
+{
+ "compartment": "Organization/e5f60b48-ec46-4592-b16e-fe40a922c762",
+ "entry": [
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "1984-03-23",
+    "id": "c92718a9-0199-423b-90e3-d95ae9e5cfb6",
+    "managingOrganization": {
+     "reference": "Organization/e5f60b48-ec46-4592-b16e-fe40a922c762"
+    },
+    "name": [
+     {
+      "family": "Dunmore",
+      "given": [
+       "Sawyer"
+      ],
+      "use": "official"
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005550007"
+     },
+     {
+      "system": "email",
+      "value": "lmcdonald@example.com"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "1962-12-01",
+    "id": "d63b17f0-dbce-4815-b7e6-3b6ed8526e0b",
+    "managingOrganization": {
+     "reference": "Organization/e5f60b48-ec46-4592-b16e-fe40a922c762"
+    },
+    "name": [
+     {
+      "family": "Dunmore",
+      "given": [
+       "Reese"
+      ],
+      "use": "official"
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005550007"
+     },
+     {
+      "system": "email",
+      "value": "yjohnson@example.org"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/e5f60b48-ec46-4592-b16e-fe40a922c762"
+      }
+     }
+    ],
+    "id": "384db8c6-ab52-4f8b-8b03-b3ecfcef1cf5",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1296012973"
+     }
+    ],
+    "name": [
+     {
+      "family": "Facchinato",
+      "given": [
+       "Jo"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/e5f60b48-ec46-4592-b16e-fe40a922c762"
+      }
+     }
+    ],
+    "id": "a93b317a-c41a-49f0-b00e-d13717c5b3f6",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1946697026"
+     }
+    ],
+    "name": [
+     {
+      "family": "Campos",
+      "given": [
+       "Ana"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/e5f60b48-ec46-4592-b16e-fe40a922c762"
+      }
+     }
+    ],
+    "id": "b4fc3a63-92e6-4b9a-b391-575c62871bbf",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1715046764"
+     }
+    ],
+    "name": [
+     {
+      "family": "Eddins",
+      "given": [
+       "Robin"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "description": "Follow-up",
+    "end": "2026-10-12T10:30:00-07:00",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/e5f60b48-ec46-4592-b16e-fe40a922c762"
+      }
+     }
+    ],
+    "id": "19963b49-674b-4660-b65a-e18542d77ebe",
+    "participant": [
+     {
+      "actor": {
+       "display": "Sawyer Dunmore",
+       "reference": "Patient/c92718a9-0199-423b-90e3-d95ae9e5cfb6"
+      },
+      "status": "accepted"
+     },
+     {
+      "actor": {
+       "display": "Dr. Campos",
+       "reference": "Practitioner/a93b317a-c41a-49f0-b00e-d13717c5b3f6"
+      },
+      "status": "accepted"
+     }
+    ],
+    "resourceType": "Appointment",
+    "start": "2026-10-12T10:00:00-07:00",
+    "status": "booked"
+   }
+  },
+  {
+   "resource": {
+    "authoredOn": "2026-10-08T01:00:38.999253+00:00",
+    "code": {
+     "coding": [
+      {
+       "code": "warm-transfer",
+       "display": "Warm transfer to staff",
+       "system": "https://ocean-ehr.com/fhir/CodeSystem/agent-action"
+      }
+     ]
+    },
+    "description": "caller transferred",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/e5f60b48-ec46-4592-b16e-fe40a922c762"
+      }
+     }
+    ],
+    "for": {
+     "display": "Sawyer Dunmore",
+     "reference": "Patient/c92718a9-0199-423b-90e3-d95ae9e5cfb6"
+    },
+    "id": "c70d7928-5967-42e3-ada5-8ccbe55a8192",
+    "intent": "order",
+    "owner": {
+     "display": "Ocean AI Agent"
+    },
+    "priority": "routine",
+    "resourceType": "Task",
+    "status": "requested"
+   }
+  }
+ ],
+ "resourceType": "Bundle",
+ "total": 7,
+ "type": "collection",
+ "types": [
+  "Patient",
+  "Practitioner",
+  "PractitionerRole",
+  "Organization",
+  "Appointment",
+  "Encounter",
+  "EpisodeOfCare",
+  "ClinicalImpression",
+  "Observation",
+  "Condition",
+  "Procedure",
+  "CarePlan",
+  "Coverage",
+  "Claim",
+  "ClaimResponse",
+  "Communication",
+  "CommunicationRequest",
+  "Consent",
+  "DocumentReference",
+  "Task"
+ ]
+}

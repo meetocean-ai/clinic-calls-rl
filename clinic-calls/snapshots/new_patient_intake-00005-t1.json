@@ -1,0 +1,239 @@
+{
+ "bundle": {
+  "compartment": "Organization/d088b33b-9d33-405c-9958-493fad8477fe",
+  "entry": [
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/d088b33b-9d33-405c-9958-493fad8477fe"
+       }
+      }
+     ],
+     "id": "8340b351-2e26-436c-9470-666f6e6d6b0a",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1715046764"
+      }
+     ],
+     "name": [
+      {
+       "family": "Eddins",
+       "given": [
+        "Robin"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/d088b33b-9d33-405c-9958-493fad8477fe"
+       }
+      }
+     ],
+     "id": "a95e1e7b-e8be-4760-94ca-90accd2f47ac",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1296012973"
+      }
+     ],
+     "name": [
+      {
+       "family": "Facchinato",
+       "given": [
+        "Jo"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/d088b33b-9d33-405c-9958-493fad8477fe"
+       }
+      }
+     ],
+     "id": "a9e3a986-3ff2-4d32-8f39-92082ef5312a",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1946697026"
+      }
+     ],
+     "name": [
+      {
+       "family": "Campos",
+       "given": [
+        "Ana"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   }
+  ],
+  "resourceType": "Bundle",
+  "total": 3,
+  "type": "collection",
+  "types": [
+   "Patient",
+   "Practitioner",
+   "PractitionerRole",
+   "Organization",
+   "Appointment",
+   "Encounter",
+   "EpisodeOfCare",
+   "ClinicalImpression",
+   "Observation",
+   "Condition",
+   "Procedure",
+   "CarePlan",
+   "Coverage",
+   "Claim",
+   "ClaimResponse",
+   "Communication",
+   "CommunicationRequest",
+   "Consent",
+   "DocumentReference",
+   "Task"
+  ]
+ },
+ "schema_version": 1,
+ "task": {
+  "appointment": null,
+  "caller_verifiable": true,
+  "chaos": [],
+  "claimed_dob": "1964-04-11",
+  "cooperation": 5,
+  "detour_question": null,
+  "duplicate": null,
+  "expect_transfer": false,
+  "family": "new_patient_intake",
+  "goal": "You are a NEW patient \u2014 you have never been to this clinic and have no record there. Book a first visit with Dr. Campos. When the agent asks, give your full name, Skyler Northcott, and your date of birth, 1964-04-11. Any day works. Accept the FIRST time the agent offers. Once the agent confirms it is done, say thank you and goodbye.",
+  "id": "new_patient_intake-00005",
+  "lookalike": null,
+  "misremembered_date": null,
+  "misstated_dob": null,
+  "names_provider": true,
+  "opening_line": "Hi, I'm a new patient and I'd like to book a first visit with Dr. Campos.",
+  "patient": {
+   "dob": "1964-04-11",
+   "family": "Northcott",
+   "given": "Skyler",
+   "phone": "+15005550006"
+  },
+  "payer": null,
+  "persona": "polite",
+  "provenance": [
+   "services/agent/agents/specialists/reception.py::register_new_patient",
+   "services/agent/agents/tools_patient.py::register_patient_in_org",
+   "services/agent/agents/tools_fhir.py::book_appointment"
+  ],
+  "provider": {
+   "display": "Dr. Campos",
+   "family": "Campos",
+   "given": "Ana"
+  },
+  "realism": [],
+  "red_flag": null,
+  "requested_slot": null,
+  "schema_version": 3,
+  "seed": 5,
+  "split": "heldout",
+  "switch_to": null,
+  "tier": 1,
+  "today": "2026-10-07",
+  "urgent": false
+ },
+ "world": {
+  "baseline": {
+   "appointments": {},
+   "n_appointments": 0,
+   "n_coverage": 0,
+   "n_patients": 0,
+   "n_tasks": 0,
+   "n_transfers": 0
+  },
+  "bystander_patient_id": null,
+  "clinic_tz": "America/Los_Angeles",
+  "duplicate_patient_id": null,
+  "organization_id": "d088b33b-9d33-405c-9958-493fad8477fe",
+  "patient_id": null,
+  "practitioners": {
+   "Dr. Campos": {
+    "display": "Dr. Campos",
+    "id": "a9e3a986-3ff2-4d32-8f39-92082ef5312a"
+   },
+   "Dr. Eddins": {
+    "display": "Dr. Eddins",
+    "id": "8340b351-2e26-436c-9470-666f6e6d6b0a"
+   },
+   "Dr. Facchinato": {
+    "display": "Dr. Facchinato",
+    "id": "a95e1e7b-e8be-4760-94ca-90accd2f47ac"
+   }
+  },
+  "requested_bystander_id": null,
+  "requested_start": null,
+  "target_appointment_id": null,
+  "today": "2026-10-07",
+  "urgent_window_days": 2
+ }
+}

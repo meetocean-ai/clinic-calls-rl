@@ -1,0 +1,74 @@
+{
+ "key": "new_patient_intake-00030-t1",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 5.225,
+   "spoken": "Hi, I'm a new patient and I'd like to book a first visit with Dr. Facchinato.",
+   "text": "Hi, I'm a new patient and I'd like to book a first visit with Dr. Facchinato."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.5,
+   "spoken": "It's September 19, 1967.",
+   "text": "It's 1967-09-19."
+  },
+  {
+   "file": "02.wav",
+   "kind": "name",
+   "sample_rate": 8000,
+   "seconds": 2.525,
+   "spoken": "My name is Logan Marlowe.",
+   "text": "My name is Logan Marlowe."
+  },
+  {
+   "file": "03.wav",
+   "kind": "name_and_dob",
+   "sample_rate": 8000,
+   "seconds": 6.075,
+   "spoken": "My name is Logan Marlowe, and my date of birth is September 19, 1967.",
+   "text": "My name is Logan Marlowe, and my date of birth is 1967-09-19."
+  },
+  {
+   "file": "04.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 1.95,
+   "spoken": "Yes, that works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "05.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 1.95,
+   "spoken": "Thank you, goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "new_patient_intake-00030",
+ "tier": 1,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.0,
+   "gain_wobble_db": 0.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 30,
+   "snr_db": null
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 0,
+   "seed": 30,
+   "self_correction": false
+  },
+  "tts": "kokoro",
+  "voice": "bf_emma"
+ }
+}

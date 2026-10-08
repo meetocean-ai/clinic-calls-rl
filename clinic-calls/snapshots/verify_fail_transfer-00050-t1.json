@@ -1,0 +1,312 @@
+{
+ "bundle": {
+  "compartment": "Organization/eafa0175-f0ce-44a4-aa7e-a86d9c151d35",
+  "entry": [
+   {
+    "resource": {
+     "active": true,
+     "birthDate": "1973-10-11",
+     "id": "b64c398f-de2e-44a5-94f6-7bb212a0472d",
+     "managingOrganization": {
+      "reference": "Organization/eafa0175-f0ce-44a4-aa7e-a86d9c151d35"
+     },
+     "name": [
+      {
+       "family": "Eastwick",
+       "given": [
+        "Logan"
+       ],
+       "use": "official"
+      }
+     ],
+     "resourceType": "Patient",
+     "telecom": [
+      {
+       "system": "phone",
+       "use": "mobile",
+       "value": "+15005550009"
+      },
+      {
+       "system": "email",
+       "value": "melissa03@example.net"
+      }
+     ]
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/eafa0175-f0ce-44a4-aa7e-a86d9c151d35"
+       }
+      }
+     ],
+     "id": "21f85fcc-8495-499a-98a3-b68827cceea5",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1715046764"
+      }
+     ],
+     "name": [
+      {
+       "family": "Eddins",
+       "given": [
+        "Robin"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/eafa0175-f0ce-44a4-aa7e-a86d9c151d35"
+       }
+      }
+     ],
+     "id": "42324043-95b6-4bcc-aa7b-11497ef28d25",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1296012973"
+      }
+     ],
+     "name": [
+      {
+       "family": "Facchinato",
+       "given": [
+        "Jo"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/eafa0175-f0ce-44a4-aa7e-a86d9c151d35"
+       }
+      }
+     ],
+     "id": "7342454e-1565-44da-bf7a-bf2909aa4233",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1946697026"
+      }
+     ],
+     "name": [
+      {
+       "family": "Campos",
+       "given": [
+        "Ana"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "description": "Follow-up",
+     "end": "2026-10-12T11:30:00-07:00",
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/eafa0175-f0ce-44a4-aa7e-a86d9c151d35"
+       }
+      }
+     ],
+     "id": "167001d5-ff5a-46fc-9bf5-b8980c1c32b5",
+     "participant": [
+      {
+       "actor": {
+        "display": "Logan Eastwick",
+        "reference": "Patient/b64c398f-de2e-44a5-94f6-7bb212a0472d"
+       },
+       "status": "accepted"
+      },
+      {
+       "actor": {
+        "display": "Dr. Eddins",
+        "reference": "Practitioner/21f85fcc-8495-499a-98a3-b68827cceea5"
+       },
+       "status": "accepted"
+      }
+     ],
+     "resourceType": "Appointment",
+     "start": "2026-10-12T11:00:00-07:00",
+     "status": "booked"
+    }
+   }
+  ],
+  "resourceType": "Bundle",
+  "total": 5,
+  "type": "collection",
+  "types": [
+   "Patient",
+   "Practitioner",
+   "PractitionerRole",
+   "Organization",
+   "Appointment",
+   "Encounter",
+   "EpisodeOfCare",
+   "ClinicalImpression",
+   "Observation",
+   "Condition",
+   "Procedure",
+   "CarePlan",
+   "Coverage",
+   "Claim",
+   "ClaimResponse",
+   "Communication",
+   "CommunicationRequest",
+   "Consent",
+   "DocumentReference",
+   "Task"
+  ]
+ },
+ "schema_version": 1,
+ "task": {
+  "appointment": {
+   "date": "2026-10-12",
+   "days_ahead": 5,
+   "local_hour": 11
+  },
+  "caller_verifiable": false,
+  "chaos": [],
+  "claimed_dob": "1971-10-11",
+  "cooperation": 5,
+  "detour_question": null,
+  "duplicate": null,
+  "expect_transfer": true,
+  "family": "verify_fail_transfer",
+  "goal": "You want to know when your next appointment is, and to cancel it. When asked for your date of birth, give 1971-10-11 and insist it is correct if questioned. You cannot provide any other date of birth. If the agent offers to transfer you to a person, accept.",
+  "id": "verify_fail_transfer-00050",
+  "lookalike": null,
+  "misremembered_date": null,
+  "misstated_dob": null,
+  "names_provider": true,
+  "opening_line": "Hi, can you tell me when my next appointment is? I want to cancel it.",
+  "patient": {
+   "dob": "1973-10-11",
+   "family": "Eastwick",
+   "given": "Logan",
+   "phone": "+15005550009"
+  },
+  "payer": null,
+  "persona": "polite",
+  "provenance": [
+   "services/agent/agents/specialists/reception.py::verify_caller_dob",
+   "agents/base/base_agent.py::_build_warm_transfer"
+  ],
+  "provider": {
+   "display": "Dr. Eddins",
+   "family": "Eddins",
+   "given": "Robin"
+  },
+  "realism": [],
+  "red_flag": null,
+  "requested_slot": null,
+  "schema_version": 3,
+  "seed": 50,
+  "split": "heldout",
+  "switch_to": null,
+  "tier": 1,
+  "today": "2026-10-07",
+  "urgent": false
+ },
+ "world": {
+  "baseline": {
+   "appointments": {
+    "167001d5-ff5a-46fc-9bf5-b8980c1c32b5": {
+     "start": "2026-10-12T11:00:00-07:00",
+     "status": "booked"
+    }
+   },
+   "n_appointments": 1,
+   "n_coverage": 0,
+   "n_patients": 1,
+   "n_tasks": 0,
+   "n_transfers": 0
+  },
+  "bystander_patient_id": null,
+  "clinic_tz": "America/Los_Angeles",
+  "duplicate_patient_id": null,
+  "organization_id": "eafa0175-f0ce-44a4-aa7e-a86d9c151d35",
+  "patient_id": "b64c398f-de2e-44a5-94f6-7bb212a0472d",
+  "practitioners": {
+   "Dr. Campos": {
+    "display": "Dr. Campos",
+    "id": "7342454e-1565-44da-bf7a-bf2909aa4233"
+   },
+   "Dr. Eddins": {
+    "display": "Dr. Eddins",
+    "id": "21f85fcc-8495-499a-98a3-b68827cceea5"
+   },
+   "Dr. Facchinato": {
+    "display": "Dr. Facchinato",
+    "id": "42324043-95b6-4bcc-aa7b-11497ef28d25"
+   }
+  },
+  "requested_bystander_id": null,
+  "requested_start": null,
+  "target_appointment_id": "167001d5-ff5a-46fc-9bf5-b8980c1c32b5",
+  "today": "2026-10-07",
+  "urgent_window_days": 2
+ }
+}

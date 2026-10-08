@@ -1,0 +1,58 @@
+{
+ "key": "booking-00015-t4",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 4.55,
+   "spoken": "So I\u2014 hi,, um, I'd like to book a, you know, follow-up visit,, um, please.",
+   "text": "Hi, I'd like to book a follow-up visit, please."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.675,
+   "spoken": "It's\u2014 it's October 17, 1972.",
+   "text": "It's 1972-10-17."
+  },
+  {
+   "file": "02.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.45,
+   "spoken": "I\u2014 yes,, um, that, you know, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "03.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 2.6,
+   "spoken": "I\u2014 thank, um, you,, you know, goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "booking-00015",
+ "tier": 4,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.02,
+   "gain_wobble_db": 3.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 15,
+   "snr_db": 5.0
+  },
+  "disfluency": {
+   "false_start": true,
+   "fillers": 3,
+   "seed": 15,
+   "self_correction": false
+  },
+  "tts": "kokoro",
+  "voice": "am_adam"
+ }
+}

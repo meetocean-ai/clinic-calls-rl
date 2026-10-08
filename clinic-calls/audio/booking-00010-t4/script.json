@@ -1,0 +1,74 @@
+{
+ "key": "booking-00010-t4",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 4.575,
+   "spoken": "So I\u2014 hi, I'd like to, um, book a, er, follow-up visit, please.",
+   "text": "Hi, I'd like to book a follow-up visit, please."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob_misstated",
+   "sample_rate": 8000,
+   "seconds": 3.4,
+   "spoken": "It's\u2014 it's July 12, 1959.",
+   "text": "It's 1959-07-12."
+  },
+  {
+   "file": "02.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.3,
+   "spoken": "It's\u2014 it's July 9, 1959.",
+   "text": "It's 1959-07-09."
+  },
+  {
+   "file": "03.wav",
+   "kind": "detour",
+   "sample_rate": 8000,
+   "seconds": 4.775,
+   "spoken": "So I\u2014 is there a balance on my, er, account I should, um, know about?",
+   "text": "Is there a balance on my account I should know about?"
+  },
+  {
+   "file": "04.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.9,
+   "spoken": "So I\u2014 yes,, um, that, er, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "05.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 3.0,
+   "spoken": "So I\u2014 thank, um, you,, er, goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "booking-00010",
+ "tier": 4,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.02,
+   "gain_wobble_db": 3.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 10,
+   "snr_db": 15.0
+  },
+  "disfluency": {
+   "false_start": true,
+   "fillers": 2,
+   "seed": 10,
+   "self_correction": false
+  },
+  "tts": "kokoro",
+  "voice": "bf_isabella"
+ }
+}

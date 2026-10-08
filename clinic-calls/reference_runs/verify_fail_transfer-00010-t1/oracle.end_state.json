@@ -1,0 +1,256 @@
+{
+ "compartment": "Organization/d65a550d-c879-4566-b16d-afa05ce5b5f5",
+ "entry": [
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "1986-11-15",
+    "id": "a7fc8c9e-73f3-412b-ad31-7d6e213381e2",
+    "managingOrganization": {
+     "reference": "Organization/d65a550d-c879-4566-b16d-afa05ce5b5f5"
+    },
+    "name": [
+     {
+      "family": "Thornbury",
+      "given": [
+       "Skyler"
+      ],
+      "use": "official"
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005550011"
+     },
+     {
+      "system": "email",
+      "value": "david78@example.net"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/d65a550d-c879-4566-b16d-afa05ce5b5f5"
+      }
+     }
+    ],
+    "id": "33f92f44-6ee2-4712-96c3-e12be07946d4",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1946697026"
+     }
+    ],
+    "name": [
+     {
+      "family": "Campos",
+      "given": [
+       "Ana"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/d65a550d-c879-4566-b16d-afa05ce5b5f5"
+      }
+     }
+    ],
+    "id": "e1c30d69-6a7a-42e2-b01d-21cb1710e9d2",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1296012973"
+     }
+    ],
+    "name": [
+     {
+      "family": "Facchinato",
+      "given": [
+       "Jo"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/d65a550d-c879-4566-b16d-afa05ce5b5f5"
+      }
+     }
+    ],
+    "id": "fa6b353f-5ac2-464c-85e1-1086f64ad007",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1715046764"
+     }
+    ],
+    "name": [
+     {
+      "family": "Eddins",
+      "given": [
+       "Robin"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "description": "Follow-up",
+    "end": "2026-10-15T10:30:00-07:00",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/d65a550d-c879-4566-b16d-afa05ce5b5f5"
+      }
+     }
+    ],
+    "id": "cfd49e44-0ec5-4d12-829f-5efa1a7cdc3e",
+    "participant": [
+     {
+      "actor": {
+       "display": "Skyler Thornbury",
+       "reference": "Patient/a7fc8c9e-73f3-412b-ad31-7d6e213381e2"
+      },
+      "status": "accepted"
+     },
+     {
+      "actor": {
+       "display": "Dr. Campos",
+       "reference": "Practitioner/33f92f44-6ee2-4712-96c3-e12be07946d4"
+      },
+      "status": "accepted"
+     }
+    ],
+    "resourceType": "Appointment",
+    "start": "2026-10-15T10:00:00-07:00",
+    "status": "booked"
+   }
+  },
+  {
+   "resource": {
+    "authoredOn": "2026-10-08T00:52:26.041695+00:00",
+    "code": {
+     "coding": [
+      {
+       "code": "warm-transfer",
+       "display": "Warm transfer to staff",
+       "system": "https://ocean-ehr.com/fhir/CodeSystem/agent-action"
+      }
+     ]
+    },
+    "description": "caller transferred",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/d65a550d-c879-4566-b16d-afa05ce5b5f5"
+      }
+     }
+    ],
+    "for": {
+     "display": "Skyler Thornbury",
+     "reference": "Patient/a7fc8c9e-73f3-412b-ad31-7d6e213381e2"
+    },
+    "id": "db0f9466-2706-4453-b240-b98270a9c4df",
+    "intent": "order",
+    "owner": {
+     "display": "Ocean AI Agent"
+    },
+    "priority": "routine",
+    "resourceType": "Task",
+    "status": "requested"
+   }
+  }
+ ],
+ "resourceType": "Bundle",
+ "total": 6,
+ "type": "collection",
+ "types": [
+  "Patient",
+  "Practitioner",
+  "PractitionerRole",
+  "Organization",
+  "Appointment",
+  "Encounter",
+  "EpisodeOfCare",
+  "ClinicalImpression",
+  "Observation",
+  "Condition",
+  "Procedure",
+  "CarePlan",
+  "Coverage",
+  "Claim",
+  "ClaimResponse",
+  "Communication",
+  "CommunicationRequest",
+  "Consent",
+  "DocumentReference",
+  "Task"
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "key": "reschedule-00005-t4",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 8.375,
+   "spoken": "Hi, I need to move my appoint\u2014 no, wait, appointment, um, on Wednesday, October 14 at 2 PM to, hmm, another, you know, day.",
+   "text": "Hi, I need to move my appointment on Wednesday, October 14 at 2 PM to another day."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.15,
+   "spoken": "It's October 22, 2000.",
+   "text": "It's 2000-10-22."
+  },
+  {
+   "file": "02.wav",
+   "kind": "detour",
+   "sample_rate": 8000,
+   "seconds": 5.425,
+   "spoken": "Is there a bala\u2014 no, wait, balance on my account, um, I should, hmm, know, you know, about?",
+   "text": "Is there a balance on my account I should know about?"
+  },
+  {
+   "file": "03.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.5,
+   "spoken": "Yes,, hmm, that, um, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "04.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 3.275,
+   "spoken": "Thank, hmm, you,, um, good\u2014 no, wait, goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "reschedule-00005",
+ "tier": 4,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.02,
+   "gain_wobble_db": 3.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 5,
+   "snr_db": 10.0
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 3,
+   "seed": 5,
+   "self_correction": true
+  },
+  "tts": "kokoro",
+  "voice": "bf_isabella"
+ }
+}

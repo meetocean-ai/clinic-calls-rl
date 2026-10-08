@@ -1,0 +1,74 @@
+{
+ "key": "new_patient_intake-00005-t3",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 5.85,
+   "spoken": "Hi, I'm a new patient and, um, I'd like to book a, uh, first visit with Dr. Eddins.",
+   "text": "Hi, I'm a new patient and I'd like to book a first visit with Dr. Eddins."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.275,
+   "spoken": "It's March 20, 1967.",
+   "text": "It's 1967-03-20."
+  },
+  {
+   "file": "02.wav",
+   "kind": "name",
+   "sample_rate": 8000,
+   "seconds": 3.4,
+   "spoken": "My, let me think, name, er, is Morgan Kingsley.",
+   "text": "My name is Morgan Kingsley."
+  },
+  {
+   "file": "03.wav",
+   "kind": "name_and_dob",
+   "sample_rate": 8000,
+   "seconds": 7.05,
+   "spoken": "My name, let me think, is Morgan, er, Kingsley, and my date of birth is March 20, 1967.",
+   "text": "My name is Morgan Kingsley, and my date of birth is 1967-03-20."
+  },
+  {
+   "file": "04.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.725,
+   "spoken": "Yes,, er, that, let me think, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "05.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 2.8,
+   "spoken": "Thank, er, you,, let me think, goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "new_patient_intake-00005",
+ "tier": 3,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.02,
+   "gain_wobble_db": 3.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 5,
+   "snr_db": 15.0
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 2,
+   "seed": 5,
+   "self_correction": false
+  },
+  "tts": "kokoro",
+  "voice": "bf_isabella"
+ }
+}

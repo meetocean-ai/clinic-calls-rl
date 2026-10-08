@@ -1,0 +1,74 @@
+{
+ "key": "new_patient_intake-00010-t1",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 5.325,
+   "spoken": "Hi, I'm a new patient and I'd like to book a first visit with Dr. Facchinato.",
+   "text": "Hi, I'm a new patient and I'd like to book a first visit with Dr. Facchinato."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.025,
+   "spoken": "It's March 10, 1964.",
+   "text": "It's 1964-03-10."
+  },
+  {
+   "file": "02.wav",
+   "kind": "name",
+   "sample_rate": 8000,
+   "seconds": 2.625,
+   "spoken": "My name is Logan Kingsley.",
+   "text": "My name is Logan Kingsley."
+  },
+  {
+   "file": "03.wav",
+   "kind": "name_and_dob",
+   "sample_rate": 8000,
+   "seconds": 5.675,
+   "spoken": "My name is Logan Kingsley, and my date of birth is March 10, 1964.",
+   "text": "My name is Logan Kingsley, and my date of birth is 1964-03-10."
+  },
+  {
+   "file": "04.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.0,
+   "spoken": "Yes, that works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "05.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 2.025,
+   "spoken": "Thank you, goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "new_patient_intake-00010",
+ "tier": 1,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.0,
+   "gain_wobble_db": 0.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 10,
+   "snr_db": null
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 0,
+   "seed": 10,
+   "self_correction": false
+  },
+  "tts": "kokoro",
+  "voice": "bf_isabella"
+ }
+}

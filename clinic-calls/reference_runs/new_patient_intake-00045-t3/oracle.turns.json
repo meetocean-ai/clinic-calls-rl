@@ -1,0 +1,43 @@
+{
+ "agent_turns": [
+  {
+   "caller_so_far": [
+    "Hi, I'm a new patient and I'd like to book a first visit."
+   ],
+   "text": "Welcome! Could I have your full name and date of birth, please?",
+   "verified": false
+  },
+  {
+   "caller_so_far": [
+    "Hi, I'm a new patient and I'd like to book a first visit.",
+    "My name is Casey Ravenscroft, and my date of birth is 1958-03-27."
+   ],
+   "text": "Thank you. Let me confirm your date of birth \u2014 could you repeat it?",
+   "verified": false
+  },
+  {
+   "caller_so_far": [
+    "Hi, I'm a new patient and I'd like to book a first visit.",
+    "My name is Casey Ravenscroft, and my date of birth is 1958-03-27.",
+    "It's 1958-03-27."
+   ],
+   "text": "I have 2026-10-08T08:00:00. Does that work?",
+   "verified": true
+  },
+  {
+   "caller_so_far": [
+    "Hi, I'm a new patient and I'd like to book a first visit.",
+    "My name is Casey Ravenscroft, and my date of birth is 1958-03-27.",
+    "It's 1958-03-27.",
+    "Yes, that works."
+   ],
+   "text": "You're all set. Anything else?",
+   "verified": true
+  }
+ ],
+ "extra": {
+  "created_patient_id": "0bc4ba06-8456-49d9-9aaf-86af4dd1f0b8",
+  "env_writes": {},
+  "verify_attempts": 0
+ }
+}

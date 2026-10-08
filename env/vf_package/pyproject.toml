@@ -1,0 +1,24 @@
+# The EHR scheduling environment as an installable `verifiers` environment package (roadmap P1-08):
+#
+#   cd tests/behavioral && .venv-verifiers/bin/pip install -e env/vf_package
+#   # then, with the OpenEnv server up:  vf-eval ehr_scheduling --env-args '{"ws_url": "ws://127.0.0.1:8011/ws", "tier": 3}'
+#
+# The module is a shim over env/verifiers_env.py (one implementation); it finds tests/behavioral by its own location.
+[project]
+name = "ehr-scheduling-env"
+version = "0.1.0"
+description = "Ocean EHR scheduling calls as a verifiers MultiTurnEnv over the OpenEnv server (synthetic data only)"
+requires-python = ">=3.10"
+dependencies = ["verifiers>=0.1.5", "websockets>=15", "datasets", "httpx"]
+# Free for any noncommercial use (research, personal, nonprofit); business use needs a separate license — Artem's call.
+license = "PolyForm-Noncommercial-1.0.0"
+license-files = ["LICENSE"]
+readme = "README.md"
+keywords = ["healthcare", "scheduling", "voice-agent", "tool-use", "multi-turn", "fhir", "synthetic", "verifiers", "openenv"]
+
+[tool.prime]
+# Environments Hub tags (prime env push). The upload itself needs an account — roadmap P1-10 stops to ask.
+tags = ["healthcare", "scheduling", "tool-use", "multi-turn", "agentic", "synthetic-data"]
+
+[tool.setuptools]
+py-modules = ["ehr_scheduling"]

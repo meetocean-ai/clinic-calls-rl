@@ -1,0 +1,32 @@
+{
+ "agent_turns": [
+  {
+   "caller_so_far": [
+    "Hi, I'd like to book a follow-up visit, please."
+   ],
+   "text": "Could I have your date of birth, please?",
+   "verified": false
+  },
+  {
+   "caller_so_far": [
+    "Hi, I'd like to book a follow-up visit, please.",
+    "It's 1989-11-01."
+   ],
+   "text": "I have 2026-10-08T08:00:00. Does that work?",
+   "verified": true
+  },
+  {
+   "caller_so_far": [
+    "Hi, I'd like to book a follow-up visit, please.",
+    "It's 1989-11-01.",
+    "Yes, that works."
+   ],
+   "text": "You're all set. Anything else?",
+   "verified": true
+  }
+ ],
+ "extra": {
+  "env_writes": {},
+  "verify_attempts": 1
+ }
+}

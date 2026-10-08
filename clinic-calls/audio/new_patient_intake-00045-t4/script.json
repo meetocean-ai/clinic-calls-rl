@@ -1,0 +1,74 @@
+{
+ "key": "new_patient_intake-00045-t4",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 7.275,
+   "spoken": "I\u2014 hi,, hmm, I'm a new pati\u2014 sorry, I mean patient, you know, and I'd like to book a first visit with Dr. Campos.",
+   "text": "Hi, I'm a new patient and I'd like to book a first visit with Dr. Campos."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.325,
+   "spoken": "I\u2014 it's May 18, 1959.",
+   "text": "It's 1959-05-18."
+  },
+  {
+   "file": "02.wav",
+   "kind": "name",
+   "sample_rate": 8000,
+   "seconds": 4.15,
+   "spoken": "I\u2014 my, hmm, name, you know, is Sawy\u2014 sorry, I mean Sawyer Eastwick.",
+   "text": "My name is Sawyer Eastwick."
+  },
+  {
+   "file": "03.wav",
+   "kind": "name_and_dob",
+   "sample_rate": 8000,
+   "seconds": 7.475,
+   "spoken": "I\u2014 my, hmm, name is Sawy\u2014 sorry, I mean Sawyer Eastwick,, you know, and my date of birth is May 18, 1959.",
+   "text": "My name is Sawyer Eastwick, and my date of birth is 1959-05-18."
+  },
+  {
+   "file": "04.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.55,
+   "spoken": "I\u2014 yes,, hmm, that, you know, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "05.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 3.775,
+   "spoken": "I\u2014 thank, hmm, you,, you know, good\u2014 sorry, I mean goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "new_patient_intake-00045",
+ "tier": 4,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.05,
+   "gain_wobble_db": 6.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 45,
+   "snr_db": 5.0
+  },
+  "disfluency": {
+   "false_start": true,
+   "fillers": 2,
+   "seed": 45,
+   "self_correction": true
+  },
+  "tts": "kokoro",
+  "voice": "af_sky"
+ }
+}

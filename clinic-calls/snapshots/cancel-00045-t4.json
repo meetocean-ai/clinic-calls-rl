@@ -1,0 +1,353 @@
+{
+ "bundle": {
+  "compartment": "Organization/dcc6e03b-0379-4965-a3d0-1d18977fa0af",
+  "entry": [
+   {
+    "resource": {
+     "active": true,
+     "birthDate": "1955-10-16",
+     "id": "94629b01-efb6-4606-bf32-1d99eb37d496",
+     "managingOrganization": {
+      "reference": "Organization/dcc6e03b-0379-4965-a3d0-1d18977fa0af"
+     },
+     "name": [
+      {
+       "family": "Ashgrove",
+       "given": [
+        "Logan"
+       ],
+       "use": "official"
+      }
+     ],
+     "resourceType": "Patient",
+     "telecom": [
+      {
+       "system": "phone",
+       "use": "mobile",
+       "value": "+15005550004"
+      },
+      {
+       "system": "email",
+       "value": "wherrera@example.net"
+      }
+     ]
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "birthDate": "1999-08-06",
+     "id": "b1729f81-a8a7-41e6-854a-d55d7a1ecad8",
+     "managingOrganization": {
+      "reference": "Organization/dcc6e03b-0379-4965-a3d0-1d18977fa0af"
+     },
+     "name": [
+      {
+       "family": "Ashgrove",
+       "given": [
+        "Reese"
+       ],
+       "use": "official"
+      }
+     ],
+     "resourceType": "Patient",
+     "telecom": [
+      {
+       "system": "phone",
+       "use": "mobile",
+       "value": "+15005550004"
+      },
+      {
+       "system": "email",
+       "value": "johnny56@example.org"
+      }
+     ]
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/dcc6e03b-0379-4965-a3d0-1d18977fa0af"
+       }
+      }
+     ],
+     "id": "0769eb56-aef1-4ec4-a03a-feb0fca3a002",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1715046764"
+      }
+     ],
+     "name": [
+      {
+       "family": "Eddins",
+       "given": [
+        "Robin"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/dcc6e03b-0379-4965-a3d0-1d18977fa0af"
+       }
+      }
+     ],
+     "id": "433858e3-041c-4d11-8ad6-24a90788d9cc",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1946697026"
+      }
+     ],
+     "name": [
+      {
+       "family": "Campos",
+       "given": [
+        "Ana"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/dcc6e03b-0379-4965-a3d0-1d18977fa0af"
+       }
+      }
+     ],
+     "id": "e463e2b4-5fd0-40a0-b8af-44da5e60f7be",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1296012973"
+      }
+     ],
+     "name": [
+      {
+       "family": "Facchinato",
+       "given": [
+        "Jo"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "description": "Follow-up",
+     "end": "2026-10-16T14:30:00-07:00",
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/dcc6e03b-0379-4965-a3d0-1d18977fa0af"
+       }
+      }
+     ],
+     "id": "f6146c09-1752-40aa-aa75-d97127e849c8",
+     "participant": [
+      {
+       "actor": {
+        "display": "Reese Ashgrove",
+        "reference": "Patient/b1729f81-a8a7-41e6-854a-d55d7a1ecad8"
+       },
+       "status": "accepted"
+      },
+      {
+       "actor": {
+        "display": "Dr. Facchinato",
+        "reference": "Practitioner/e463e2b4-5fd0-40a0-b8af-44da5e60f7be"
+       },
+       "status": "accepted"
+      }
+     ],
+     "resourceType": "Appointment",
+     "start": "2026-10-16T14:00:00-07:00",
+     "status": "booked"
+    }
+   }
+  ],
+  "resourceType": "Bundle",
+  "total": 6,
+  "type": "collection",
+  "types": [
+   "Patient",
+   "Practitioner",
+   "PractitionerRole",
+   "Organization",
+   "Appointment",
+   "Encounter",
+   "EpisodeOfCare",
+   "ClinicalImpression",
+   "Observation",
+   "Condition",
+   "Procedure",
+   "CarePlan",
+   "Coverage",
+   "Claim",
+   "ClaimResponse",
+   "Communication",
+   "CommunicationRequest",
+   "Consent",
+   "DocumentReference",
+   "Task"
+  ]
+ },
+ "schema_version": 1,
+ "task": {
+  "appointment": {
+   "date": "2026-10-16",
+   "days_ahead": 9,
+   "local_hour": 14
+  },
+  "caller_verifiable": true,
+  "chaos": [
+   "dob_corrected",
+   "shared_phone",
+   "wrong_day_memory"
+  ],
+  "claimed_dob": "1999-08-06",
+  "cooperation": 1,
+  "detour_question": null,
+  "duplicate": {
+   "dob": "1955-10-16",
+   "family": "Ashgrove",
+   "given": "Logan"
+  },
+  "expect_transfer": false,
+  "family": "cancel",
+  "goal": "Cancel your appointment with Dr. Facchinato on Friday, October 16 at 2 PM. You cannot make it. You BELIEVE the visit is on Thursday, October 15 at 2 PM and say so \u2014 it is actually on Friday, October 16 at 2 PM. When the agent cannot find a visit on that day or tells you the real date, say 'oh, you're right' and go on with the real one. Do NOT let the agent book a brand-new visit. When FIRST asked for your date of birth, say 1999-08-07 (you misspeak). If the agent says it does not match or asks again, apologize and give your correct date of birth, 1999-08-06. You do NOT want to reschedule; if offered, decline. Once the agent confirms it is done, say thank you and goodbye.",
+  "id": "cancel-00045",
+  "lookalike": null,
+  "misremembered_date": "2026-10-15",
+  "misstated_dob": "1999-08-07",
+  "names_provider": true,
+  "opening_line": "Hi, I need to cancel my appointment on Thursday, October 15 at 2 PM.",
+  "patient": {
+   "dob": "1999-08-06",
+   "family": "Ashgrove",
+   "given": "Reese",
+   "phone": "+15005550004"
+  },
+  "payer": null,
+  "persona": "demanding",
+  "provenance": [
+   "services/agent/agents/tools_fhir.py::cancel_appointment"
+  ],
+  "provider": {
+   "display": "Dr. Facchinato",
+   "family": "Facchinato",
+   "given": "Jo"
+  },
+  "realism": [
+   "hesitant_dob",
+   "self_corrections"
+  ],
+  "red_flag": null,
+  "requested_slot": null,
+  "schema_version": 3,
+  "seed": 45,
+  "split": "heldout",
+  "switch_to": null,
+  "tier": 4,
+  "today": "2026-10-07",
+  "urgent": false
+ },
+ "world": {
+  "baseline": {
+   "appointments": {
+    "f6146c09-1752-40aa-aa75-d97127e849c8": {
+     "start": "2026-10-16T14:00:00-07:00",
+     "status": "booked"
+    }
+   },
+   "n_appointments": 1,
+   "n_coverage": 0,
+   "n_patients": 2,
+   "n_tasks": 0,
+   "n_transfers": 0
+  },
+  "bystander_patient_id": null,
+  "clinic_tz": "America/Los_Angeles",
+  "duplicate_patient_id": "94629b01-efb6-4606-bf32-1d99eb37d496",
+  "organization_id": "dcc6e03b-0379-4965-a3d0-1d18977fa0af",
+  "patient_id": "b1729f81-a8a7-41e6-854a-d55d7a1ecad8",
+  "practitioners": {
+   "Dr. Campos": {
+    "display": "Dr. Campos",
+    "id": "433858e3-041c-4d11-8ad6-24a90788d9cc"
+   },
+   "Dr. Eddins": {
+    "display": "Dr. Eddins",
+    "id": "0769eb56-aef1-4ec4-a03a-feb0fca3a002"
+   },
+   "Dr. Facchinato": {
+    "display": "Dr. Facchinato",
+    "id": "e463e2b4-5fd0-40a0-b8af-44da5e60f7be"
+   }
+  },
+  "requested_bystander_id": null,
+  "requested_start": null,
+  "target_appointment_id": "f6146c09-1752-40aa-aa75-d97127e849c8",
+  "today": "2026-10-07",
+  "urgent_window_days": 2
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "key": "cancel-00005-t1",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 5.975,
+   "spoken": "Hi, I need to cancel my appointment on Wednesday, October 14 at 11 AM.",
+   "text": "Hi, I need to cancel my appointment on Wednesday, October 14 at 11 AM."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.2,
+   "spoken": "It's May 7, 1977.",
+   "text": "It's 1977-05-07."
+  },
+  {
+   "file": "02.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.0,
+   "spoken": "Yes, that works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "03.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 2.025,
+   "spoken": "Thank you, goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "cancel-00005",
+ "tier": 1,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.0,
+   "gain_wobble_db": 0.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 5,
+   "snr_db": null
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 0,
+   "seed": 5,
+   "self_correction": false
+  },
+  "tts": "kokoro",
+  "voice": "bf_isabella"
+ }
+}

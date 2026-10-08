@@ -1,0 +1,226 @@
+{
+ "compartment": "Organization/07bc56ed-64c8-4d15-a177-5928bc71dde2",
+ "entry": [
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "1991-11-27",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/07bc56ed-64c8-4d15-a177-5928bc71dde2"
+      }
+     }
+    ],
+    "id": "24643676-9970-4379-9683-a624f7f5c5a4",
+    "name": [
+     {
+      "family": "Underhill",
+      "given": [
+       "Taylor"
+      ]
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005550003"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/07bc56ed-64c8-4d15-a177-5928bc71dde2"
+      }
+     }
+    ],
+    "id": "12ae9b49-a0a7-4da9-aeda-4995f321b7a0",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1715046764"
+     }
+    ],
+    "name": [
+     {
+      "family": "Eddins",
+      "given": [
+       "Robin"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/07bc56ed-64c8-4d15-a177-5928bc71dde2"
+      }
+     }
+    ],
+    "id": "86246a54-3f4f-4af4-b75f-b8d62b8226ea",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1296012973"
+     }
+    ],
+    "name": [
+     {
+      "family": "Facchinato",
+      "given": [
+       "Jo"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/07bc56ed-64c8-4d15-a177-5928bc71dde2"
+      }
+     }
+    ],
+    "id": "b9e67b7d-3f77-41b6-90e0-f1e84eec7573",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1946697026"
+     }
+    ],
+    "name": [
+     {
+      "family": "Campos",
+      "given": [
+       "Ana"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "authoredOn": "2026-10-08T00:57:30.226361+00:00",
+    "code": {
+     "coding": [
+      {
+       "code": "waitlist",
+       "display": "Waitlist",
+       "system": "https://ocean-ehr.com/fhir/CodeSystem/task-type"
+      }
+     ]
+    },
+    "description": "Waitlist: follow-up appointment",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/Extension/waitlist-appointment-type",
+      "valueString": "follow-up"
+     },
+     {
+      "url": "https://ocean-ehr.com/fhir/Extension/waitlist-preferred-practitioner",
+      "valueString": "86246a54-3f4f-4af4-b75f-b8d62b8226ea"
+     },
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/07bc56ed-64c8-4d15-a177-5928bc71dde2"
+      }
+     }
+    ],
+    "for": {
+     "display": "Taylor Underhill",
+     "reference": "Patient/24643676-9970-4379-9683-a624f7f5c5a4"
+    },
+    "id": "3b9af6c5-b6ed-4048-baa1-846f43b1795d",
+    "intent": "order",
+    "resourceType": "Task",
+    "status": "requested"
+   }
+  }
+ ],
+ "resourceType": "Bundle",
+ "total": 5,
+ "type": "collection",
+ "types": [
+  "Patient",
+  "Practitioner",
+  "PractitionerRole",
+  "Organization",
+  "Appointment",
+  "Encounter",
+  "EpisodeOfCare",
+  "ClinicalImpression",
+  "Observation",
+  "Condition",
+  "Procedure",
+  "CarePlan",
+  "Coverage",
+  "Claim",
+  "ClaimResponse",
+  "Communication",
+  "CommunicationRequest",
+  "Consent",
+  "DocumentReference",
+  "Task"
+ ]
+}

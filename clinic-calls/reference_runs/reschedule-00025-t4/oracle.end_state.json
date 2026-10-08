@@ -1,0 +1,317 @@
+{
+ "compartment": "Organization/ef014e75-5cef-4e5c-be6a-eed30ac42a26",
+ "entry": [
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "1991-06-18",
+    "id": "1fa0f0d9-c97b-4c2f-83a2-f65744932f54",
+    "managingOrganization": {
+     "reference": "Organization/ef014e75-5cef-4e5c-be6a-eed30ac42a26"
+    },
+    "name": [
+     {
+      "family": "Northcott",
+      "given": [
+       "Finley"
+      ],
+      "use": "official"
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005550012"
+     },
+     {
+      "system": "email",
+      "value": "melissabell@example.org"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "1992-10-10",
+    "id": "b2a28c21-056e-4154-8dc6-e737146d965b",
+    "managingOrganization": {
+     "reference": "Organization/ef014e75-5cef-4e5c-be6a-eed30ac42a26"
+    },
+    "name": [
+     {
+      "family": "Northcott",
+      "given": [
+       "Wren"
+      ],
+      "use": "official"
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005550012"
+     },
+     {
+      "system": "email",
+      "value": "lewisrobert@example.com"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "1980-01-01",
+    "id": "dd6088be-af04-47b4-9515-dbe50127ceae",
+    "managingOrganization": {
+     "reference": "Organization/ef014e75-5cef-4e5c-be6a-eed30ac42a26"
+    },
+    "name": [
+     {
+      "family": "Booked1",
+      "given": [
+       "Bystander"
+      ],
+      "use": "official"
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005559901"
+     },
+     {
+      "system": "email",
+      "value": "bystander1@example.com"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/ef014e75-5cef-4e5c-be6a-eed30ac42a26"
+      }
+     }
+    ],
+    "id": "4f2b594f-d351-444d-b9f9-080b6155dd80",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1715046764"
+     }
+    ],
+    "name": [
+     {
+      "family": "Eddins",
+      "given": [
+       "Robin"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/ef014e75-5cef-4e5c-be6a-eed30ac42a26"
+      }
+     }
+    ],
+    "id": "c5d536d5-8c4f-47dd-8d64-3971167c0b9e",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1296012973"
+     }
+    ],
+    "name": [
+     {
+      "family": "Facchinato",
+      "given": [
+       "Jo"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/ef014e75-5cef-4e5c-be6a-eed30ac42a26"
+      }
+     }
+    ],
+    "id": "fba95a67-3330-496c-ae9e-739194f75b5d",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1946697026"
+     }
+    ],
+    "name": [
+     {
+      "family": "Campos",
+      "given": [
+       "Ana"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "description": "Follow-up",
+    "end": "2026-10-08T08:15:00-07:00",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/ef014e75-5cef-4e5c-be6a-eed30ac42a26"
+      }
+     }
+    ],
+    "id": "683a13fa-eccd-4a7f-b013-71b0b4290bcc",
+    "participant": [
+     {
+      "actor": {
+       "display": "Bystander Booked1",
+       "reference": "Patient/dd6088be-af04-47b4-9515-dbe50127ceae"
+      },
+      "status": "accepted"
+     },
+     {
+      "actor": {
+       "display": "Ana Campos",
+       "reference": "Practitioner/fba95a67-3330-496c-ae9e-739194f75b5d"
+      },
+      "status": "accepted"
+     }
+    ],
+    "resourceType": "Appointment",
+    "start": "2026-10-08T08:00:00-07:00",
+    "status": "booked"
+   }
+  },
+  {
+   "resource": {
+    "description": "Follow-up",
+    "end": "2026-10-08T08:30:00-07:00",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/ef014e75-5cef-4e5c-be6a-eed30ac42a26"
+      }
+     }
+    ],
+    "id": "d26b656a-c5dc-4ade-b060-47d5e1cde381",
+    "participant": [
+     {
+      "actor": {
+       "display": "Finley Northcott",
+       "reference": "Patient/1fa0f0d9-c97b-4c2f-83a2-f65744932f54"
+      },
+      "status": "accepted"
+     },
+     {
+      "actor": {
+       "display": "Dr. Campos",
+       "reference": "Practitioner/fba95a67-3330-496c-ae9e-739194f75b5d"
+      },
+      "status": "accepted"
+     }
+    ],
+    "resourceType": "Appointment",
+    "start": "2026-10-08T08:15:00-07:00",
+    "status": "booked"
+   }
+  }
+ ],
+ "resourceType": "Bundle",
+ "total": 8,
+ "type": "collection",
+ "types": [
+  "Patient",
+  "Practitioner",
+  "PractitionerRole",
+  "Organization",
+  "Appointment",
+  "Encounter",
+  "EpisodeOfCare",
+  "ClinicalImpression",
+  "Observation",
+  "Condition",
+  "Procedure",
+  "CarePlan",
+  "Coverage",
+  "Claim",
+  "ClaimResponse",
+  "Communication",
+  "CommunicationRequest",
+  "Consent",
+  "DocumentReference",
+  "Task"
+ ]
+}

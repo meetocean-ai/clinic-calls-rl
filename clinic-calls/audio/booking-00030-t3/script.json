@@ -1,0 +1,58 @@
+{
+ "key": "booking-00030-t3",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 7.2,
+   "spoken": "Hi, I'd like to, you know, book a follow-up visit with Dr. Facchinato on Friday, October 9 at 2 PM, please.",
+   "text": "Hi, I'd like to book a follow-up visit with Dr. Facchinato on Friday, October 9 at 2 PM, please."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.225,
+   "spoken": "It's August 13, 1953.",
+   "text": "It's 1953-08-13."
+  },
+  {
+   "file": "02.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.175,
+   "spoken": "Yes,, you know, that works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "03.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 2.275,
+   "spoken": "Thank, you know, you, goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "booking-00030",
+ "tier": 3,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.02,
+   "gain_wobble_db": 3.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 30,
+   "snr_db": 25.0
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 1,
+   "seed": 30,
+   "self_correction": false
+  },
+  "tts": "kokoro",
+  "voice": "bf_emma"
+ }
+}

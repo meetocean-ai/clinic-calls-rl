@@ -1,0 +1,82 @@
+{
+ "key": "new_patient_intake-00030-t3",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 5.75,
+   "spoken": "Hi, I'm a new patient and I'd like to book a first, uh, visit with Dr. Facchinato.",
+   "text": "Hi, I'm a new patient and I'd like to book a first visit with Dr. Facchinato."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob_misstated",
+   "sample_rate": 8000,
+   "seconds": 3.475,
+   "spoken": "It's November 28, 1991.",
+   "text": "It's 1991-11-28."
+  },
+  {
+   "file": "02.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.65,
+   "spoken": "It's November 27, 1991.",
+   "text": "It's 1991-11-27."
+  },
+  {
+   "file": "03.wav",
+   "kind": "name",
+   "sample_rate": 8000,
+   "seconds": 2.875,
+   "spoken": "My name, you know, is Taylor Underhill.",
+   "text": "My name is Taylor Underhill."
+  },
+  {
+   "file": "04.wav",
+   "kind": "name_and_dob",
+   "sample_rate": 8000,
+   "seconds": 6.5,
+   "spoken": "My name is Taylor, you know, Underhill, and my date of birth is November 27, 1991.",
+   "text": "My name is Taylor Underhill, and my date of birth is 1991-11-27."
+  },
+  {
+   "file": "05.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.175,
+   "spoken": "Yes,, you know, that works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "06.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 2.275,
+   "spoken": "Thank, you know, you, goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "new_patient_intake-00030",
+ "tier": 3,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.02,
+   "gain_wobble_db": 3.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 30,
+   "snr_db": 25.0
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 1,
+   "seed": 30,
+   "self_correction": false
+  },
+  "tts": "kokoro",
+  "voice": "bf_emma"
+ }
+}

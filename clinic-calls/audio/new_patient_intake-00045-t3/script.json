@@ -1,0 +1,74 @@
+{
+ "key": "new_patient_intake-00045-t3",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 4.9,
+   "spoken": "Hi, I'm, um, a new patient, er, and I'd like to book a first visit.",
+   "text": "Hi, I'm a new patient and I'd like to book a first visit."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.375,
+   "spoken": "It's March 27, 1958.",
+   "text": "It's 1958-03-27."
+  },
+  {
+   "file": "02.wav",
+   "kind": "name",
+   "sample_rate": 8000,
+   "seconds": 3.575,
+   "spoken": "My, um, name, er, is Casey Ravenscroft.",
+   "text": "My name is Casey Ravenscroft."
+  },
+  {
+   "file": "03.wav",
+   "kind": "name_and_dob",
+   "sample_rate": 8000,
+   "seconds": 7.05,
+   "spoken": "My name, um, is Casey Ravenscroft,, er, and my date of birth is March 27, 1958.",
+   "text": "My name is Casey Ravenscroft, and my date of birth is 1958-03-27."
+  },
+  {
+   "file": "04.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.525,
+   "spoken": "Yes,, um, that, er, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "05.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 2.7,
+   "spoken": "Thank, um, you,, er, goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "new_patient_intake-00045",
+ "tier": 3,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.02,
+   "gain_wobble_db": 3.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 45,
+   "snr_db": 25.0
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 2,
+   "seed": 45,
+   "self_correction": false
+  },
+  "tts": "kokoro",
+  "voice": "af_sky"
+ }
+}

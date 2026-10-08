@@ -1,0 +1,58 @@
+{
+ "key": "booking-00040-t3",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 12.525,
+   "spoken": "It's\u2014 hi, I need to cancel my appointment on Monday, October 19 at 10 AM with Dr. Eddins, and book a new, let me think, visit, let me think, with Dr. Campos instead.",
+   "text": "Hi, I need to cancel my appointment on Monday, October 19 at 10 AM with Dr. Eddins, and book a new visit with Dr. Campos instead."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 4.0,
+   "spoken": "It's\u2014 it's May 28, 1974.",
+   "text": "It's 1974-05-28."
+  },
+  {
+   "file": "02.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.825,
+   "spoken": "I\u2014 yes,, uh, that, hmm, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "03.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 3.0,
+   "spoken": "I\u2014 thank, uh, you,, hmm, goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "booking-00040",
+ "tier": 3,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.02,
+   "gain_wobble_db": 0.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 40,
+   "snr_db": 25.0
+  },
+  "disfluency": {
+   "false_start": true,
+   "fillers": 2,
+   "seed": 40,
+   "self_correction": false
+  },
+  "tts": "kokoro",
+  "voice": "bm_lewis"
+ }
+}

@@ -1,0 +1,269 @@
+{
+ "bundle": {
+  "compartment": "Organization/5c074c5b-f669-4816-8e0a-b64df1d2e152",
+  "entry": [
+   {
+    "resource": {
+     "active": true,
+     "birthDate": "1970-07-28",
+     "id": "a1e051c8-ea47-4876-a075-0a44ce2cc4d8",
+     "managingOrganization": {
+      "reference": "Organization/5c074c5b-f669-4816-8e0a-b64df1d2e152"
+     },
+     "name": [
+      {
+       "family": "Greenhollow",
+       "given": [
+        "Taylor"
+       ],
+       "use": "official"
+      }
+     ],
+     "resourceType": "Patient",
+     "telecom": [
+      {
+       "system": "phone",
+       "use": "mobile",
+       "value": "+15005550009"
+      },
+      {
+       "system": "email",
+       "value": "jacksonamanda@example.org"
+      }
+     ]
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/5c074c5b-f669-4816-8e0a-b64df1d2e152"
+       }
+      }
+     ],
+     "id": "8cc1f94b-45d1-47ac-a7ce-5594ee1ab076",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1715046764"
+      }
+     ],
+     "name": [
+      {
+       "family": "Eddins",
+       "given": [
+        "Robin"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/5c074c5b-f669-4816-8e0a-b64df1d2e152"
+       }
+      }
+     ],
+     "id": "c2f2872f-c2ed-48b4-90af-9529e1a3ffe0",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1946697026"
+      }
+     ],
+     "name": [
+      {
+       "family": "Campos",
+       "given": [
+        "Ana"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/5c074c5b-f669-4816-8e0a-b64df1d2e152"
+       }
+      }
+     ],
+     "id": "fc1abe05-fb89-4cb6-932e-9b75cb7e772f",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1296012973"
+      }
+     ],
+     "name": [
+      {
+       "family": "Facchinato",
+       "given": [
+        "Jo"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   }
+  ],
+  "resourceType": "Bundle",
+  "total": 4,
+  "type": "collection",
+  "types": [
+   "Patient",
+   "Practitioner",
+   "PractitionerRole",
+   "Organization",
+   "Appointment",
+   "Encounter",
+   "EpisodeOfCare",
+   "ClinicalImpression",
+   "Observation",
+   "Condition",
+   "Procedure",
+   "CarePlan",
+   "Coverage",
+   "Claim",
+   "ClaimResponse",
+   "Communication",
+   "CommunicationRequest",
+   "Consent",
+   "DocumentReference",
+   "Task"
+  ]
+ },
+ "schema_version": 1,
+ "task": {
+  "appointment": null,
+  "caller_verifiable": true,
+  "chaos": [],
+  "claimed_dob": "1970-07-28",
+  "cooperation": 5,
+  "detour_question": null,
+  "duplicate": null,
+  "expect_transfer": false,
+  "family": "booking",
+  "goal": "Book a follow-up visit with Dr. Facchinato. Any day next week works. Accept the FIRST time the agent offers. Once the agent confirms it is done, say thank you and goodbye.",
+  "id": "booking-00050",
+  "lookalike": null,
+  "misremembered_date": null,
+  "misstated_dob": null,
+  "names_provider": true,
+  "opening_line": "Hi, I'd like to book a follow-up visit with Dr. Facchinato, please.",
+  "patient": {
+   "dob": "1970-07-28",
+   "family": "Greenhollow",
+   "given": "Taylor",
+   "phone": "+15005550009"
+  },
+  "payer": null,
+  "persona": "polite",
+  "provenance": [
+   "services/agent/agents/tools_fhir.py::book_appointment",
+   "services/agent/agents/specialists/scheduler.py::book_appointment"
+  ],
+  "provider": {
+   "display": "Dr. Facchinato",
+   "family": "Facchinato",
+   "given": "Jo"
+  },
+  "realism": [],
+  "red_flag": null,
+  "requested_slot": null,
+  "schema_version": 3,
+  "seed": 50,
+  "split": "heldout",
+  "switch_to": null,
+  "tier": 1,
+  "today": "2026-10-07",
+  "urgent": false
+ },
+ "world": {
+  "baseline": {
+   "appointments": {},
+   "n_appointments": 0,
+   "n_coverage": 0,
+   "n_patients": 1,
+   "n_tasks": 0,
+   "n_transfers": 0
+  },
+  "bystander_patient_id": null,
+  "clinic_tz": "America/Los_Angeles",
+  "duplicate_patient_id": null,
+  "organization_id": "5c074c5b-f669-4816-8e0a-b64df1d2e152",
+  "patient_id": "a1e051c8-ea47-4876-a075-0a44ce2cc4d8",
+  "practitioners": {
+   "Dr. Campos": {
+    "display": "Dr. Campos",
+    "id": "c2f2872f-c2ed-48b4-90af-9529e1a3ffe0"
+   },
+   "Dr. Eddins": {
+    "display": "Dr. Eddins",
+    "id": "8cc1f94b-45d1-47ac-a7ce-5594ee1ab076"
+   },
+   "Dr. Facchinato": {
+    "display": "Dr. Facchinato",
+    "id": "fc1abe05-fb89-4cb6-932e-9b75cb7e772f"
+   }
+  },
+  "requested_bystander_id": null,
+  "requested_start": null,
+  "target_appointment_id": null,
+  "today": "2026-10-07",
+  "urgent_window_days": 2
+ }
+}

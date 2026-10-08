@@ -1,0 +1,58 @@
+{
+ "key": "reschedule-00035-t4",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 9.575,
+   "spoken": "Hi, I need to, er, move, er, my appoint\u2014 no, wait, appointment on Wednesday, October 14 at 2 PM to, er, another day.",
+   "text": "Hi, I need to move my appointment on Wednesday, October 14 at 2 PM to another day."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.225,
+   "spoken": "It's February 1, 1958.",
+   "text": "It's 1958-02-01."
+  },
+  {
+   "file": "02.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.475,
+   "spoken": "Yes,, er, that, er, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "03.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 3.475,
+   "spoken": "Thank, er, you,, er, good\u2014 sorry, I mean goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "reschedule-00035",
+ "tier": 4,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.02,
+   "gain_wobble_db": 6.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 35,
+   "snr_db": 15.0
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 3,
+   "seed": 35,
+   "self_correction": true
+  },
+  "tts": "kokoro",
+  "voice": "af_bella"
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "key": "booking-00035-t1",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 4.725,
+   "spoken": "Hi, I'd like to book a follow-up visit with Dr. Eddins, please.",
+   "text": "Hi, I'd like to book a follow-up visit with Dr. Eddins, please."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.175,
+   "spoken": "It's August 1, 1997.",
+   "text": "It's 1997-08-01."
+  },
+  {
+   "file": "02.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 1.925,
+   "spoken": "Yes, that works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "03.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 1.975,
+   "spoken": "Thank you, goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "booking-00035",
+ "tier": 1,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.0,
+   "gain_wobble_db": 0.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 35,
+   "snr_db": null
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 0,
+   "seed": 35,
+   "self_correction": false
+  },
+  "tts": "kokoro",
+  "voice": "af_bella"
+ }
+}

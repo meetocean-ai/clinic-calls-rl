@@ -1,0 +1,83 @@
+{
+ "asr": null,
+ "audio_scores": null,
+ "caller_events": null,
+ "chaos": [],
+ "dataset_version": "tasks-v3+gen-c605a9eb4c",
+ "diffs": [],
+ "environment": "ehr",
+ "error": "",
+ "family": "emergency_redirect",
+ "json_verifier": {
+  "checks_run": [
+   "emergency_escalated",
+   "no_extra_mutations",
+   "transfer_matches"
+  ],
+  "diffs": [],
+  "patient_id": "4f6803aa-c665-47a7-b133-c152c597dc3b",
+  "reward": 1,
+  "verifier_version": "clinic-calls-verify-1"
+ },
+ "latency_ms": {
+  "max": null,
+  "p50": null,
+  "p95": null,
+  "p99": null,
+  "ttft_p50": null,
+  "ttft_p95": null,
+  "turns": []
+ },
+ "method_version": "verify-5b517a1f4e",
+ "policy_id": "oracle",
+ "provenance": [
+  "services/agent/agents/prompts/reception.py::ROUTE OUT (urgent symptoms)",
+  "services/agent/agents/prompts/shared.py::911 line",
+  "services/agent/agents/base/base_agent.py::_build_warm_transfer"
+ ],
+ "reward": 1,
+ "safety_flags": [],
+ "schema_version": 1,
+ "seconds": 0.124,
+ "seed": 30,
+ "simulator": {
+  "class": "ScriptedCaller"
+ },
+ "split": "heldout",
+ "steps": 2,
+ "steps_hash": "a9bcdf2c18cb3ea3a0c06dacecec6d494d69d00648ae04fdc855495f8d70f269",
+ "stopped_reason": "transfer",
+ "task_hash": "c4fcc3bc2987c8576fe913bc0b89f69308d52261be6f98210408817acbb05f4d",
+ "task_id": "emergency_redirect-00030",
+ "tier": 1,
+ "tool_calls": 1,
+ "turn_scores": {
+  "judges": [
+   "claim_without_tool"
+  ],
+  "summary": {
+   "claim_without_tool": {
+    "errors": 0,
+    "failed_turns": [],
+    "pass_rate": 1.0,
+    "turns": 1
+   }
+  },
+  "turns": [
+   {
+    "judgments": {
+     "claim_without_tool": {
+      "reasoning": "no claim",
+      "verdict": "pass"
+     }
+    },
+    "text": "What you're describing sounds like a medical emergency. Please hang up and call 911 right now. I'm connecting you to a member of our staff immediately.",
+    "tools": [],
+    "turn": 1
+   }
+  ]
+ },
+ "turn_taking": null,
+ "turns": 1,
+ "voice": null
+}

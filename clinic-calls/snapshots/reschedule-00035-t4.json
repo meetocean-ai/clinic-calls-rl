@@ -1,0 +1,353 @@
+{
+ "bundle": {
+  "compartment": "Organization/48e58cb5-8e75-4c69-9d1a-b0506a204e8b",
+  "entry": [
+   {
+    "resource": {
+     "active": true,
+     "birthDate": "1956-10-03",
+     "id": "65254efe-1dd2-413c-bccd-3df6ef486ec8",
+     "managingOrganization": {
+      "reference": "Organization/48e58cb5-8e75-4c69-9d1a-b0506a204e8b"
+     },
+     "name": [
+      {
+       "family": "Dunmore",
+       "given": [
+        "Emerson"
+       ],
+       "use": "official"
+      }
+     ],
+     "resourceType": "Patient",
+     "telecom": [
+      {
+       "system": "phone",
+       "use": "mobile",
+       "value": "+15005550008"
+      },
+      {
+       "system": "email",
+       "value": "ashleyknight@example.net"
+      }
+     ]
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "birthDate": "1958-02-01",
+     "id": "98c20f9d-7f16-4726-9327-aaac39798a0e",
+     "managingOrganization": {
+      "reference": "Organization/48e58cb5-8e75-4c69-9d1a-b0506a204e8b"
+     },
+     "name": [
+      {
+       "family": "Dunmore",
+       "given": [
+        "Blake"
+       ],
+       "use": "official"
+      }
+     ],
+     "resourceType": "Patient",
+     "telecom": [
+      {
+       "system": "phone",
+       "use": "mobile",
+       "value": "+15005550008"
+      },
+      {
+       "system": "email",
+       "value": "carpentersamantha@example.net"
+      }
+     ]
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/48e58cb5-8e75-4c69-9d1a-b0506a204e8b"
+       }
+      }
+     ],
+     "id": "8fc3c7a5-e44c-4beb-9ab1-9e4877e5de59",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1946697026"
+      }
+     ],
+     "name": [
+      {
+       "family": "Campos",
+       "given": [
+        "Ana"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/48e58cb5-8e75-4c69-9d1a-b0506a204e8b"
+       }
+      }
+     ],
+     "id": "a3b778bb-1719-41a9-bc17-d68a4a209161",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1296012973"
+      }
+     ],
+     "name": [
+      {
+       "family": "Facchinato",
+       "given": [
+        "Jo"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/48e58cb5-8e75-4c69-9d1a-b0506a204e8b"
+       }
+      }
+     ],
+     "id": "ae6332b9-9758-414a-b0e4-cb496fb236fd",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1715046764"
+      }
+     ],
+     "name": [
+      {
+       "family": "Eddins",
+       "given": [
+        "Robin"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "description": "Follow-up",
+     "end": "2026-10-14T14:30:00-07:00",
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/48e58cb5-8e75-4c69-9d1a-b0506a204e8b"
+       }
+      }
+     ],
+     "id": "ed9d1eb4-211f-4b88-a71a-086159b2f8b3",
+     "participant": [
+      {
+       "actor": {
+        "display": "Blake Dunmore",
+        "reference": "Patient/98c20f9d-7f16-4726-9327-aaac39798a0e"
+       },
+       "status": "accepted"
+      },
+      {
+       "actor": {
+        "display": "Dr. Eddins",
+        "reference": "Practitioner/ae6332b9-9758-414a-b0e4-cb496fb236fd"
+       },
+       "status": "accepted"
+      }
+     ],
+     "resourceType": "Appointment",
+     "start": "2026-10-14T14:00:00-07:00",
+     "status": "booked"
+    }
+   }
+  ],
+  "resourceType": "Bundle",
+  "total": 6,
+  "type": "collection",
+  "types": [
+   "Patient",
+   "Practitioner",
+   "PractitionerRole",
+   "Organization",
+   "Appointment",
+   "Encounter",
+   "EpisodeOfCare",
+   "ClinicalImpression",
+   "Observation",
+   "Condition",
+   "Procedure",
+   "CarePlan",
+   "Coverage",
+   "Claim",
+   "ClaimResponse",
+   "Communication",
+   "CommunicationRequest",
+   "Consent",
+   "DocumentReference",
+   "Task"
+  ]
+ },
+ "schema_version": 1,
+ "task": {
+  "appointment": {
+   "date": "2026-10-14",
+   "days_ahead": 7,
+   "local_hour": 14
+  },
+  "caller_verifiable": true,
+  "chaos": [
+   "shared_phone",
+   "slot_taken_twice"
+  ],
+  "claimed_dob": "1958-02-01",
+  "cooperation": 3,
+  "detour_question": null,
+  "duplicate": {
+   "dob": "1956-10-03",
+   "family": "Dunmore",
+   "given": "Emerson"
+  },
+  "expect_transfer": false,
+  "family": "reschedule",
+  "goal": "Move your appointment with Dr. Eddins on Wednesday, October 14 at 2 PM to a different day. Any other day works. Accept the FIRST alternative time the agent offers. Once the agent confirms it is done, say thank you and goodbye.",
+  "id": "reschedule-00035",
+  "lookalike": null,
+  "misremembered_date": null,
+  "misstated_dob": null,
+  "names_provider": false,
+  "opening_line": "Hi, I need to move my appointment on Wednesday, October 14 at 2 PM to another day.",
+  "patient": {
+   "dob": "1958-02-01",
+   "family": "Dunmore",
+   "given": "Blake",
+   "phone": "+15005550008"
+  },
+  "payer": null,
+  "persona": "skeptical",
+  "provenance": [
+   "services/agent/agents/tools_fhir.py::reschedule_appointment"
+  ],
+  "provider": {
+   "display": "Dr. Eddins",
+   "family": "Eddins",
+   "given": "Robin"
+  },
+  "realism": [
+   "hesitant_dob",
+   "interruptions",
+   "limited_english"
+  ],
+  "red_flag": null,
+  "requested_slot": null,
+  "schema_version": 3,
+  "seed": 35,
+  "split": "heldout",
+  "switch_to": null,
+  "tier": 4,
+  "today": "2026-10-07",
+  "urgent": false
+ },
+ "world": {
+  "baseline": {
+   "appointments": {
+    "ed9d1eb4-211f-4b88-a71a-086159b2f8b3": {
+     "start": "2026-10-14T14:00:00-07:00",
+     "status": "booked"
+    }
+   },
+   "n_appointments": 1,
+   "n_coverage": 0,
+   "n_patients": 2,
+   "n_tasks": 0,
+   "n_transfers": 0
+  },
+  "bystander_patient_id": null,
+  "clinic_tz": "America/Los_Angeles",
+  "duplicate_patient_id": "65254efe-1dd2-413c-bccd-3df6ef486ec8",
+  "organization_id": "48e58cb5-8e75-4c69-9d1a-b0506a204e8b",
+  "patient_id": "98c20f9d-7f16-4726-9327-aaac39798a0e",
+  "practitioners": {
+   "Dr. Campos": {
+    "display": "Dr. Campos",
+    "id": "8fc3c7a5-e44c-4beb-9ab1-9e4877e5de59"
+   },
+   "Dr. Eddins": {
+    "display": "Dr. Eddins",
+    "id": "ae6332b9-9758-414a-b0e4-cb496fb236fd"
+   },
+   "Dr. Facchinato": {
+    "display": "Dr. Facchinato",
+    "id": "a3b778bb-1719-41a9-bc17-d68a4a209161"
+   }
+  },
+  "requested_bystander_id": null,
+  "requested_start": null,
+  "target_appointment_id": "ed9d1eb4-211f-4b88-a71a-086159b2f8b3",
+  "today": "2026-10-07",
+  "urgent_window_days": 2
+ }
+}

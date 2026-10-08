@@ -1,0 +1,229 @@
+{
+ "compartment": "Organization/e747ff33-d974-4911-a545-d83f9cee6449",
+ "entry": [
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "2000-06-27",
+    "id": "e7117bf0-fa2d-418f-9137-381d088bf670",
+    "managingOrganization": {
+     "reference": "Organization/e747ff33-d974-4911-a545-d83f9cee6449"
+    },
+    "name": [
+     {
+      "family": "Dunmore",
+      "given": [
+       "Logan"
+      ],
+      "use": "official"
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005550007"
+     },
+     {
+      "system": "email",
+      "value": "danielshepard@example.net"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/e747ff33-d974-4911-a545-d83f9cee6449"
+      }
+     }
+    ],
+    "id": "74188e65-493f-4f77-84eb-2471a90a84ed",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1715046764"
+     }
+    ],
+    "name": [
+     {
+      "family": "Eddins",
+      "given": [
+       "Robin"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/e747ff33-d974-4911-a545-d83f9cee6449"
+      }
+     }
+    ],
+    "id": "7d87a9df-fd3a-4271-a7dd-ff2f887eaaf1",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1946697026"
+     }
+    ],
+    "name": [
+     {
+      "family": "Campos",
+      "given": [
+       "Ana"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/e747ff33-d974-4911-a545-d83f9cee6449"
+      }
+     }
+    ],
+    "id": "ea6f918a-ee8e-4028-8e4e-f670bb1a567b",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1296012973"
+     }
+    ],
+    "name": [
+     {
+      "family": "Facchinato",
+      "given": [
+       "Jo"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "appointmentType": {
+     "coding": [
+      {
+       "code": "follow-up",
+       "display": "Follow Up",
+       "system": "https://ocean-ehr.com/fhir/CodeSystem/appointment-type"
+      }
+     ]
+    },
+    "end": "2026-10-08T08:15:00-07:00",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/e747ff33-d974-4911-a545-d83f9cee6449"
+      }
+     }
+    ],
+    "id": "6bf383a6-bd8e-4be7-b215-0b3b1819d904",
+    "participant": [
+     {
+      "actor": {
+       "display": "Logan Dunmore",
+       "reference": "Patient/e7117bf0-fa2d-418f-9137-381d088bf670"
+      },
+      "status": "accepted"
+     },
+     {
+      "actor": {
+       "display": "Robin Eddins",
+       "reference": "Practitioner/74188e65-493f-4f77-84eb-2471a90a84ed"
+      },
+      "status": "accepted"
+     }
+    ],
+    "resourceType": "Appointment",
+    "start": "2026-10-08T08:00:00-07:00",
+    "status": "booked"
+   }
+  }
+ ],
+ "resourceType": "Bundle",
+ "total": 5,
+ "type": "collection",
+ "types": [
+  "Patient",
+  "Practitioner",
+  "PractitionerRole",
+  "Organization",
+  "Appointment",
+  "Encounter",
+  "EpisodeOfCare",
+  "ClinicalImpression",
+  "Observation",
+  "Condition",
+  "Procedure",
+  "CarePlan",
+  "Coverage",
+  "Claim",
+  "ClaimResponse",
+  "Communication",
+  "CommunicationRequest",
+  "Consent",
+  "DocumentReference",
+  "Task"
+ ]
+}

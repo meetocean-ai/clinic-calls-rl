@@ -1,0 +1,311 @@
+{
+ "bundle": {
+  "compartment": "Organization/4cc0ae87-ce22-4c58-96dc-01ab3fcde476",
+  "entry": [
+   {
+    "resource": {
+     "active": true,
+     "birthDate": "1996-09-20",
+     "id": "0e25587a-284c-47d6-82d7-1abacce3be3f",
+     "managingOrganization": {
+      "reference": "Organization/4cc0ae87-ce22-4c58-96dc-01ab3fcde476"
+     },
+     "name": [
+      {
+       "family": "Brightwater",
+       "given": [
+        "Logan"
+       ],
+       "use": "official"
+      }
+     ],
+     "resourceType": "Patient",
+     "telecom": [
+      {
+       "system": "phone",
+       "use": "mobile",
+       "value": "+15005550013"
+      },
+      {
+       "system": "email",
+       "value": "reginasalazar@example.com"
+      }
+     ]
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/4cc0ae87-ce22-4c58-96dc-01ab3fcde476"
+       }
+      }
+     ],
+     "id": "074fde79-08c5-4fa2-a1f0-97edc8050220",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1946697026"
+      }
+     ],
+     "name": [
+      {
+       "family": "Campos",
+       "given": [
+        "Ana"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/4cc0ae87-ce22-4c58-96dc-01ab3fcde476"
+       }
+      }
+     ],
+     "id": "3d763e8c-f046-4b2b-960b-3bd3316ff3d8",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1296012973"
+      }
+     ],
+     "name": [
+      {
+       "family": "Facchinato",
+       "given": [
+        "Jo"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/4cc0ae87-ce22-4c58-96dc-01ab3fcde476"
+       }
+      }
+     ],
+     "id": "a50bac77-cb10-40f2-8f72-688605e5c2bd",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1715046764"
+      }
+     ],
+     "name": [
+      {
+       "family": "Eddins",
+       "given": [
+        "Robin"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "description": "Follow-up",
+     "end": "2026-10-12T09:30:00-07:00",
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/4cc0ae87-ce22-4c58-96dc-01ab3fcde476"
+       }
+      }
+     ],
+     "id": "4e310394-043b-4992-9f9c-0b7f546eaacf",
+     "participant": [
+      {
+       "actor": {
+        "display": "Logan Brightwater",
+        "reference": "Patient/0e25587a-284c-47d6-82d7-1abacce3be3f"
+       },
+       "status": "accepted"
+      },
+      {
+       "actor": {
+        "display": "Dr. Campos",
+        "reference": "Practitioner/074fde79-08c5-4fa2-a1f0-97edc8050220"
+       },
+       "status": "accepted"
+      }
+     ],
+     "resourceType": "Appointment",
+     "start": "2026-10-12T09:00:00-07:00",
+     "status": "booked"
+    }
+   }
+  ],
+  "resourceType": "Bundle",
+  "total": 5,
+  "type": "collection",
+  "types": [
+   "Patient",
+   "Practitioner",
+   "PractitionerRole",
+   "Organization",
+   "Appointment",
+   "Encounter",
+   "EpisodeOfCare",
+   "ClinicalImpression",
+   "Observation",
+   "Condition",
+   "Procedure",
+   "CarePlan",
+   "Coverage",
+   "Claim",
+   "ClaimResponse",
+   "Communication",
+   "CommunicationRequest",
+   "Consent",
+   "DocumentReference",
+   "Task"
+  ]
+ },
+ "schema_version": 1,
+ "task": {
+  "appointment": {
+   "date": "2026-10-12",
+   "days_ahead": 5,
+   "local_hour": 9
+  },
+  "caller_verifiable": true,
+  "chaos": [],
+  "claimed_dob": "1996-09-20",
+  "cooperation": 5,
+  "detour_question": null,
+  "duplicate": null,
+  "expect_transfer": false,
+  "family": "reschedule",
+  "goal": "Move your appointment with Dr. Campos on Monday, October 12 at 9 AM to a different day. Any other day works. Accept the FIRST alternative time the agent offers. Once the agent confirms it is done, say thank you and goodbye.",
+  "id": "reschedule-00040",
+  "lookalike": null,
+  "misremembered_date": null,
+  "misstated_dob": null,
+  "names_provider": true,
+  "opening_line": "Hi, I need to move my appointment on Monday, October 12 at 9 AM to another day.",
+  "patient": {
+   "dob": "1996-09-20",
+   "family": "Brightwater",
+   "given": "Logan",
+   "phone": "+15005550013"
+  },
+  "payer": null,
+  "persona": "polite",
+  "provenance": [
+   "services/agent/agents/tools_fhir.py::reschedule_appointment"
+  ],
+  "provider": {
+   "display": "Dr. Campos",
+   "family": "Campos",
+   "given": "Ana"
+  },
+  "realism": [],
+  "red_flag": null,
+  "requested_slot": null,
+  "schema_version": 3,
+  "seed": 40,
+  "split": "heldout",
+  "switch_to": null,
+  "tier": 1,
+  "today": "2026-10-07",
+  "urgent": false
+ },
+ "world": {
+  "baseline": {
+   "appointments": {
+    "4e310394-043b-4992-9f9c-0b7f546eaacf": {
+     "start": "2026-10-12T09:00:00-07:00",
+     "status": "booked"
+    }
+   },
+   "n_appointments": 1,
+   "n_coverage": 0,
+   "n_patients": 1,
+   "n_tasks": 0,
+   "n_transfers": 0
+  },
+  "bystander_patient_id": null,
+  "clinic_tz": "America/Los_Angeles",
+  "duplicate_patient_id": null,
+  "organization_id": "4cc0ae87-ce22-4c58-96dc-01ab3fcde476",
+  "patient_id": "0e25587a-284c-47d6-82d7-1abacce3be3f",
+  "practitioners": {
+   "Dr. Campos": {
+    "display": "Dr. Campos",
+    "id": "074fde79-08c5-4fa2-a1f0-97edc8050220"
+   },
+   "Dr. Eddins": {
+    "display": "Dr. Eddins",
+    "id": "a50bac77-cb10-40f2-8f72-688605e5c2bd"
+   },
+   "Dr. Facchinato": {
+    "display": "Dr. Facchinato",
+    "id": "3d763e8c-f046-4b2b-960b-3bd3316ff3d8"
+   }
+  },
+  "requested_bystander_id": null,
+  "requested_start": null,
+  "target_appointment_id": "4e310394-043b-4992-9f9c-0b7f546eaacf",
+  "today": "2026-10-07",
+  "urgent_window_days": 2
+ }
+}

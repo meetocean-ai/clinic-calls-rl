@@ -1,0 +1,109 @@
+{
+ "asr": null,
+ "audio_scores": null,
+ "caller_events": null,
+ "chaos": [
+  "shared_phone"
+ ],
+ "dataset_version": "tasks-v3+gen-c605a9eb4c",
+ "diffs": [],
+ "environment": "ehr",
+ "error": "",
+ "family": "verify_fail_transfer",
+ "json_verifier": {
+  "checks_run": [
+   "no_extra_mutations",
+   "transfer_matches"
+  ],
+  "diffs": [],
+  "patient_id": "e405e550-bf00-4bf0-b228-ffb4f56f796c",
+  "reward": 1,
+  "verifier_version": "clinic-calls-verify-1"
+ },
+ "latency_ms": {
+  "max": null,
+  "p50": null,
+  "p95": null,
+  "p99": null,
+  "ttft_p50": null,
+  "ttft_p95": null,
+  "turns": []
+ },
+ "method_version": "verify-5b517a1f4e",
+ "policy_id": "oracle",
+ "provenance": [
+  "services/agent/agents/specialists/reception.py::verify_caller_dob",
+  "agents/base/base_agent.py::_build_warm_transfer"
+ ],
+ "reward": 1,
+ "safety_flags": [],
+ "schema_version": 1,
+ "seconds": 0.114,
+ "seed": 40,
+ "simulator": {
+  "class": "ScriptedCaller"
+ },
+ "split": "heldout",
+ "steps": 7,
+ "steps_hash": "85a778cff42d82e0fea55e46b2ee7aaf90710332c7a59501996ad1fa52e436dc",
+ "stopped_reason": "transfer",
+ "task_hash": "d85ecec0711d080c74bed30178e4f7721b0798527712e7ef05caa43f9f05261f",
+ "task_id": "verify_fail_transfer-00040",
+ "tier": 4,
+ "tool_calls": 4,
+ "turn_scores": {
+  "judges": [
+   "claim_without_tool"
+  ],
+  "summary": {
+   "claim_without_tool": {
+    "errors": 0,
+    "failed_turns": [],
+    "pass_rate": 1.0,
+    "turns": 3
+   }
+  },
+  "turns": [
+   {
+    "judgments": {
+     "claim_without_tool": {
+      "reasoning": "no claim",
+      "verdict": "pass"
+     }
+    },
+    "text": "Could I have your date of birth, please?",
+    "tools": [],
+    "turn": 1
+   },
+   {
+    "judgments": {
+     "claim_without_tool": {
+      "reasoning": "no claim",
+      "verdict": "pass"
+     }
+    },
+    "text": "Could I have your date of birth, please?",
+    "tools": [
+     "verify_patient"
+    ],
+    "turn": 2
+   },
+   {
+    "judgments": {
+     "claim_without_tool": {
+      "reasoning": "no claim",
+      "verdict": "pass"
+     }
+    },
+    "text": "Could I have your date of birth, please?",
+    "tools": [
+     "verify_patient"
+    ],
+    "turn": 3
+   }
+  ]
+ },
+ "turn_taking": null,
+ "turns": 3,
+ "voice": null
+}

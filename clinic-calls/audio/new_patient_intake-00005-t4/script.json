@@ -1,0 +1,82 @@
+{
+ "key": "new_patient_intake-00005-t4",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 6.75,
+   "spoken": "Hi,, hmm, I'm a new pati\u2014 no, wait, patient and I'd like, hmm, to book a first visit, hmm, with Dr. Eddins.",
+   "text": "Hi, I'm a new patient and I'd like to book a first visit with Dr. Eddins."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob_misstated",
+   "sample_rate": 8000,
+   "seconds": 3.55,
+   "spoken": "It's October 25, 1961.",
+   "text": "It's 1961-10-25."
+  },
+  {
+   "file": "02.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.65,
+   "spoken": "It's October 27, 1961.",
+   "text": "It's 1961-10-27."
+  },
+  {
+   "file": "03.wav",
+   "kind": "name",
+   "sample_rate": 8000,
+   "seconds": 4.575,
+   "spoken": "My name, hmm, is, you know, Logan, um, Ironw\u2014 no, wait, Ironwood.",
+   "text": "My name is Logan Ironwood."
+  },
+  {
+   "file": "04.wav",
+   "kind": "name_and_dob",
+   "sample_rate": 8000,
+   "seconds": 8.575,
+   "spoken": "My name is Logan Ironw\u2014 no, wait, Ironwood, and my, um, date of, hmm, birth, you know, is October 27, 1961.",
+   "text": "My name is Logan Ironwood, and my date of birth is 1961-10-27."
+  },
+  {
+   "file": "05.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.5,
+   "spoken": "Yes,, hmm, that, um, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "06.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 3.275,
+   "spoken": "Thank, hmm, you,, um, good\u2014 no, wait, goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "new_patient_intake-00005",
+ "tier": 4,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.02,
+   "gain_wobble_db": 3.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 5,
+   "snr_db": 10.0
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 3,
+   "seed": 5,
+   "self_correction": true
+  },
+  "tts": "kokoro",
+  "voice": "bf_isabella"
+ }
+}

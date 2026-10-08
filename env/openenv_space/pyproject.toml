@@ -1,0 +1,18 @@
+# OpenEnv package metadata for the hub card (roadmap P1-10). The runtime is the image from
+# tests/behavioral/env/Dockerfile; this directory holds the manifest, the README card and the server entry shim.
+[project]
+name = "ehr-scheduling-openenv"
+version = "0.1.0"
+description = "Clinic front-desk calls as an OpenEnv environment: ten receptionist tools over a real FHIR sandbox, binary state-verified reward, synthetic data only"
+requires-python = ">=3.11"
+dependencies = ["openenv-core[core]>=0.3.0", "uvicorn>=0.24"]
+# Free for any noncommercial use (research, personal, nonprofit); business use needs a separate license — Artem's call.
+license = "PolyForm-Noncommercial-1.0.0"
+license-files = ["LICENSE"]
+readme = "README.md"
+
+[project.scripts]
+server = "server.app:main"
+
+[tool.setuptools]
+packages = ["server"]

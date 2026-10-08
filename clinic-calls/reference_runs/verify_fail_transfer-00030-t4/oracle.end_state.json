@@ -1,0 +1,287 @@
+{
+ "compartment": "Organization/148c3fea-ac34-4b6e-8858-80e2cdd58cf4",
+ "entry": [
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "1990-05-08",
+    "id": "b086491e-05b4-48bf-9005-143980d5a6f2",
+    "managingOrganization": {
+     "reference": "Organization/148c3fea-ac34-4b6e-8858-80e2cdd58cf4"
+    },
+    "name": [
+     {
+      "family": "Underhill",
+      "given": [
+       "Morgan"
+      ],
+      "use": "official"
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005550003"
+     },
+     {
+      "system": "email",
+      "value": "brandonstephens@example.org"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "1998-08-02",
+    "id": "ba9a26a4-4799-49ae-9db5-f275479908ae",
+    "managingOrganization": {
+     "reference": "Organization/148c3fea-ac34-4b6e-8858-80e2cdd58cf4"
+    },
+    "name": [
+     {
+      "family": "Underhill",
+      "given": [
+       "Logan"
+      ],
+      "use": "official"
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005550003"
+     },
+     {
+      "system": "email",
+      "value": "kimberly83@example.com"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/148c3fea-ac34-4b6e-8858-80e2cdd58cf4"
+      }
+     }
+    ],
+    "id": "43d7a597-ebf3-4d8c-86a8-40b3260ef4ac",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1715046764"
+     }
+    ],
+    "name": [
+     {
+      "family": "Eddins",
+      "given": [
+       "Robin"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/148c3fea-ac34-4b6e-8858-80e2cdd58cf4"
+      }
+     }
+    ],
+    "id": "8d614de2-4684-4d57-8f48-1eb980a9cc45",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1946697026"
+     }
+    ],
+    "name": [
+     {
+      "family": "Campos",
+      "given": [
+       "Ana"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/148c3fea-ac34-4b6e-8858-80e2cdd58cf4"
+      }
+     }
+    ],
+    "id": "e5381e6b-e3cd-411a-b86b-eddce9b33e57",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1296012973"
+     }
+    ],
+    "name": [
+     {
+      "family": "Facchinato",
+      "given": [
+       "Jo"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "description": "Follow-up",
+    "end": "2026-10-12T15:30:00-07:00",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/148c3fea-ac34-4b6e-8858-80e2cdd58cf4"
+      }
+     }
+    ],
+    "id": "8607bab9-8f66-4cc1-b9dc-51ce4389d2cd",
+    "participant": [
+     {
+      "actor": {
+       "display": "Morgan Underhill",
+       "reference": "Patient/b086491e-05b4-48bf-9005-143980d5a6f2"
+      },
+      "status": "accepted"
+     },
+     {
+      "actor": {
+       "display": "Dr. Campos",
+       "reference": "Practitioner/8d614de2-4684-4d57-8f48-1eb980a9cc45"
+      },
+      "status": "accepted"
+     }
+    ],
+    "resourceType": "Appointment",
+    "start": "2026-10-12T15:00:00-07:00",
+    "status": "booked"
+   }
+  },
+  {
+   "resource": {
+    "authoredOn": "2026-10-08T01:00:46.646815+00:00",
+    "code": {
+     "coding": [
+      {
+       "code": "warm-transfer",
+       "display": "Warm transfer to staff",
+       "system": "https://ocean-ehr.com/fhir/CodeSystem/agent-action"
+      }
+     ]
+    },
+    "description": "caller transferred",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/148c3fea-ac34-4b6e-8858-80e2cdd58cf4"
+      }
+     }
+    ],
+    "for": {
+     "display": "Morgan Underhill",
+     "reference": "Patient/b086491e-05b4-48bf-9005-143980d5a6f2"
+    },
+    "id": "220f972b-7862-40ab-97cc-c159368388dd",
+    "intent": "order",
+    "owner": {
+     "display": "Ocean AI Agent"
+    },
+    "priority": "routine",
+    "resourceType": "Task",
+    "status": "requested"
+   }
+  }
+ ],
+ "resourceType": "Bundle",
+ "total": 7,
+ "type": "collection",
+ "types": [
+  "Patient",
+  "Practitioner",
+  "PractitionerRole",
+  "Organization",
+  "Appointment",
+  "Encounter",
+  "EpisodeOfCare",
+  "ClinicalImpression",
+  "Observation",
+  "Condition",
+  "Procedure",
+  "CarePlan",
+  "Coverage",
+  "Claim",
+  "ClaimResponse",
+  "Communication",
+  "CommunicationRequest",
+  "Consent",
+  "DocumentReference",
+  "Task"
+ ]
+}

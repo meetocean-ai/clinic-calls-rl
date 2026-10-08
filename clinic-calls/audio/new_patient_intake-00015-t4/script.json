@@ -1,0 +1,82 @@
+{
+ "key": "new_patient_intake-00015-t4",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 6.6,
+   "spoken": "We\u2014 hi,, um, I'm, uh, a new patient and, you know, I'd like to book a first visit with Dr. Campos.",
+   "text": "Hi, I'm a new patient and I'd like to book a first visit with Dr. Campos."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob_misstated",
+   "sample_rate": 8000,
+   "seconds": 3.3,
+   "spoken": "It's\u2014 it's May 23, 1953.",
+   "text": "It's 1953-05-23."
+  },
+  {
+   "file": "02.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.325,
+   "spoken": "It's\u2014 it's May 21, 1953.",
+   "text": "It's 1953-05-21."
+  },
+  {
+   "file": "03.wav",
+   "kind": "name",
+   "sample_rate": 8000,
+   "seconds": 3.55,
+   "spoken": "We\u2014 my, um, name, uh, is, you know, Parker Fairweather.",
+   "text": "My name is Parker Fairweather."
+  },
+  {
+   "file": "04.wav",
+   "kind": "name_and_dob",
+   "sample_rate": 8000,
+   "seconds": 7.225,
+   "spoken": "We\u2014 my, um, name, uh, is Parker Fairweather, and, you know, my date of birth is May 21, 1953.",
+   "text": "My name is Parker Fairweather, and my date of birth is 1953-05-21."
+  },
+  {
+   "file": "05.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.45,
+   "spoken": "I\u2014 yes,, um, that, you know, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "06.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 2.6,
+   "spoken": "I\u2014 thank, um, you,, you know, goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "new_patient_intake-00015",
+ "tier": 4,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.02,
+   "gain_wobble_db": 3.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 15,
+   "snr_db": 5.0
+  },
+  "disfluency": {
+   "false_start": true,
+   "fillers": 3,
+   "seed": 15,
+   "self_correction": false
+  },
+  "tts": "kokoro",
+  "voice": "am_adam"
+ }
+}

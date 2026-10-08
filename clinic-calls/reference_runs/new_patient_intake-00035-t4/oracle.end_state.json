@@ -1,0 +1,257 @@
+{
+ "compartment": "Organization/7776bc23-530d-4753-9070-60767ad5fb9d",
+ "entry": [
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "1951-09-14",
+    "id": "29d5a4d3-4d86-4809-9f2c-cfb090ca1380",
+    "managingOrganization": {
+     "reference": "Organization/7776bc23-530d-4753-9070-60767ad5fb9d"
+    },
+    "name": [
+     {
+      "family": "Thornbury",
+      "given": [
+       "Kendall"
+      ],
+      "use": "official"
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005550008"
+     },
+     {
+      "system": "email",
+      "value": "ronaldcortez@example.com"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "1995-08-05",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/7776bc23-530d-4753-9070-60767ad5fb9d"
+      }
+     }
+    ],
+    "id": "cd485887-9e11-4fba-a7e9-71194a88257c",
+    "name": [
+     {
+      "family": "Thornbury",
+      "given": [
+       "Reese"
+      ]
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005550008"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/7776bc23-530d-4753-9070-60767ad5fb9d"
+      }
+     }
+    ],
+    "id": "423ec215-0e5d-4e47-b15e-eb5dcbd12f21",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1296012973"
+     }
+    ],
+    "name": [
+     {
+      "family": "Facchinato",
+      "given": [
+       "Jo"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/7776bc23-530d-4753-9070-60767ad5fb9d"
+      }
+     }
+    ],
+    "id": "4a4e24ed-16ef-42e7-9908-f89e552de34c",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1946697026"
+     }
+    ],
+    "name": [
+     {
+      "family": "Campos",
+      "given": [
+       "Ana"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/7776bc23-530d-4753-9070-60767ad5fb9d"
+      }
+     }
+    ],
+    "id": "5c1583e6-abde-419d-ad2f-9d2c4ea25482",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1715046764"
+     }
+    ],
+    "name": [
+     {
+      "family": "Eddins",
+      "given": [
+       "Robin"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "authoredOn": "2026-10-08T01:01:48.616812+00:00",
+    "code": {
+     "coding": [
+      {
+       "code": "waitlist",
+       "display": "Waitlist",
+       "system": "https://ocean-ehr.com/fhir/CodeSystem/task-type"
+      }
+     ]
+    },
+    "description": "Waitlist: follow-up appointment",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/Extension/waitlist-appointment-type",
+      "valueString": "follow-up"
+     },
+     {
+      "url": "https://ocean-ehr.com/fhir/Extension/waitlist-preferred-practitioner",
+      "valueString": "4a4e24ed-16ef-42e7-9908-f89e552de34c"
+     },
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/7776bc23-530d-4753-9070-60767ad5fb9d"
+      }
+     }
+    ],
+    "for": {
+     "display": "Reese Thornbury",
+     "reference": "Patient/cd485887-9e11-4fba-a7e9-71194a88257c"
+    },
+    "id": "550f5b1a-b09c-462a-9747-938aea9cc0be",
+    "intent": "order",
+    "resourceType": "Task",
+    "status": "requested"
+   }
+  }
+ ],
+ "resourceType": "Bundle",
+ "total": 6,
+ "type": "collection",
+ "types": [
+  "Patient",
+  "Practitioner",
+  "PractitionerRole",
+  "Organization",
+  "Appointment",
+  "Encounter",
+  "EpisodeOfCare",
+  "ClinicalImpression",
+  "Observation",
+  "Condition",
+  "Procedure",
+  "CarePlan",
+  "Coverage",
+  "Claim",
+  "ClaimResponse",
+  "Communication",
+  "CommunicationRequest",
+  "Consent",
+  "DocumentReference",
+  "Task"
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "key": "verify_fail_transfer-00005-t3",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 5.2,
+   "spoken": "Hi, can you tell me when, um, my next appointment is? I, uh, want to cancel it.",
+   "text": "Hi, can you tell me when my next appointment is? I want to cancel it."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.6,
+   "spoken": "It's October 25, 1967.",
+   "text": "It's 1967-10-25."
+  },
+  {
+   "file": "02.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.725,
+   "spoken": "Yes,, er, that, let me think, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "03.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 2.8,
+   "spoken": "Thank, er, you,, let me think, goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "verify_fail_transfer-00005",
+ "tier": 3,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.02,
+   "gain_wobble_db": 3.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 5,
+   "snr_db": 15.0
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 2,
+   "seed": 5,
+   "self_correction": false
+  },
+  "tts": "kokoro",
+  "voice": "bf_isabella"
+ }
+}

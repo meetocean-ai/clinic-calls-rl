@@ -1,0 +1,99 @@
+{
+ "asr": null,
+ "audio_scores": null,
+ "caller_events": null,
+ "chaos": [
+  "shared_phone",
+  "wrong_day_memory"
+ ],
+ "dataset_version": "tasks-v3+gen-c605a9eb4c",
+ "diffs": [],
+ "environment": "ehr",
+ "error": "",
+ "family": "cancel",
+ "json_verifier": {
+  "checks_run": [
+   "cancel_targeted_right_id",
+   "no_extra_mutations",
+   "transfer_matches"
+  ],
+  "diffs": [],
+  "patient_id": "4bf1474b-dd66-41a6-9144-814df66d8ebe",
+  "reward": 1,
+  "verifier_version": "clinic-calls-verify-1"
+ },
+ "latency_ms": {
+  "max": null,
+  "p50": null,
+  "p95": null,
+  "p99": null,
+  "ttft_p50": null,
+  "ttft_p95": null,
+  "turns": []
+ },
+ "method_version": "verify-5b517a1f4e",
+ "policy_id": "oracle",
+ "provenance": [
+  "services/agent/agents/tools_fhir.py::cancel_appointment"
+ ],
+ "reward": 1,
+ "safety_flags": [],
+ "schema_version": 1,
+ "seconds": 0.151,
+ "seed": 50,
+ "simulator": {
+  "class": "ScriptedCaller"
+ },
+ "split": "heldout",
+ "steps": 6,
+ "steps_hash": "5088604c5654e4f468c0572b42d1a8ad3f779ca5a9d15ebbdbbce48edfe3c4be",
+ "stopped_reason": "end_call",
+ "task_hash": "a241c1e35e54fd42e42b64c1d6cfbb5e6025dc783f1243d43f4f25cfe50160c0",
+ "task_id": "cancel-00050",
+ "tier": 3,
+ "tool_calls": 4,
+ "turn_scores": {
+  "judges": [
+   "claim_without_tool"
+  ],
+  "summary": {
+   "claim_without_tool": {
+    "errors": 0,
+    "failed_turns": [],
+    "pass_rate": 1.0,
+    "turns": 2
+   }
+  },
+  "turns": [
+   {
+    "judgments": {
+     "claim_without_tool": {
+      "reasoning": "no claim",
+      "verdict": "pass"
+     }
+    },
+    "text": "Could I have your date of birth, please?",
+    "tools": [],
+    "turn": 1
+   },
+   {
+    "judgments": {
+     "claim_without_tool": {
+      "reasoning": "no claim",
+      "verdict": "pass"
+     }
+    },
+    "text": "It's cancelled. Anything else?",
+    "tools": [
+     "verify_patient",
+     "get_appointments",
+     "cancel_appointment"
+    ],
+    "turn": 2
+   }
+  ]
+ },
+ "turn_taking": null,
+ "turns": 2,
+ "voice": null
+}

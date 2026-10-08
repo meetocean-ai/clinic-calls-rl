@@ -1,0 +1,66 @@
+{
+ "key": "booking-00035-t3",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 5.1,
+   "spoken": "Hi, I'd like to book, hmm, a follow-up visit with Dr. Eddins, please.",
+   "text": "Hi, I'd like to book a follow-up visit with Dr. Eddins, please."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.25,
+   "spoken": "It's April 7, 1951.",
+   "text": "It's 1951-04-07."
+  },
+  {
+   "file": "02.wav",
+   "kind": "detour",
+   "sample_rate": 8000,
+   "seconds": 2.8,
+   "spoken": "What will my, hmm, copay be for this?",
+   "text": "What will my copay be for this?"
+  },
+  {
+   "file": "03.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.025,
+   "spoken": "Yes, that, hmm, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "04.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 2.35,
+   "spoken": "Thank you,, hmm, goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "booking-00035",
+ "tier": 3,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.02,
+   "gain_wobble_db": 0.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 35,
+   "snr_db": 20.0
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 1,
+   "seed": 35,
+   "self_correction": false
+  },
+  "tts": "kokoro",
+  "voice": "af_bella"
+ }
+}

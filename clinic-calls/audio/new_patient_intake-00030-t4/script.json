@@ -1,0 +1,82 @@
+{
+ "key": "new_patient_intake-00030-t4",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 6.125,
+   "spoken": "I\u2014 hi, I'm a new, hmm, patient and I'd like, uh, to book a, um, first visit with Dr. Facchinato.",
+   "text": "Hi, I'm a new patient and I'd like to book a first visit with Dr. Facchinato."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob_misstated",
+   "sample_rate": 8000,
+   "seconds": 3.45,
+   "spoken": "We\u2014 it's October 19, 1983.",
+   "text": "It's 1983-10-19."
+  },
+  {
+   "file": "02.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.45,
+   "spoken": "We\u2014 it's October 20, 1983.",
+   "text": "It's 1983-10-20."
+  },
+  {
+   "file": "03.wav",
+   "kind": "name",
+   "sample_rate": 8000,
+   "seconds": 4.1,
+   "spoken": "So I\u2014 my, hmm, name, um, is Kendall, uh, Ravenscroft.",
+   "text": "My name is Kendall Ravenscroft."
+  },
+  {
+   "file": "04.wav",
+   "kind": "name_and_dob",
+   "sample_rate": 8000,
+   "seconds": 7.45,
+   "spoken": "So I\u2014 my, um, name is Kendall, hmm, Ravenscroft, and my date, uh, of birth is October 20, 1983.",
+   "text": "My name is Kendall Ravenscroft, and my date of birth is 1983-10-20."
+  },
+  {
+   "file": "05.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.525,
+   "spoken": "I\u2014 yes,, hmm, that, uh, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "06.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 2.6,
+   "spoken": "I\u2014 thank, hmm, you,, uh, goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "new_patient_intake-00030",
+ "tier": 4,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.05,
+   "gain_wobble_db": 3.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 30,
+   "snr_db": 15.0
+  },
+  "disfluency": {
+   "false_start": true,
+   "fillers": 3,
+   "seed": 30,
+   "self_correction": false
+  },
+  "tts": "kokoro",
+  "voice": "bf_emma"
+ }
+}

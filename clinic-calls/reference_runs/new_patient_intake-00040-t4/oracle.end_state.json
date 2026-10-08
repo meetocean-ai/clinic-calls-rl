@@ -1,0 +1,260 @@
+{
+ "compartment": "Organization/a8dfef4d-ed0a-408d-bd9b-0fad778705b9",
+ "entry": [
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "1974-04-09",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/a8dfef4d-ed0a-408d-bd9b-0fad778705b9"
+      }
+     }
+    ],
+    "id": "a3466947-f1f3-43e7-a676-fa9b9b471609",
+    "name": [
+     {
+      "family": "Westbrook",
+      "given": [
+       "Wren"
+      ]
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005550013"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "1958-10-06",
+    "id": "bbcc02d5-1036-4b13-9267-4900bacfb774",
+    "managingOrganization": {
+     "reference": "Organization/a8dfef4d-ed0a-408d-bd9b-0fad778705b9"
+    },
+    "name": [
+     {
+      "family": "Westbrook",
+      "given": [
+       "Tatum"
+      ],
+      "use": "official"
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005550013"
+     },
+     {
+      "system": "email",
+      "value": "marymoore@example.com"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/a8dfef4d-ed0a-408d-bd9b-0fad778705b9"
+      }
+     }
+    ],
+    "id": "5b01440e-40ce-43da-b26a-477a1c82488c",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1946697026"
+     }
+    ],
+    "name": [
+     {
+      "family": "Campos",
+      "given": [
+       "Ana"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/a8dfef4d-ed0a-408d-bd9b-0fad778705b9"
+      }
+     }
+    ],
+    "id": "a27b92a9-6ad7-420e-a078-784af45a0b6d",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1296012973"
+     }
+    ],
+    "name": [
+     {
+      "family": "Facchinato",
+      "given": [
+       "Jo"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/a8dfef4d-ed0a-408d-bd9b-0fad778705b9"
+      }
+     }
+    ],
+    "id": "e5e7a55f-408f-40da-a30d-e09169c645b6",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1715046764"
+     }
+    ],
+    "name": [
+     {
+      "family": "Eddins",
+      "given": [
+       "Robin"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "appointmentType": {
+     "coding": [
+      {
+       "code": "follow-up",
+       "display": "Follow Up",
+       "system": "https://ocean-ehr.com/fhir/CodeSystem/appointment-type"
+      }
+     ]
+    },
+    "end": "2026-10-08T08:15:00-07:00",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/a8dfef4d-ed0a-408d-bd9b-0fad778705b9"
+      }
+     }
+    ],
+    "id": "229e4e59-c3e1-42cb-940b-c7d7f468b59e",
+    "participant": [
+     {
+      "actor": {
+       "display": "Wren Westbrook",
+       "reference": "Patient/a3466947-f1f3-43e7-a676-fa9b9b471609"
+      },
+      "status": "accepted"
+     },
+     {
+      "actor": {
+       "display": "Ana Campos",
+       "reference": "Practitioner/5b01440e-40ce-43da-b26a-477a1c82488c"
+      },
+      "status": "accepted"
+     }
+    ],
+    "resourceType": "Appointment",
+    "start": "2026-10-08T08:00:00-07:00",
+    "status": "booked"
+   }
+  }
+ ],
+ "resourceType": "Bundle",
+ "total": 6,
+ "type": "collection",
+ "types": [
+  "Patient",
+  "Practitioner",
+  "PractitionerRole",
+  "Organization",
+  "Appointment",
+  "Encounter",
+  "EpisodeOfCare",
+  "ClinicalImpression",
+  "Observation",
+  "Condition",
+  "Procedure",
+  "CarePlan",
+  "Coverage",
+  "Claim",
+  "ClaimResponse",
+  "Communication",
+  "CommunicationRequest",
+  "Consent",
+  "DocumentReference",
+  "Task"
+ ]
+}

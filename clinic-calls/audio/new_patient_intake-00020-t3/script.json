@@ -1,0 +1,74 @@
+{
+ "key": "new_patient_intake-00020-t3",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 7.325,
+   "spoken": "Hi, I'm, let me think, a new patient and, um, I'd like to book a first visit with Dr. Campos.",
+   "text": "Hi, I'm a new patient and I'd like to book a first visit with Dr. Campos."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.45,
+   "spoken": "It's June 13, 1981.",
+   "text": "It's 1981-06-13."
+  },
+  {
+   "file": "02.wav",
+   "kind": "name",
+   "sample_rate": 8000,
+   "seconds": 3.825,
+   "spoken": "My, let me think, name is, um, Kendall Coldbrook.",
+   "text": "My name is Kendall Coldbrook."
+  },
+  {
+   "file": "03.wav",
+   "kind": "name_and_dob",
+   "sample_rate": 8000,
+   "seconds": 7.8,
+   "spoken": "My name, let me think, is Kendall Coldbrook, and, um, my date of birth is June 13, 1981.",
+   "text": "My name is Kendall Coldbrook, and my date of birth is 1981-06-13."
+  },
+  {
+   "file": "04.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.975,
+   "spoken": "Yes,, let me think, that, um, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "05.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 3.175,
+   "spoken": "Thank, let me think, you,, um, goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "new_patient_intake-00020",
+ "tier": 3,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.0,
+   "gain_wobble_db": 0.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 20,
+   "snr_db": 25.0
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 2,
+   "seed": 20,
+   "self_correction": false
+  },
+  "tts": "kokoro",
+  "voice": "am_michael"
+ }
+}

@@ -1,0 +1,221 @@
+{
+ "compartment": "Organization/40f02c66-a9c1-4bec-933d-8c769f5ba0c0",
+ "entry": [
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "1952-01-21",
+    "id": "5d4eff26-9de2-432f-98ae-571548b35756",
+    "managingOrganization": {
+     "reference": "Organization/40f02c66-a9c1-4bec-933d-8c769f5ba0c0"
+    },
+    "name": [
+     {
+      "family": "Kingsley",
+      "given": [
+       "Morgan"
+      ],
+      "use": "official"
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005550004"
+     },
+     {
+      "system": "email",
+      "value": "mrhodes@example.org"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/40f02c66-a9c1-4bec-933d-8c769f5ba0c0"
+      }
+     }
+    ],
+    "id": "1847ccf7-09c4-4557-a1e0-deadeee527c8",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1946697026"
+     }
+    ],
+    "name": [
+     {
+      "family": "Campos",
+      "given": [
+       "Ana"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/40f02c66-a9c1-4bec-933d-8c769f5ba0c0"
+      }
+     }
+    ],
+    "id": "2e3dbd3e-b1a2-45f1-a824-cafd58c5c34a",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1296012973"
+     }
+    ],
+    "name": [
+     {
+      "family": "Facchinato",
+      "given": [
+       "Jo"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/40f02c66-a9c1-4bec-933d-8c769f5ba0c0"
+      }
+     }
+    ],
+    "id": "e072dfaf-756c-4127-b719-5693aa21cf6a",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1715046764"
+     }
+    ],
+    "name": [
+     {
+      "family": "Eddins",
+      "given": [
+       "Robin"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "description": "Follow-up",
+    "end": "2026-10-08T08:15:00-07:00",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/40f02c66-a9c1-4bec-933d-8c769f5ba0c0"
+      }
+     }
+    ],
+    "id": "cc804020-799f-4a79-a966-90c5c6a43e28",
+    "participant": [
+     {
+      "actor": {
+       "display": "Morgan Kingsley",
+       "reference": "Patient/5d4eff26-9de2-432f-98ae-571548b35756"
+      },
+      "status": "accepted"
+     },
+     {
+      "actor": {
+       "display": "Dr. Facchinato",
+       "reference": "Practitioner/e072dfaf-756c-4127-b719-5693aa21cf6a"
+      },
+      "status": "accepted"
+     }
+    ],
+    "resourceType": "Appointment",
+    "start": "2026-10-08T08:00:00-07:00",
+    "status": "booked"
+   }
+  }
+ ],
+ "resourceType": "Bundle",
+ "total": 5,
+ "type": "collection",
+ "types": [
+  "Patient",
+  "Practitioner",
+  "PractitionerRole",
+  "Organization",
+  "Appointment",
+  "Encounter",
+  "EpisodeOfCare",
+  "ClinicalImpression",
+  "Observation",
+  "Condition",
+  "Procedure",
+  "CarePlan",
+  "Coverage",
+  "Claim",
+  "ClaimResponse",
+  "Communication",
+  "CommunicationRequest",
+  "Consent",
+  "DocumentReference",
+  "Task"
+ ]
+}

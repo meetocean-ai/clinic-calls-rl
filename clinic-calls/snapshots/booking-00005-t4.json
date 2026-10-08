@@ -1,0 +1,310 @@
+{
+ "bundle": {
+  "compartment": "Organization/5a3570a5-5d16-4b01-9d7c-f34d2493bdaf",
+  "entry": [
+   {
+    "resource": {
+     "active": true,
+     "birthDate": "1971-04-25",
+     "id": "09a7ed30-9934-437a-939f-ba7025c9b048",
+     "managingOrganization": {
+      "reference": "Organization/5a3570a5-5d16-4b01-9d7c-f34d2493bdaf"
+     },
+     "name": [
+      {
+       "family": "Hartwell",
+       "given": [
+        "Rowan"
+       ],
+       "use": "official"
+      }
+     ],
+     "resourceType": "Patient",
+     "telecom": [
+      {
+       "system": "phone",
+       "use": "mobile",
+       "value": "+15005550006"
+      },
+      {
+       "system": "email",
+       "value": "laura01@example.net"
+      }
+     ]
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "birthDate": "2000-01-07",
+     "id": "9c1f1df9-2354-4248-b7e9-e143ba07475e",
+     "managingOrganization": {
+      "reference": "Organization/5a3570a5-5d16-4b01-9d7c-f34d2493bdaf"
+     },
+     "name": [
+      {
+       "family": "Hartwell",
+       "given": [
+        "Sawyer"
+       ],
+       "use": "official"
+      }
+     ],
+     "resourceType": "Patient",
+     "telecom": [
+      {
+       "system": "phone",
+       "use": "mobile",
+       "value": "+15005550006"
+      },
+      {
+       "system": "email",
+       "value": "michelle59@example.net"
+      }
+     ]
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/5a3570a5-5d16-4b01-9d7c-f34d2493bdaf"
+       }
+      }
+     ],
+     "id": "1f583f81-7265-4c7b-9e0e-3f842266f0c1",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1715046764"
+      }
+     ],
+     "name": [
+      {
+       "family": "Eddins",
+       "given": [
+        "Robin"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/5a3570a5-5d16-4b01-9d7c-f34d2493bdaf"
+       }
+      }
+     ],
+     "id": "609392b2-cc9a-4836-a7ef-19c091d87062",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1946697026"
+      }
+     ],
+     "name": [
+      {
+       "family": "Campos",
+       "given": [
+        "Ana"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/5a3570a5-5d16-4b01-9d7c-f34d2493bdaf"
+       }
+      }
+     ],
+     "id": "e0899427-1d23-4b1f-97ad-597209c4cf57",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1296012973"
+      }
+     ],
+     "name": [
+      {
+       "family": "Facchinato",
+       "given": [
+        "Jo"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   }
+  ],
+  "resourceType": "Bundle",
+  "total": 5,
+  "type": "collection",
+  "types": [
+   "Patient",
+   "Practitioner",
+   "PractitionerRole",
+   "Organization",
+   "Appointment",
+   "Encounter",
+   "EpisodeOfCare",
+   "ClinicalImpression",
+   "Observation",
+   "Condition",
+   "Procedure",
+   "CarePlan",
+   "Coverage",
+   "Claim",
+   "ClaimResponse",
+   "Communication",
+   "CommunicationRequest",
+   "Consent",
+   "DocumentReference",
+   "Task"
+  ]
+ },
+ "schema_version": 1,
+ "task": {
+  "appointment": null,
+  "caller_verifiable": true,
+  "chaos": [
+   "dob_corrected",
+   "shared_phone"
+  ],
+  "claimed_dob": "2000-01-07",
+  "cooperation": 3,
+  "detour_question": null,
+  "duplicate": {
+   "dob": "1971-04-25",
+   "family": "Hartwell",
+   "given": "Rowan"
+  },
+  "expect_transfer": false,
+  "family": "booking",
+  "goal": "Book a follow-up visit with Dr. Facchinato. Any day next week works. Accept the FIRST time the agent offers. When FIRST asked for your date of birth, say 2000-01-05 (you misspeak). If the agent says it does not match or asks again, apologize and give your correct date of birth, 2000-01-07. Once the agent confirms it is done, say thank you and goodbye.",
+  "id": "booking-00005",
+  "lookalike": null,
+  "misremembered_date": null,
+  "misstated_dob": "2000-01-05",
+  "names_provider": true,
+  "opening_line": "Hi, I'd like to book a follow-up visit with Dr. Facchinato, please.",
+  "patient": {
+   "dob": "2000-01-07",
+   "family": "Hartwell",
+   "given": "Sawyer",
+   "phone": "+15005550006"
+  },
+  "payer": null,
+  "persona": "rushed",
+  "provenance": [
+   "services/agent/agents/tools_fhir.py::book_appointment",
+   "services/agent/agents/specialists/scheduler.py::book_appointment"
+  ],
+  "provider": {
+   "display": "Dr. Facchinato",
+   "family": "Facchinato",
+   "given": "Jo"
+  },
+  "realism": [
+   "fillers",
+   "off_topic_aside"
+  ],
+  "red_flag": null,
+  "requested_slot": null,
+  "schema_version": 3,
+  "seed": 5,
+  "split": "heldout",
+  "switch_to": null,
+  "tier": 4,
+  "today": "2026-10-07",
+  "urgent": false
+ },
+ "world": {
+  "baseline": {
+   "appointments": {},
+   "n_appointments": 0,
+   "n_coverage": 0,
+   "n_patients": 2,
+   "n_tasks": 0,
+   "n_transfers": 0
+  },
+  "bystander_patient_id": null,
+  "clinic_tz": "America/Los_Angeles",
+  "duplicate_patient_id": "09a7ed30-9934-437a-939f-ba7025c9b048",
+  "organization_id": "5a3570a5-5d16-4b01-9d7c-f34d2493bdaf",
+  "patient_id": "9c1f1df9-2354-4248-b7e9-e143ba07475e",
+  "practitioners": {
+   "Dr. Campos": {
+    "display": "Dr. Campos",
+    "id": "609392b2-cc9a-4836-a7ef-19c091d87062"
+   },
+   "Dr. Eddins": {
+    "display": "Dr. Eddins",
+    "id": "1f583f81-7265-4c7b-9e0e-3f842266f0c1"
+   },
+   "Dr. Facchinato": {
+    "display": "Dr. Facchinato",
+    "id": "e0899427-1d23-4b1f-97ad-597209c4cf57"
+   }
+  },
+  "requested_bystander_id": null,
+  "requested_start": null,
+  "target_appointment_id": null,
+  "today": "2026-10-07",
+  "urgent_window_days": 2
+ }
+}

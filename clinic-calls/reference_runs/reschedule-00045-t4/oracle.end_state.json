@@ -1,0 +1,351 @@
+{
+ "compartment": "Organization/179bafb5-94ad-4e03-9056-06ac61b1ae32",
+ "entry": [
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "1980-01-01",
+    "id": "767075b1-bb46-419a-84ab-363f0e197766",
+    "managingOrganization": {
+     "reference": "Organization/179bafb5-94ad-4e03-9056-06ac61b1ae32"
+    },
+    "name": [
+     {
+      "family": "Booked1",
+      "given": [
+       "Bystander"
+      ],
+      "use": "official"
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005559901"
+     },
+     {
+      "system": "email",
+      "value": "bystander1@example.com"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "1980-01-01",
+    "id": "abe34abf-56d2-4ec7-a6c6-f7f68921ff10",
+    "managingOrganization": {
+     "reference": "Organization/179bafb5-94ad-4e03-9056-06ac61b1ae32"
+    },
+    "name": [
+     {
+      "family": "Booked2",
+      "given": [
+       "Bystander"
+      ],
+      "use": "official"
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005559902"
+     },
+     {
+      "system": "email",
+      "value": "bystander2@example.com"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "1951-11-27",
+    "id": "e54bf070-71ab-4c5c-b6b4-1ae95405d8ca",
+    "managingOrganization": {
+     "reference": "Organization/179bafb5-94ad-4e03-9056-06ac61b1ae32"
+    },
+    "name": [
+     {
+      "family": "Brightwater",
+      "given": [
+       "Logan"
+      ],
+      "use": "official"
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005550004"
+     },
+     {
+      "system": "email",
+      "value": "khernandez@example.com"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/179bafb5-94ad-4e03-9056-06ac61b1ae32"
+      }
+     }
+    ],
+    "id": "58e640ad-4553-49d3-90bb-c1b9959515f6",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1296012973"
+     }
+    ],
+    "name": [
+     {
+      "family": "Facchinato",
+      "given": [
+       "Jo"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/179bafb5-94ad-4e03-9056-06ac61b1ae32"
+      }
+     }
+    ],
+    "id": "6e1355ae-227f-4551-8afb-c5e7629f663e",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1946697026"
+     }
+    ],
+    "name": [
+     {
+      "family": "Campos",
+      "given": [
+       "Ana"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/179bafb5-94ad-4e03-9056-06ac61b1ae32"
+      }
+     }
+    ],
+    "id": "ee3dc2a5-ae9f-4158-8576-ccc3bd6162f3",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1715046764"
+     }
+    ],
+    "name": [
+     {
+      "family": "Eddins",
+      "given": [
+       "Robin"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "description": "Follow-up",
+    "end": "2026-10-08T08:45:00-07:00",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/179bafb5-94ad-4e03-9056-06ac61b1ae32"
+      }
+     }
+    ],
+    "id": "1632dc8e-6d0c-40ee-b328-93242ec93952",
+    "participant": [
+     {
+      "actor": {
+       "display": "Logan Brightwater",
+       "reference": "Patient/e54bf070-71ab-4c5c-b6b4-1ae95405d8ca"
+      },
+      "status": "accepted"
+     },
+     {
+      "actor": {
+       "display": "Dr. Facchinato",
+       "reference": "Practitioner/ee3dc2a5-ae9f-4158-8576-ccc3bd6162f3"
+      },
+      "status": "accepted"
+     }
+    ],
+    "resourceType": "Appointment",
+    "start": "2026-10-08T08:30:00-07:00",
+    "status": "booked"
+   }
+  },
+  {
+   "resource": {
+    "description": "Follow-up",
+    "end": "2026-10-08T08:15:00-07:00",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/179bafb5-94ad-4e03-9056-06ac61b1ae32"
+      }
+     }
+    ],
+    "id": "79150280-f693-4283-85f6-67dd2da34ebe",
+    "participant": [
+     {
+      "actor": {
+       "display": "Bystander Booked1",
+       "reference": "Patient/767075b1-bb46-419a-84ab-363f0e197766"
+      },
+      "status": "accepted"
+     },
+     {
+      "actor": {
+       "display": "Robin Eddins",
+       "reference": "Practitioner/ee3dc2a5-ae9f-4158-8576-ccc3bd6162f3"
+      },
+      "status": "accepted"
+     }
+    ],
+    "resourceType": "Appointment",
+    "start": "2026-10-08T08:00:00-07:00",
+    "status": "booked"
+   }
+  },
+  {
+   "resource": {
+    "description": "Follow-up",
+    "end": "2026-10-08T08:30:00-07:00",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/179bafb5-94ad-4e03-9056-06ac61b1ae32"
+      }
+     }
+    ],
+    "id": "b79f295b-2d81-4727-9b34-65c17a00a962",
+    "participant": [
+     {
+      "actor": {
+       "display": "Bystander Booked2",
+       "reference": "Patient/abe34abf-56d2-4ec7-a6c6-f7f68921ff10"
+      },
+      "status": "accepted"
+     },
+     {
+      "actor": {
+       "display": "Robin Eddins",
+       "reference": "Practitioner/ee3dc2a5-ae9f-4158-8576-ccc3bd6162f3"
+      },
+      "status": "accepted"
+     }
+    ],
+    "resourceType": "Appointment",
+    "start": "2026-10-08T08:15:00-07:00",
+    "status": "booked"
+   }
+  }
+ ],
+ "resourceType": "Bundle",
+ "total": 9,
+ "type": "collection",
+ "types": [
+  "Patient",
+  "Practitioner",
+  "PractitionerRole",
+  "Organization",
+  "Appointment",
+  "Encounter",
+  "EpisodeOfCare",
+  "ClinicalImpression",
+  "Observation",
+  "Condition",
+  "Procedure",
+  "CarePlan",
+  "Coverage",
+  "Claim",
+  "ClaimResponse",
+  "Communication",
+  "CommunicationRequest",
+  "Consent",
+  "DocumentReference",
+  "Task"
+ ]
+}

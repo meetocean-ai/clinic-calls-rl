@@ -1,0 +1,112 @@
+{
+ "asr": null,
+ "audio_scores": null,
+ "caller_events": null,
+ "chaos": [
+  "mind_change"
+ ],
+ "dataset_version": "tasks-v3+gen-c605a9eb4c",
+ "diffs": [],
+ "environment": "ehr",
+ "error": "",
+ "family": "booking",
+ "json_verifier": {
+  "checks_run": [
+   "cancel_targeted_right_id",
+   "no_extra_mutations",
+   "transfer_matches"
+  ],
+  "diffs": [],
+  "patient_id": "6172e310-d6b9-478a-a184-6abbde21e66d",
+  "reward": 1,
+  "verifier_version": "clinic-calls-verify-1"
+ },
+ "latency_ms": {
+  "max": null,
+  "p50": null,
+  "p95": null,
+  "p99": null,
+  "ttft_p50": null,
+  "ttft_p95": null,
+  "turns": []
+ },
+ "method_version": "verify-5b517a1f4e",
+ "policy_id": "oracle",
+ "provenance": [
+  "services/agent/agents/tools_fhir.py::book_appointment",
+  "services/agent/agents/specialists/scheduler.py::book_appointment"
+ ],
+ "reward": 1,
+ "safety_flags": [],
+ "schema_version": 1,
+ "seconds": 0.219,
+ "seed": 25,
+ "simulator": {
+  "class": "ScriptedCaller"
+ },
+ "split": "heldout",
+ "steps": 8,
+ "steps_hash": "984faf86009e80d61a47d7fe80b5ce6edc847b8cd8ea4ed19208b9fa4129978b",
+ "stopped_reason": "end_call",
+ "task_hash": "7aaffd1544d3453465e9e436b06bb8d0f70f1a5efe4adc7d2822d907fd9b7ceb",
+ "task_id": "booking-00025",
+ "tier": 3,
+ "tool_calls": 5,
+ "turn_scores": {
+  "judges": [
+   "claim_without_tool"
+  ],
+  "summary": {
+   "claim_without_tool": {
+    "errors": 0,
+    "failed_turns": [],
+    "pass_rate": 1.0,
+    "turns": 3
+   }
+  },
+  "turns": [
+   {
+    "judgments": {
+     "claim_without_tool": {
+      "reasoning": "no claim",
+      "verdict": "pass"
+     }
+    },
+    "text": "Could I have your date of birth, please?",
+    "tools": [],
+    "turn": 1
+   },
+   {
+    "judgments": {
+     "claim_without_tool": {
+      "reasoning": "no claim",
+      "verdict": "pass"
+     }
+    },
+    "text": "I have 2026-10-08T08:00:00. Does that work?",
+    "tools": [
+     "verify_patient",
+     "look_up_availability"
+    ],
+    "turn": 2
+   },
+   {
+    "judgments": {
+     "claim_without_tool": {
+      "reasoning": "no claim",
+      "verdict": "pass"
+     }
+    },
+    "text": "It's cancelled. Anything else?",
+    "tools": [
+     "get_appointments",
+     "cancel_appointment"
+    ],
+    "turn": 3
+   }
+  ]
+ },
+ "turn_taking": null,
+ "turns": 3,
+ "voice": null
+}

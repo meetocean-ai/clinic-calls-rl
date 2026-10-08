@@ -1,0 +1,318 @@
+{
+ "bundle": {
+  "compartment": "Organization/3dff79ba-3531-49e6-bcd5-f44894d79447",
+  "entry": [
+   {
+    "resource": {
+     "active": true,
+     "birthDate": "1956-03-28",
+     "id": "5ea2bcb3-c5ef-40ae-9145-68b6d173ca16",
+     "managingOrganization": {
+      "reference": "Organization/3dff79ba-3531-49e6-bcd5-f44894d79447"
+     },
+     "name": [
+      {
+       "family": "Ravenscroft",
+       "given": [
+        "Taylor"
+       ],
+       "use": "official"
+      }
+     ],
+     "resourceType": "Patient",
+     "telecom": [
+      {
+       "system": "phone",
+       "use": "mobile",
+       "value": "+15005550011"
+      },
+      {
+       "system": "email",
+       "value": "jessica30@example.net"
+      }
+     ]
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/3dff79ba-3531-49e6-bcd5-f44894d79447"
+       }
+      }
+     ],
+     "id": "5c37b7db-4e15-433a-8456-8a9a9e39f7b5",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1946697026"
+      }
+     ],
+     "name": [
+      {
+       "family": "Campos",
+       "given": [
+        "Ana"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/3dff79ba-3531-49e6-bcd5-f44894d79447"
+       }
+      }
+     ],
+     "id": "5ebd3850-4a5e-4ab3-9bb5-d07ab964657e",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1715046764"
+      }
+     ],
+     "name": [
+      {
+       "family": "Eddins",
+       "given": [
+        "Robin"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/3dff79ba-3531-49e6-bcd5-f44894d79447"
+       }
+      }
+     ],
+     "id": "b57e475d-6b83-487a-ad96-1258f9296c12",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1296012973"
+      }
+     ],
+     "name": [
+      {
+       "family": "Facchinato",
+       "given": [
+        "Jo"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "description": "Follow-up",
+     "end": "2026-10-16T14:30:00-07:00",
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/3dff79ba-3531-49e6-bcd5-f44894d79447"
+       }
+      }
+     ],
+     "id": "cef64048-5b03-4458-acdf-f44ff57e953c",
+     "participant": [
+      {
+       "actor": {
+        "display": "Taylor Ravenscroft",
+        "reference": "Patient/5ea2bcb3-c5ef-40ae-9145-68b6d173ca16"
+       },
+       "status": "accepted"
+      },
+      {
+       "actor": {
+        "display": "Dr. Campos",
+        "reference": "Practitioner/5c37b7db-4e15-433a-8456-8a9a9e39f7b5"
+       },
+       "status": "accepted"
+      }
+     ],
+     "resourceType": "Appointment",
+     "start": "2026-10-16T14:00:00-07:00",
+     "status": "booked"
+    }
+   }
+  ],
+  "resourceType": "Bundle",
+  "total": 5,
+  "type": "collection",
+  "types": [
+   "Patient",
+   "Practitioner",
+   "PractitionerRole",
+   "Organization",
+   "Appointment",
+   "Encounter",
+   "EpisodeOfCare",
+   "ClinicalImpression",
+   "Observation",
+   "Condition",
+   "Procedure",
+   "CarePlan",
+   "Coverage",
+   "Claim",
+   "ClaimResponse",
+   "Communication",
+   "CommunicationRequest",
+   "Consent",
+   "DocumentReference",
+   "Task"
+  ]
+ },
+ "schema_version": 1,
+ "task": {
+  "appointment": {
+   "date": "2026-10-16",
+   "days_ahead": 9,
+   "local_hour": 14
+  },
+  "caller_verifiable": true,
+  "chaos": [
+   "insurance_detour",
+   "wrong_day_memory"
+  ],
+  "claimed_dob": "1956-03-28",
+  "cooperation": 4,
+  "detour_question": "Is there a balance on my account I should know about?",
+  "duplicate": null,
+  "expect_transfer": false,
+  "family": "reschedule",
+  "goal": "Move your appointment with Dr. Campos on Friday, October 16 at 2 PM to a different day. Any other day works. You BELIEVE the visit is on Monday, October 19 at 2 PM and say so \u2014 it is actually on Friday, October 16 at 2 PM. When the agent cannot find a visit on that day or tells you the real date, say 'oh, you're right' and go on with the real one. Do NOT let the agent book a brand-new visit. Right after the agent first offers a time or asks what day works, ask: \"Is there a balance on my account I should know about?\" Whatever the answer is \u2014 even that billing will follow up, or that the agent cannot say \u2014 reply okay and go straight back to the scheduling; do not drop it. Accept the FIRST alternative time the agent offers. Once the agent confirms it is done, say thank you and goodbye.",
+  "id": "reschedule-00010",
+  "lookalike": null,
+  "misremembered_date": "2026-10-19",
+  "misstated_dob": null,
+  "names_provider": false,
+  "opening_line": "Hi, I need to move my appointment on Monday, October 19 at 2 PM to another day.",
+  "patient": {
+   "dob": "1956-03-28",
+   "family": "Ravenscroft",
+   "given": "Taylor",
+   "phone": "+15005550011"
+  },
+  "payer": null,
+  "persona": "confused",
+  "provenance": [
+   "services/agent/agents/tools_fhir.py::reschedule_appointment"
+  ],
+  "provider": {
+   "display": "Dr. Campos",
+   "family": "Campos",
+   "given": "Ana"
+  },
+  "realism": [
+   "fillers",
+   "limited_english",
+   "off_topic_aside"
+  ],
+  "red_flag": null,
+  "requested_slot": null,
+  "schema_version": 3,
+  "seed": 10,
+  "split": "heldout",
+  "switch_to": null,
+  "tier": 4,
+  "today": "2026-10-07",
+  "urgent": false
+ },
+ "world": {
+  "baseline": {
+   "appointments": {
+    "cef64048-5b03-4458-acdf-f44ff57e953c": {
+     "start": "2026-10-16T14:00:00-07:00",
+     "status": "booked"
+    }
+   },
+   "n_appointments": 1,
+   "n_coverage": 0,
+   "n_patients": 1,
+   "n_tasks": 0,
+   "n_transfers": 0
+  },
+  "bystander_patient_id": null,
+  "clinic_tz": "America/Los_Angeles",
+  "duplicate_patient_id": null,
+  "organization_id": "3dff79ba-3531-49e6-bcd5-f44894d79447",
+  "patient_id": "5ea2bcb3-c5ef-40ae-9145-68b6d173ca16",
+  "practitioners": {
+   "Dr. Campos": {
+    "display": "Dr. Campos",
+    "id": "5c37b7db-4e15-433a-8456-8a9a9e39f7b5"
+   },
+   "Dr. Eddins": {
+    "display": "Dr. Eddins",
+    "id": "5ebd3850-4a5e-4ab3-9bb5-d07ab964657e"
+   },
+   "Dr. Facchinato": {
+    "display": "Dr. Facchinato",
+    "id": "b57e475d-6b83-487a-ad96-1258f9296c12"
+   }
+  },
+  "requested_bystander_id": null,
+  "requested_start": null,
+  "target_appointment_id": "cef64048-5b03-4458-acdf-f44ff57e953c",
+  "today": "2026-10-07",
+  "urgent_window_days": 2
+ }
+}

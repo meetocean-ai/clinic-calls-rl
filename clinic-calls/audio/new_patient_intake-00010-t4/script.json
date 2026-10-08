@@ -1,0 +1,82 @@
+{
+ "key": "new_patient_intake-00010-t4",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 6.2,
+   "spoken": "So I\u2014 hi, I'm a new patient and, er, I'd like to, um, book a first visit with Dr. Eddins.",
+   "text": "Hi, I'm a new patient and I'd like to book a first visit with Dr. Eddins."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob_misstated",
+   "sample_rate": 8000,
+   "seconds": 3.3,
+   "spoken": "It's\u2014 it's June 11, 1953.",
+   "text": "It's 1953-06-11."
+  },
+  {
+   "file": "02.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.5,
+   "spoken": "It's\u2014 it's June 14, 1953.",
+   "text": "It's 1953-06-14."
+  },
+  {
+   "file": "03.wav",
+   "kind": "name",
+   "sample_rate": 8000,
+   "seconds": 3.65,
+   "spoken": "So I\u2014 my name, um, is, er, Logan Stonebridge.",
+   "text": "My name is Logan Stonebridge."
+  },
+  {
+   "file": "04.wav",
+   "kind": "name_and_dob",
+   "sample_rate": 8000,
+   "seconds": 7.025,
+   "spoken": "So I\u2014 my name is Logan Stonebridge, and, er, my date of, um, birth is June 14, 1953.",
+   "text": "My name is Logan Stonebridge, and my date of birth is 1953-06-14."
+  },
+  {
+   "file": "05.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.9,
+   "spoken": "So I\u2014 yes,, um, that, er, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "06.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 3.0,
+   "spoken": "So I\u2014 thank, um, you,, er, goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "new_patient_intake-00010",
+ "tier": 4,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.02,
+   "gain_wobble_db": 3.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 10,
+   "snr_db": 15.0
+  },
+  "disfluency": {
+   "false_start": true,
+   "fillers": 2,
+   "seed": 10,
+   "self_correction": false
+  },
+  "tts": "kokoro",
+  "voice": "bf_isabella"
+ }
+}

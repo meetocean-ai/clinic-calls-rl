@@ -1,0 +1,74 @@
+{
+ "key": "new_patient_intake-00050-t1",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 5.05,
+   "spoken": "Hi, I'm a new patient and I'd like to book a first visit with Dr. Campos.",
+   "text": "Hi, I'm a new patient and I'd like to book a first visit with Dr. Campos."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.15,
+   "spoken": "It's July 13, 1956.",
+   "text": "It's 1956-07-13."
+  },
+  {
+   "file": "02.wav",
+   "kind": "name",
+   "sample_rate": 8000,
+   "seconds": 2.225,
+   "spoken": "My name is Finley Greenhollow.",
+   "text": "My name is Finley Greenhollow."
+  },
+  {
+   "file": "03.wav",
+   "kind": "name_and_dob",
+   "sample_rate": 8000,
+   "seconds": 6.05,
+   "spoken": "My name is Finley Greenhollow, and my date of birth is July 13, 1956.",
+   "text": "My name is Finley Greenhollow, and my date of birth is 1956-07-13."
+  },
+  {
+   "file": "04.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 1.775,
+   "spoken": "Yes, that works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "05.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 1.775,
+   "spoken": "Thank you, goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "new_patient_intake-00050",
+ "tier": 1,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.0,
+   "gain_wobble_db": 0.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 50,
+   "snr_db": null
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 0,
+   "seed": 50,
+   "self_correction": false
+  },
+  "tts": "kokoro",
+  "voice": "af_heart"
+ }
+}

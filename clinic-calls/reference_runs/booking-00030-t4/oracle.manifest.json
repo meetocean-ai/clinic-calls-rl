@@ -1,0 +1,126 @@
+{
+ "asr": null,
+ "audio_scores": null,
+ "caller_events": null,
+ "chaos": [
+  "dob_corrected",
+  "exact_time_unavailable"
+ ],
+ "dataset_version": "tasks-v3+gen-c605a9eb4c",
+ "diffs": [],
+ "environment": "ehr",
+ "error": "",
+ "family": "booking",
+ "json_verifier": {
+  "checks_run": [
+   "booking_matches",
+   "booking_not_at_requested_time",
+   "no_extra_mutations",
+   "transfer_matches"
+  ],
+  "diffs": [],
+  "patient_id": "e7c3a0b1-6af6-4302-8ba6-c5eca7ff13bb",
+  "reward": 1,
+  "verifier_version": "clinic-calls-verify-1"
+ },
+ "latency_ms": {
+  "max": null,
+  "p50": null,
+  "p95": null,
+  "p99": null,
+  "ttft_p50": null,
+  "ttft_p95": null,
+  "turns": []
+ },
+ "method_version": "verify-5b517a1f4e",
+ "policy_id": "oracle",
+ "provenance": [
+  "services/agent/agents/tools_fhir.py::book_appointment",
+  "services/agent/agents/specialists/scheduler.py::book_appointment"
+ ],
+ "reward": 1,
+ "safety_flags": [],
+ "schema_version": 1,
+ "seconds": 0.185,
+ "seed": 30,
+ "simulator": {
+  "class": "ScriptedCaller"
+ },
+ "split": "heldout",
+ "steps": 9,
+ "steps_hash": "02c5acdc8587def6cc29d714dea326e8a9798615db18de5584a78acee929ee8d",
+ "stopped_reason": "end_call",
+ "task_hash": "b8c78391e7ffcb45baf84f4712543a2e4dacecf816da05cc1226c9f22d8b1be1",
+ "task_id": "booking-00030",
+ "tier": 4,
+ "tool_calls": 5,
+ "turn_scores": {
+  "judges": [
+   "claim_without_tool"
+  ],
+  "summary": {
+   "claim_without_tool": {
+    "errors": 0,
+    "failed_turns": [],
+    "pass_rate": 1.0,
+    "turns": 4
+   }
+  },
+  "turns": [
+   {
+    "judgments": {
+     "claim_without_tool": {
+      "reasoning": "no claim",
+      "verdict": "pass"
+     }
+    },
+    "text": "Could I have your date of birth, please?",
+    "tools": [],
+    "turn": 1
+   },
+   {
+    "judgments": {
+     "claim_without_tool": {
+      "reasoning": "no claim",
+      "verdict": "pass"
+     }
+    },
+    "text": "Could I have your date of birth, please?",
+    "tools": [
+     "verify_patient"
+    ],
+    "turn": 2
+   },
+   {
+    "judgments": {
+     "claim_without_tool": {
+      "reasoning": "no claim",
+      "verdict": "pass"
+     }
+    },
+    "text": "I have 2026-10-09T13:45:00. Does that work?",
+    "tools": [
+     "verify_patient",
+     "look_up_availability"
+    ],
+    "turn": 3
+   },
+   {
+    "judgments": {
+     "claim_without_tool": {
+      "reasoning": "claim backed by an earlier successful write tool",
+      "verdict": "pass"
+     }
+    },
+    "text": "You're all set. Anything else?",
+    "tools": [
+     "confirm_appointment"
+    ],
+    "turn": 4
+   }
+  ]
+ },
+ "turn_taking": null,
+ "turns": 4,
+ "voice": null
+}

@@ -1,0 +1,260 @@
+{
+ "compartment": "Organization/dc1ae7b2-41e3-4745-926d-c9012425ac5f",
+ "entry": [
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "1985-07-09",
+    "id": "33ebab88-043e-4b23-b9d2-ab7652562139",
+    "managingOrganization": {
+     "reference": "Organization/dc1ae7b2-41e3-4745-926d-c9012425ac5f"
+    },
+    "name": [
+     {
+      "family": "Ironwood",
+      "given": [
+       "Jordan"
+      ],
+      "use": "official"
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005550013"
+     },
+     {
+      "system": "email",
+      "value": "austin65@example.net"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "1979-04-14",
+    "id": "8c6acd78-97df-4732-919b-5f0c724f3375",
+    "managingOrganization": {
+     "reference": "Organization/dc1ae7b2-41e3-4745-926d-c9012425ac5f"
+    },
+    "name": [
+     {
+      "family": "Ironwood",
+      "given": [
+       "Blake"
+      ],
+      "use": "official"
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005550013"
+     },
+     {
+      "system": "email",
+      "value": "dsmith@example.org"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/dc1ae7b2-41e3-4745-926d-c9012425ac5f"
+      }
+     }
+    ],
+    "id": "6a695495-bd60-487a-a7f2-9f55032ff5dc",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1296012973"
+     }
+    ],
+    "name": [
+     {
+      "family": "Facchinato",
+      "given": [
+       "Jo"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/dc1ae7b2-41e3-4745-926d-c9012425ac5f"
+      }
+     }
+    ],
+    "id": "978d1727-7cd3-4bf2-bfe2-5135b37a406c",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1946697026"
+     }
+    ],
+    "name": [
+     {
+      "family": "Campos",
+      "given": [
+       "Ana"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/dc1ae7b2-41e3-4745-926d-c9012425ac5f"
+      }
+     }
+    ],
+    "id": "cc6dcd6c-8431-409f-97d2-48d74e5f7ab9",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1715046764"
+     }
+    ],
+    "name": [
+     {
+      "family": "Eddins",
+      "given": [
+       "Robin"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "cancelationReason": {
+     "coding": [
+      {
+       "display": "patient request",
+       "system": "http://terminology.hl7.org/CodeSystem/appointment-cancellation-reason"
+      }
+     ]
+    },
+    "description": "Follow-up",
+    "end": "2026-10-12T14:30:00-07:00",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/dc1ae7b2-41e3-4745-926d-c9012425ac5f"
+      }
+     }
+    ],
+    "id": "b717c6fd-3c62-496b-bd8a-d5f88b96f5cc",
+    "participant": [
+     {
+      "actor": {
+       "display": "Jordan Ironwood",
+       "reference": "Patient/33ebab88-043e-4b23-b9d2-ab7652562139"
+      },
+      "status": "accepted"
+     },
+     {
+      "actor": {
+       "display": "Dr. Facchinato",
+       "reference": "Practitioner/6a695495-bd60-487a-a7f2-9f55032ff5dc"
+      },
+      "status": "accepted"
+     }
+    ],
+    "resourceType": "Appointment",
+    "start": "2026-10-12T14:00:00-07:00",
+    "status": "cancelled"
+   }
+  }
+ ],
+ "resourceType": "Bundle",
+ "total": 6,
+ "type": "collection",
+ "types": [
+  "Patient",
+  "Practitioner",
+  "PractitionerRole",
+  "Organization",
+  "Appointment",
+  "Encounter",
+  "EpisodeOfCare",
+  "ClinicalImpression",
+  "Observation",
+  "Condition",
+  "Procedure",
+  "CarePlan",
+  "Coverage",
+  "Claim",
+  "ClaimResponse",
+  "Communication",
+  "CommunicationRequest",
+  "Consent",
+  "DocumentReference",
+  "Task"
+ ]
+}

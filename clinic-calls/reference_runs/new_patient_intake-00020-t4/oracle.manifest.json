@@ -1,0 +1,126 @@
+{
+ "asr": null,
+ "audio_scores": null,
+ "caller_events": null,
+ "chaos": [
+  "dob_corrected",
+  "no_availability",
+  "shared_phone"
+ ],
+ "dataset_version": "tasks-v3+gen-c605a9eb4c",
+ "diffs": [],
+ "environment": "ehr",
+ "error": "",
+ "family": "new_patient_intake",
+ "json_verifier": {
+  "checks_run": [
+   "patient_created_once",
+   "waitlisted_not_booked",
+   "no_extra_mutations",
+   "transfer_matches"
+  ],
+  "diffs": [],
+  "patient_id": "0ebd4866-b105-484f-831f-f8465df81cce",
+  "reward": 1,
+  "verifier_version": "clinic-calls-verify-1"
+ },
+ "latency_ms": {
+  "max": null,
+  "p50": null,
+  "p95": null,
+  "p99": null,
+  "ttft_p50": null,
+  "ttft_p95": null,
+  "turns": []
+ },
+ "method_version": "verify-5b517a1f4e",
+ "policy_id": "oracle",
+ "provenance": [
+  "services/agent/agents/specialists/reception.py::register_new_patient",
+  "services/agent/agents/tools_patient.py::register_patient_in_org",
+  "services/agent/agents/tools_fhir.py::book_appointment"
+ ],
+ "reward": 1,
+ "safety_flags": [],
+ "schema_version": 1,
+ "seconds": 0.344,
+ "seed": 20,
+ "simulator": {
+  "class": "ScriptedCaller"
+ },
+ "split": "heldout",
+ "steps": 8,
+ "steps_hash": "b38f3889c224e8113fc783c21d1f8124e1ff2980333bbd9cb3aa2ddecb7f6dc9",
+ "stopped_reason": "end_call",
+ "task_hash": "19936bfe8cf5b73ea67180b77d5d2b0dd174193672aa57faee5fb75a618e9a8a",
+ "task_id": "new_patient_intake-00020",
+ "tier": 4,
+ "tool_calls": 4,
+ "turn_scores": {
+  "judges": [
+   "claim_without_tool"
+  ],
+  "summary": {
+   "claim_without_tool": {
+    "errors": 0,
+    "failed_turns": [],
+    "pass_rate": 1.0,
+    "turns": 4
+   }
+  },
+  "turns": [
+   {
+    "judgments": {
+     "claim_without_tool": {
+      "reasoning": "no claim",
+      "verdict": "pass"
+     }
+    },
+    "text": "Welcome! Could I have your full name and date of birth, please?",
+    "tools": [],
+    "turn": 1
+   },
+   {
+    "judgments": {
+     "claim_without_tool": {
+      "reasoning": "no claim",
+      "verdict": "pass"
+     }
+    },
+    "text": "Thank you. Let me confirm your date of birth \u2014 could you repeat it?",
+    "tools": [],
+    "turn": 2
+   },
+   {
+    "judgments": {
+     "claim_without_tool": {
+      "reasoning": "no claim",
+      "verdict": "pass"
+     }
+    },
+    "text": "There is nothing open with that provider. Shall I put you on the waitlist?",
+    "tools": [
+     "create_patient",
+     "look_up_availability"
+    ],
+    "turn": 3
+   },
+   {
+    "judgments": {
+     "claim_without_tool": {
+      "reasoning": "no claim",
+      "verdict": "pass"
+     }
+    },
+    "text": "You're on the waitlist. Anything else?",
+    "tools": [
+     "enroll_in_waitlist"
+    ],
+    "turn": 4
+   }
+  ]
+ },
+ "turn_taking": null,
+ "turns": 4,
+ "voice": null
+}

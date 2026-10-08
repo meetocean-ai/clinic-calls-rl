@@ -1,0 +1,66 @@
+{
+ "key": "booking-00020-t4",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 5.975,
+   "spoken": "Hi,, let me think, I'd, er, like to book a foll\u2014 sorry, I mean follow-up visit, please.",
+   "text": "Hi, I'd like to book a follow-up visit, please."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.45,
+   "spoken": "It's November 1, 1989.",
+   "text": "It's 1989-11-01."
+  },
+  {
+   "file": "02.wav",
+   "kind": "detour",
+   "sample_rate": 8000,
+   "seconds": 6.275,
+   "spoken": "Is, let me think, there, er, a bala\u2014 sorry, I mean balance on my account I should know about?",
+   "text": "Is there a balance on my account I should know about?"
+  },
+  {
+   "file": "03.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.85,
+   "spoken": "Yes,, er, that, let me think, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "04.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 4.175,
+   "spoken": "Thank, er, you,, let me think, good\u2014 sorry, I mean goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "booking-00020",
+ "tier": 4,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.05,
+   "gain_wobble_db": 6.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 20,
+   "snr_db": 15.0
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 2,
+   "seed": 20,
+   "self_correction": true
+  },
+  "tts": "kokoro",
+  "voice": "am_michael"
+ }
+}

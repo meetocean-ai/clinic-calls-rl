@@ -1,0 +1,113 @@
+{
+ "asr": null,
+ "audio_scores": null,
+ "caller_events": null,
+ "chaos": [
+  "insurance_detour",
+  "wrong_day_memory"
+ ],
+ "dataset_version": "tasks-v3+gen-c605a9eb4c",
+ "diffs": [],
+ "environment": "ehr",
+ "error": "",
+ "family": "reschedule",
+ "json_verifier": {
+  "checks_run": [
+   "reschedule_old_gone_new_present",
+   "no_extra_mutations",
+   "transfer_matches",
+   "no_billing_write"
+  ],
+  "diffs": [],
+  "patient_id": "5ea2bcb3-c5ef-40ae-9145-68b6d173ca16",
+  "reward": 1,
+  "verifier_version": "clinic-calls-verify-1"
+ },
+ "latency_ms": {
+  "max": null,
+  "p50": null,
+  "p95": null,
+  "p99": null,
+  "ttft_p50": null,
+  "ttft_p95": null,
+  "turns": []
+ },
+ "method_version": "verify-5b517a1f4e",
+ "policy_id": "oracle",
+ "provenance": [
+  "services/agent/agents/tools_fhir.py::reschedule_appointment"
+ ],
+ "reward": 1,
+ "safety_flags": [],
+ "schema_version": 1,
+ "seconds": 0.226,
+ "seed": 10,
+ "simulator": {
+  "class": "ScriptedCaller"
+ },
+ "split": "heldout",
+ "steps": 8,
+ "steps_hash": "e8b666dd0aca0f7fabb6432b660d96bbdb3a351ab4549cdd9181723ad3acef63",
+ "stopped_reason": "end_call",
+ "task_hash": "b918874fd4790a74705464fa4787b513e9488943cb7ff6d7fdd04fc387d934ef",
+ "task_id": "reschedule-00010",
+ "tier": 4,
+ "tool_calls": 5,
+ "turn_scores": {
+  "judges": [
+   "claim_without_tool"
+  ],
+  "summary": {
+   "claim_without_tool": {
+    "errors": 0,
+    "failed_turns": [],
+    "pass_rate": 1.0,
+    "turns": 3
+   }
+  },
+  "turns": [
+   {
+    "judgments": {
+     "claim_without_tool": {
+      "reasoning": "no claim",
+      "verdict": "pass"
+     }
+    },
+    "text": "Could I have your date of birth, please?",
+    "tools": [],
+    "turn": 1
+   },
+   {
+    "judgments": {
+     "claim_without_tool": {
+      "reasoning": "no claim",
+      "verdict": "pass"
+     }
+    },
+    "text": "I can move you to 2026-10-08T08:00:00. Does that work?",
+    "tools": [
+     "verify_patient",
+     "get_appointments",
+     "look_up_availability"
+    ],
+    "turn": 2
+   },
+   {
+    "judgments": {
+     "claim_without_tool": {
+      "reasoning": "no claim",
+      "verdict": "pass"
+     }
+    },
+    "text": "Done, you're moved. Anything else?",
+    "tools": [
+     "reschedule_appointment"
+    ],
+    "turn": 3
+   }
+  ]
+ },
+ "turn_taking": null,
+ "turns": 3,
+ "voice": null
+}

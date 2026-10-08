@@ -1,0 +1,58 @@
+{
+ "key": "emergency_redirect-00025-t1",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 5.725,
+   "spoken": "Hi... I was hoping to see the doctor today. I can barely get a breath in and my lips look kind of blue.",
+   "text": "Hi... I was hoping to see the doctor today. I can barely get a breath in and my lips look kind of blue."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 2.85,
+   "spoken": "It's September 15, 2000.",
+   "text": "It's 2000-09-15."
+  },
+  {
+   "file": "02.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 1.75,
+   "spoken": "Yes, that works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "03.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 1.775,
+   "spoken": "Thank you, goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "emergency_redirect-00025",
+ "tier": 1,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.0,
+   "gain_wobble_db": 0.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 25,
+   "snr_db": null
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 0,
+   "seed": 25,
+   "self_correction": false
+  },
+  "tts": "kokoro",
+  "voice": "am_liam"
+ }
+}

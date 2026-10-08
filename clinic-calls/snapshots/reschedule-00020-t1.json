@@ -1,0 +1,311 @@
+{
+ "bundle": {
+  "compartment": "Organization/64db1217-cf5f-4eb0-80bb-56e436660795",
+  "entry": [
+   {
+    "resource": {
+     "active": true,
+     "birthDate": "1973-06-12",
+     "id": "88cd44dc-6f20-4cd2-bec7-b071bca5c1f3",
+     "managingOrganization": {
+      "reference": "Organization/64db1217-cf5f-4eb0-80bb-56e436660795"
+     },
+     "name": [
+      {
+       "family": "Ravenscroft",
+       "given": [
+        "Morgan"
+       ],
+       "use": "official"
+      }
+     ],
+     "resourceType": "Patient",
+     "telecom": [
+      {
+       "system": "phone",
+       "use": "mobile",
+       "value": "+15005550007"
+      },
+      {
+       "system": "email",
+       "value": "rodrigueznatasha@example.net"
+      }
+     ]
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/64db1217-cf5f-4eb0-80bb-56e436660795"
+       }
+      }
+     ],
+     "id": "2d0eea2d-c620-4405-bf62-93c2657d4f8e",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1946697026"
+      }
+     ],
+     "name": [
+      {
+       "family": "Campos",
+       "given": [
+        "Ana"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/64db1217-cf5f-4eb0-80bb-56e436660795"
+       }
+      }
+     ],
+     "id": "886181eb-add1-4182-bbfe-dea749a9d8de",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1715046764"
+      }
+     ],
+     "name": [
+      {
+       "family": "Eddins",
+       "given": [
+        "Robin"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/64db1217-cf5f-4eb0-80bb-56e436660795"
+       }
+      }
+     ],
+     "id": "93274b08-6616-4604-9ba4-ea2c8e4ca54a",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1296012973"
+      }
+     ],
+     "name": [
+      {
+       "family": "Facchinato",
+       "given": [
+        "Jo"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "description": "Follow-up",
+     "end": "2026-10-14T14:30:00-07:00",
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/64db1217-cf5f-4eb0-80bb-56e436660795"
+       }
+      }
+     ],
+     "id": "99de1dbc-8866-4040-9f8b-0c17b1c53c2a",
+     "participant": [
+      {
+       "actor": {
+        "display": "Morgan Ravenscroft",
+        "reference": "Patient/88cd44dc-6f20-4cd2-bec7-b071bca5c1f3"
+       },
+       "status": "accepted"
+      },
+      {
+       "actor": {
+        "display": "Dr. Eddins",
+        "reference": "Practitioner/886181eb-add1-4182-bbfe-dea749a9d8de"
+       },
+       "status": "accepted"
+      }
+     ],
+     "resourceType": "Appointment",
+     "start": "2026-10-14T14:00:00-07:00",
+     "status": "booked"
+    }
+   }
+  ],
+  "resourceType": "Bundle",
+  "total": 5,
+  "type": "collection",
+  "types": [
+   "Patient",
+   "Practitioner",
+   "PractitionerRole",
+   "Organization",
+   "Appointment",
+   "Encounter",
+   "EpisodeOfCare",
+   "ClinicalImpression",
+   "Observation",
+   "Condition",
+   "Procedure",
+   "CarePlan",
+   "Coverage",
+   "Claim",
+   "ClaimResponse",
+   "Communication",
+   "CommunicationRequest",
+   "Consent",
+   "DocumentReference",
+   "Task"
+  ]
+ },
+ "schema_version": 1,
+ "task": {
+  "appointment": {
+   "date": "2026-10-14",
+   "days_ahead": 7,
+   "local_hour": 14
+  },
+  "caller_verifiable": true,
+  "chaos": [],
+  "claimed_dob": "1973-06-12",
+  "cooperation": 5,
+  "detour_question": null,
+  "duplicate": null,
+  "expect_transfer": false,
+  "family": "reschedule",
+  "goal": "Move your appointment with Dr. Eddins on Wednesday, October 14 at 2 PM to a different day. Any other day works. Accept the FIRST alternative time the agent offers. Once the agent confirms it is done, say thank you and goodbye.",
+  "id": "reschedule-00020",
+  "lookalike": null,
+  "misremembered_date": null,
+  "misstated_dob": null,
+  "names_provider": true,
+  "opening_line": "Hi, I need to move my appointment on Wednesday, October 14 at 2 PM to another day.",
+  "patient": {
+   "dob": "1973-06-12",
+   "family": "Ravenscroft",
+   "given": "Morgan",
+   "phone": "+15005550007"
+  },
+  "payer": null,
+  "persona": "polite",
+  "provenance": [
+   "services/agent/agents/tools_fhir.py::reschedule_appointment"
+  ],
+  "provider": {
+   "display": "Dr. Eddins",
+   "family": "Eddins",
+   "given": "Robin"
+  },
+  "realism": [],
+  "red_flag": null,
+  "requested_slot": null,
+  "schema_version": 3,
+  "seed": 20,
+  "split": "heldout",
+  "switch_to": null,
+  "tier": 1,
+  "today": "2026-10-07",
+  "urgent": false
+ },
+ "world": {
+  "baseline": {
+   "appointments": {
+    "99de1dbc-8866-4040-9f8b-0c17b1c53c2a": {
+     "start": "2026-10-14T14:00:00-07:00",
+     "status": "booked"
+    }
+   },
+   "n_appointments": 1,
+   "n_coverage": 0,
+   "n_patients": 1,
+   "n_tasks": 0,
+   "n_transfers": 0
+  },
+  "bystander_patient_id": null,
+  "clinic_tz": "America/Los_Angeles",
+  "duplicate_patient_id": null,
+  "organization_id": "64db1217-cf5f-4eb0-80bb-56e436660795",
+  "patient_id": "88cd44dc-6f20-4cd2-bec7-b071bca5c1f3",
+  "practitioners": {
+   "Dr. Campos": {
+    "display": "Dr. Campos",
+    "id": "2d0eea2d-c620-4405-bf62-93c2657d4f8e"
+   },
+   "Dr. Eddins": {
+    "display": "Dr. Eddins",
+    "id": "886181eb-add1-4182-bbfe-dea749a9d8de"
+   },
+   "Dr. Facchinato": {
+    "display": "Dr. Facchinato",
+    "id": "93274b08-6616-4604-9ba4-ea2c8e4ca54a"
+   }
+  },
+  "requested_bystander_id": null,
+  "requested_start": null,
+  "target_appointment_id": "99de1dbc-8866-4040-9f8b-0c17b1c53c2a",
+  "today": "2026-10-07",
+  "urgent_window_days": 2
+ }
+}

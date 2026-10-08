@@ -1,0 +1,318 @@
+{
+ "bundle": {
+  "compartment": "Organization/6ff3d21b-9a6e-4e9c-b132-cce376eb4be6",
+  "entry": [
+   {
+    "resource": {
+     "active": true,
+     "birthDate": "1994-07-20",
+     "id": "10f0bf36-6918-46bb-8ea8-ccdf46670092",
+     "managingOrganization": {
+      "reference": "Organization/6ff3d21b-9a6e-4e9c-b132-cce376eb4be6"
+     },
+     "name": [
+      {
+       "family": "Coldbrook",
+       "given": [
+        "Parker"
+       ],
+       "use": "official"
+      }
+     ],
+     "resourceType": "Patient",
+     "telecom": [
+      {
+       "system": "phone",
+       "use": "mobile",
+       "value": "+15005550007"
+      },
+      {
+       "system": "email",
+       "value": "gmartinez@example.org"
+      }
+     ]
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/6ff3d21b-9a6e-4e9c-b132-cce376eb4be6"
+       }
+      }
+     ],
+     "id": "9a9f657b-9519-4699-adbe-385a9f91c130",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1715046764"
+      }
+     ],
+     "name": [
+      {
+       "family": "Eddins",
+       "given": [
+        "Robin"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/6ff3d21b-9a6e-4e9c-b132-cce376eb4be6"
+       }
+      }
+     ],
+     "id": "ca6efec3-7d44-4750-9fc7-7ba86c55219b",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1296012973"
+      }
+     ],
+     "name": [
+      {
+       "family": "Facchinato",
+       "given": [
+        "Jo"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/6ff3d21b-9a6e-4e9c-b132-cce376eb4be6"
+       }
+      }
+     ],
+     "id": "df786fd1-b756-4413-ae92-e9b1ce6357be",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1946697026"
+      }
+     ],
+     "name": [
+      {
+       "family": "Campos",
+       "given": [
+        "Ana"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "description": "Follow-up",
+     "end": "2026-10-19T15:30:00-07:00",
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/6ff3d21b-9a6e-4e9c-b132-cce376eb4be6"
+       }
+      }
+     ],
+     "id": "78f9e585-16f8-41e9-bd59-bed045f15bc2",
+     "participant": [
+      {
+       "actor": {
+        "display": "Parker Coldbrook",
+        "reference": "Patient/10f0bf36-6918-46bb-8ea8-ccdf46670092"
+       },
+       "status": "accepted"
+      },
+      {
+       "actor": {
+        "display": "Dr. Facchinato",
+        "reference": "Practitioner/ca6efec3-7d44-4750-9fc7-7ba86c55219b"
+       },
+       "status": "accepted"
+      }
+     ],
+     "resourceType": "Appointment",
+     "start": "2026-10-19T15:00:00-07:00",
+     "status": "booked"
+    }
+   }
+  ],
+  "resourceType": "Bundle",
+  "total": 5,
+  "type": "collection",
+  "types": [
+   "Patient",
+   "Practitioner",
+   "PractitionerRole",
+   "Organization",
+   "Appointment",
+   "Encounter",
+   "EpisodeOfCare",
+   "ClinicalImpression",
+   "Observation",
+   "Condition",
+   "Procedure",
+   "CarePlan",
+   "Coverage",
+   "Claim",
+   "ClaimResponse",
+   "Communication",
+   "CommunicationRequest",
+   "Consent",
+   "DocumentReference",
+   "Task"
+  ]
+ },
+ "schema_version": 1,
+ "task": {
+  "appointment": {
+   "date": "2026-10-19",
+   "days_ahead": 12,
+   "local_hour": 15
+  },
+  "caller_verifiable": true,
+  "chaos": [
+   "existing_visit",
+   "insurance_detour"
+  ],
+  "claimed_dob": "1994-07-20",
+  "cooperation": 3,
+  "detour_question": "Is there a balance on my account I should know about?",
+  "duplicate": null,
+  "expect_transfer": false,
+  "family": "booking",
+  "goal": "Book an ADDITIONAL follow-up visit with Dr. Facchinato, on top of the one you already have on Monday, October 19 at 3 PM. Say clearly that you want both visits. Any day works. Accept the FIRST time the agent offers. Right after the agent first offers a time or asks what day works, ask: \"Is there a balance on my account I should know about?\" Whatever the answer is \u2014 even that billing will follow up, or that the agent cannot say \u2014 reply okay and go straight back to the scheduling; do not drop it. Once the agent confirms it is done, say thank you and goodbye.",
+  "id": "booking-00020",
+  "lookalike": null,
+  "misremembered_date": null,
+  "misstated_dob": null,
+  "names_provider": true,
+  "opening_line": "Hi, I'd like to book a follow-up visit with Dr. Facchinato, please.",
+  "patient": {
+   "dob": "1994-07-20",
+   "family": "Coldbrook",
+   "given": "Parker",
+   "phone": "+15005550007"
+  },
+  "payer": "Northstar Health HMO",
+  "persona": "skeptical",
+  "provenance": [
+   "services/agent/agents/tools_fhir.py::book_appointment",
+   "services/agent/agents/specialists/scheduler.py::book_appointment"
+  ],
+  "provider": {
+   "display": "Dr. Facchinato",
+   "family": "Facchinato",
+   "given": "Jo"
+  },
+  "realism": [
+   "hidden_until_asked",
+   "self_corrections"
+  ],
+  "red_flag": null,
+  "requested_slot": null,
+  "schema_version": 3,
+  "seed": 20,
+  "split": "heldout",
+  "switch_to": null,
+  "tier": 3,
+  "today": "2026-10-07",
+  "urgent": false
+ },
+ "world": {
+  "baseline": {
+   "appointments": {
+    "78f9e585-16f8-41e9-bd59-bed045f15bc2": {
+     "start": "2026-10-19T15:00:00-07:00",
+     "status": "booked"
+    }
+   },
+   "n_appointments": 1,
+   "n_coverage": 0,
+   "n_patients": 1,
+   "n_tasks": 0,
+   "n_transfers": 0
+  },
+  "bystander_patient_id": null,
+  "clinic_tz": "America/Los_Angeles",
+  "duplicate_patient_id": null,
+  "organization_id": "6ff3d21b-9a6e-4e9c-b132-cce376eb4be6",
+  "patient_id": "10f0bf36-6918-46bb-8ea8-ccdf46670092",
+  "practitioners": {
+   "Dr. Campos": {
+    "display": "Dr. Campos",
+    "id": "df786fd1-b756-4413-ae92-e9b1ce6357be"
+   },
+   "Dr. Eddins": {
+    "display": "Dr. Eddins",
+    "id": "9a9f657b-9519-4699-adbe-385a9f91c130"
+   },
+   "Dr. Facchinato": {
+    "display": "Dr. Facchinato",
+    "id": "ca6efec3-7d44-4750-9fc7-7ba86c55219b"
+   }
+  },
+  "requested_bystander_id": null,
+  "requested_start": null,
+  "target_appointment_id": "78f9e585-16f8-41e9-bd59-bed045f15bc2",
+  "today": "2026-10-07",
+  "urgent_window_days": 2
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "key": "verify_fail_transfer-00025-t4",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 6.075,
+   "spoken": "It's\u2014 hi, can, you know, you tell me when my next appoint\u2014 no, wait, appointment is?, you know, I want to cancel, uh, it.",
+   "text": "Hi, can you tell me when my next appointment is? I want to cancel it."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.45,
+   "spoken": "So I\u2014 it's October 18, 1961.",
+   "text": "It's 1961-10-18."
+  },
+  {
+   "file": "02.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.65,
+   "spoken": "So I\u2014 yes,, um, that, hmm, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "03.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 3.325,
+   "spoken": "So I\u2014 thank, um, you,, hmm, good\u2014 sorry, I mean goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "verify_fail_transfer-00025",
+ "tier": 4,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.05,
+   "gain_wobble_db": 3.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 25,
+   "snr_db": 15.0
+  },
+  "disfluency": {
+   "false_start": true,
+   "fillers": 3,
+   "seed": 25,
+   "self_correction": true
+  },
+  "tts": "kokoro",
+  "voice": "am_liam"
+ }
+}

@@ -1,0 +1,311 @@
+{
+ "bundle": {
+  "compartment": "Organization/5faa694d-f137-4b32-9df2-2d446849100d",
+  "entry": [
+   {
+    "resource": {
+     "active": true,
+     "birthDate": "1971-11-08",
+     "id": "366b2e5b-c9df-4cb3-84e9-cf7236294874",
+     "managingOrganization": {
+      "reference": "Organization/5faa694d-f137-4b32-9df2-2d446849100d"
+     },
+     "name": [
+      {
+       "family": "Dunmore",
+       "given": [
+        "Kendall"
+       ],
+       "use": "official"
+      }
+     ],
+     "resourceType": "Patient",
+     "telecom": [
+      {
+       "system": "phone",
+       "use": "mobile",
+       "value": "+15005550008"
+      },
+      {
+       "system": "email",
+       "value": "reidanthony@example.net"
+      }
+     ]
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/5faa694d-f137-4b32-9df2-2d446849100d"
+       }
+      }
+     ],
+     "id": "06a5efd1-865b-45ee-9d33-6372fd3fa8aa",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1946697026"
+      }
+     ],
+     "name": [
+      {
+       "family": "Campos",
+       "given": [
+        "Ana"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/5faa694d-f137-4b32-9df2-2d446849100d"
+       }
+      }
+     ],
+     "id": "e211a489-007c-4c46-9241-5c63b7d009c2",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1296012973"
+      }
+     ],
+     "name": [
+      {
+       "family": "Facchinato",
+       "given": [
+        "Jo"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/5faa694d-f137-4b32-9df2-2d446849100d"
+       }
+      }
+     ],
+     "id": "ed3b3494-5a62-4756-a777-442a54dc735f",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1715046764"
+      }
+     ],
+     "name": [
+      {
+       "family": "Eddins",
+       "given": [
+        "Robin"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "description": "Follow-up",
+     "end": "2026-10-12T11:30:00-07:00",
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/5faa694d-f137-4b32-9df2-2d446849100d"
+       }
+      }
+     ],
+     "id": "2cd54fd0-efec-44ce-ae72-60a5b703bcee",
+     "participant": [
+      {
+       "actor": {
+        "display": "Kendall Dunmore",
+        "reference": "Patient/366b2e5b-c9df-4cb3-84e9-cf7236294874"
+       },
+       "status": "accepted"
+      },
+      {
+       "actor": {
+        "display": "Dr. Campos",
+        "reference": "Practitioner/06a5efd1-865b-45ee-9d33-6372fd3fa8aa"
+       },
+       "status": "accepted"
+      }
+     ],
+     "resourceType": "Appointment",
+     "start": "2026-10-12T11:00:00-07:00",
+     "status": "booked"
+    }
+   }
+  ],
+  "resourceType": "Bundle",
+  "total": 5,
+  "type": "collection",
+  "types": [
+   "Patient",
+   "Practitioner",
+   "PractitionerRole",
+   "Organization",
+   "Appointment",
+   "Encounter",
+   "EpisodeOfCare",
+   "ClinicalImpression",
+   "Observation",
+   "Condition",
+   "Procedure",
+   "CarePlan",
+   "Coverage",
+   "Claim",
+   "ClaimResponse",
+   "Communication",
+   "CommunicationRequest",
+   "Consent",
+   "DocumentReference",
+   "Task"
+  ]
+ },
+ "schema_version": 1,
+ "task": {
+  "appointment": {
+   "date": "2026-10-12",
+   "days_ahead": 5,
+   "local_hour": 11
+  },
+  "caller_verifiable": true,
+  "chaos": [],
+  "claimed_dob": "1971-11-08",
+  "cooperation": 5,
+  "detour_question": null,
+  "duplicate": null,
+  "expect_transfer": false,
+  "family": "cancel",
+  "goal": "Cancel your appointment with Dr. Campos on Monday, October 12 at 11 AM. You cannot make it. You do NOT want to reschedule; if offered, decline. Once the agent confirms it is done, say thank you and goodbye.",
+  "id": "cancel-00035",
+  "lookalike": null,
+  "misremembered_date": null,
+  "misstated_dob": null,
+  "names_provider": true,
+  "opening_line": "Hi, I need to cancel my appointment on Monday, October 12 at 11 AM.",
+  "patient": {
+   "dob": "1971-11-08",
+   "family": "Dunmore",
+   "given": "Kendall",
+   "phone": "+15005550008"
+  },
+  "payer": null,
+  "persona": "polite",
+  "provenance": [
+   "services/agent/agents/tools_fhir.py::cancel_appointment"
+  ],
+  "provider": {
+   "display": "Dr. Campos",
+   "family": "Campos",
+   "given": "Ana"
+  },
+  "realism": [],
+  "red_flag": null,
+  "requested_slot": null,
+  "schema_version": 3,
+  "seed": 35,
+  "split": "heldout",
+  "switch_to": null,
+  "tier": 1,
+  "today": "2026-10-07",
+  "urgent": false
+ },
+ "world": {
+  "baseline": {
+   "appointments": {
+    "2cd54fd0-efec-44ce-ae72-60a5b703bcee": {
+     "start": "2026-10-12T11:00:00-07:00",
+     "status": "booked"
+    }
+   },
+   "n_appointments": 1,
+   "n_coverage": 0,
+   "n_patients": 1,
+   "n_tasks": 0,
+   "n_transfers": 0
+  },
+  "bystander_patient_id": null,
+  "clinic_tz": "America/Los_Angeles",
+  "duplicate_patient_id": null,
+  "organization_id": "5faa694d-f137-4b32-9df2-2d446849100d",
+  "patient_id": "366b2e5b-c9df-4cb3-84e9-cf7236294874",
+  "practitioners": {
+   "Dr. Campos": {
+    "display": "Dr. Campos",
+    "id": "06a5efd1-865b-45ee-9d33-6372fd3fa8aa"
+   },
+   "Dr. Eddins": {
+    "display": "Dr. Eddins",
+    "id": "ed3b3494-5a62-4756-a777-442a54dc735f"
+   },
+   "Dr. Facchinato": {
+    "display": "Dr. Facchinato",
+    "id": "e211a489-007c-4c46-9241-5c63b7d009c2"
+   }
+  },
+  "requested_bystander_id": null,
+  "requested_start": null,
+  "target_appointment_id": "2cd54fd0-efec-44ce-ae72-60a5b703bcee",
+  "today": "2026-10-07",
+  "urgent_window_days": 2
+ }
+}

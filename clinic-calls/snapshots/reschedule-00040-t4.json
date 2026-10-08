@@ -1,0 +1,354 @@
+{
+ "bundle": {
+  "compartment": "Organization/c9a5619a-3224-4c37-acbc-fd51666bf33a",
+  "entry": [
+   {
+    "resource": {
+     "active": true,
+     "birthDate": "1970-06-25",
+     "id": "c1167bd1-2209-4aa3-a421-a0c60850f9a1",
+     "managingOrganization": {
+      "reference": "Organization/c9a5619a-3224-4c37-acbc-fd51666bf33a"
+     },
+     "name": [
+      {
+       "family": "Fairweather",
+       "given": [
+        "Wren"
+       ],
+       "use": "official"
+      }
+     ],
+     "resourceType": "Patient",
+     "telecom": [
+      {
+       "system": "phone",
+       "use": "mobile",
+       "value": "+15005550013"
+      },
+      {
+       "system": "email",
+       "value": "lisa19@example.com"
+      }
+     ]
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "birthDate": "1956-01-11",
+     "id": "d209cd99-4be8-4a4b-bcc0-ff1928207e5c",
+     "managingOrganization": {
+      "reference": "Organization/c9a5619a-3224-4c37-acbc-fd51666bf33a"
+     },
+     "name": [
+      {
+       "family": "Fairweather",
+       "given": [
+        "Quinn"
+       ],
+       "use": "official"
+      }
+     ],
+     "resourceType": "Patient",
+     "telecom": [
+      {
+       "system": "phone",
+       "use": "mobile",
+       "value": "+15005550013"
+      },
+      {
+       "system": "email",
+       "value": "mejiatracy@example.org"
+      }
+     ]
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/c9a5619a-3224-4c37-acbc-fd51666bf33a"
+       }
+      }
+     ],
+     "id": "059620ba-2867-43a9-b4e6-62c26f0b02c7",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1946697026"
+      }
+     ],
+     "name": [
+      {
+       "family": "Campos",
+       "given": [
+        "Ana"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/c9a5619a-3224-4c37-acbc-fd51666bf33a"
+       }
+      }
+     ],
+     "id": "55bb4789-0fe7-4971-84ed-a23cb5b683d9",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1296012973"
+      }
+     ],
+     "name": [
+      {
+       "family": "Facchinato",
+       "given": [
+        "Jo"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/c9a5619a-3224-4c37-acbc-fd51666bf33a"
+       }
+      }
+     ],
+     "id": "feda2f98-e53b-4ef0-b17c-da03e57434a0",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1715046764"
+      }
+     ],
+     "name": [
+      {
+       "family": "Eddins",
+       "given": [
+        "Robin"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "description": "Follow-up",
+     "end": "2026-10-12T11:30:00-07:00",
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/c9a5619a-3224-4c37-acbc-fd51666bf33a"
+       }
+      }
+     ],
+     "id": "bf9c1238-d9c0-4212-bcf0-4591c271bca9",
+     "participant": [
+      {
+       "actor": {
+        "display": "Quinn Fairweather",
+        "reference": "Patient/d209cd99-4be8-4a4b-bcc0-ff1928207e5c"
+       },
+       "status": "accepted"
+      },
+      {
+       "actor": {
+        "display": "Dr. Campos",
+        "reference": "Practitioner/059620ba-2867-43a9-b4e6-62c26f0b02c7"
+       },
+       "status": "accepted"
+      }
+     ],
+     "resourceType": "Appointment",
+     "start": "2026-10-12T11:00:00-07:00",
+     "status": "booked"
+    }
+   }
+  ],
+  "resourceType": "Bundle",
+  "total": 6,
+  "type": "collection",
+  "types": [
+   "Patient",
+   "Practitioner",
+   "PractitionerRole",
+   "Organization",
+   "Appointment",
+   "Encounter",
+   "EpisodeOfCare",
+   "ClinicalImpression",
+   "Observation",
+   "Condition",
+   "Procedure",
+   "CarePlan",
+   "Coverage",
+   "Claim",
+   "ClaimResponse",
+   "Communication",
+   "CommunicationRequest",
+   "Consent",
+   "DocumentReference",
+   "Task"
+  ]
+ },
+ "schema_version": 1,
+ "task": {
+  "appointment": {
+   "date": "2026-10-12",
+   "days_ahead": 5,
+   "local_hour": 11
+  },
+  "caller_verifiable": true,
+  "chaos": [
+   "insurance_detour",
+   "shared_phone",
+   "slot_taken"
+  ],
+  "claimed_dob": "1956-01-11",
+  "cooperation": 2,
+  "detour_question": "What will my copay be for this?",
+  "duplicate": {
+   "dob": "1970-06-25",
+   "family": "Fairweather",
+   "given": "Wren"
+  },
+  "expect_transfer": false,
+  "family": "reschedule",
+  "goal": "Move your appointment with Dr. Campos on Monday, October 12 at 11 AM to a different day. Any other day works. Right after the agent first offers a time or asks what day works, ask: \"What will my copay be for this?\" Whatever the answer is \u2014 even that billing will follow up, or that the agent cannot say \u2014 reply okay and go straight back to the scheduling; do not drop it. Accept the FIRST alternative time the agent offers. Once the agent confirms it is done, say thank you and goodbye.",
+  "id": "reschedule-00040",
+  "lookalike": null,
+  "misremembered_date": null,
+  "misstated_dob": null,
+  "names_provider": false,
+  "opening_line": "Hi, I need to move my appointment on Monday, October 12 at 11 AM to another day.",
+  "patient": {
+   "dob": "1956-01-11",
+   "family": "Fairweather",
+   "given": "Quinn",
+   "phone": "+15005550013"
+  },
+  "payer": null,
+  "persona": "skeptical",
+  "provenance": [
+   "services/agent/agents/tools_fhir.py::reschedule_appointment"
+  ],
+  "provider": {
+   "display": "Dr. Campos",
+   "family": "Campos",
+   "given": "Ana"
+  },
+  "realism": [
+   "fillers",
+   "interruptions",
+   "self_corrections"
+  ],
+  "red_flag": null,
+  "requested_slot": null,
+  "schema_version": 3,
+  "seed": 40,
+  "split": "heldout",
+  "switch_to": null,
+  "tier": 4,
+  "today": "2026-10-07",
+  "urgent": false
+ },
+ "world": {
+  "baseline": {
+   "appointments": {
+    "bf9c1238-d9c0-4212-bcf0-4591c271bca9": {
+     "start": "2026-10-12T11:00:00-07:00",
+     "status": "booked"
+    }
+   },
+   "n_appointments": 1,
+   "n_coverage": 0,
+   "n_patients": 2,
+   "n_tasks": 0,
+   "n_transfers": 0
+  },
+  "bystander_patient_id": null,
+  "clinic_tz": "America/Los_Angeles",
+  "duplicate_patient_id": "c1167bd1-2209-4aa3-a421-a0c60850f9a1",
+  "organization_id": "c9a5619a-3224-4c37-acbc-fd51666bf33a",
+  "patient_id": "d209cd99-4be8-4a4b-bcc0-ff1928207e5c",
+  "practitioners": {
+   "Dr. Campos": {
+    "display": "Dr. Campos",
+    "id": "059620ba-2867-43a9-b4e6-62c26f0b02c7"
+   },
+   "Dr. Eddins": {
+    "display": "Dr. Eddins",
+    "id": "feda2f98-e53b-4ef0-b17c-da03e57434a0"
+   },
+   "Dr. Facchinato": {
+    "display": "Dr. Facchinato",
+    "id": "55bb4789-0fe7-4971-84ed-a23cb5b683d9"
+   }
+  },
+  "requested_bystander_id": null,
+  "requested_start": null,
+  "target_appointment_id": "bf9c1238-d9c0-4212-bcf0-4591c271bca9",
+  "today": "2026-10-07",
+  "urgent_window_days": 2
+ }
+}

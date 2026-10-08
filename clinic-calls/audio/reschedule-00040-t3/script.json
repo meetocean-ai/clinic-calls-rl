@@ -1,0 +1,66 @@
+{
+ "key": "reschedule-00040-t3",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 8.65,
+   "spoken": "We\u2014 hi, I need to move my, hmm, appointment on Friday, October 16 at 2 PM to another, let me think, day.",
+   "text": "Hi, I need to move my appointment on Friday, October 16 at 2 PM to another day."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.8,
+   "spoken": "It's\u2014 it's July 6, 1975.",
+   "text": "It's 1975-07-06."
+  },
+  {
+   "file": "02.wav",
+   "kind": "detour",
+   "sample_rate": 8000,
+   "seconds": 5.55,
+   "spoken": "We\u2014 is there a balance on my, hmm, account I should know, let me think, about?",
+   "text": "Is there a balance on my account I should know about?"
+  },
+  {
+   "file": "03.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.825,
+   "spoken": "I\u2014 yes,, uh, that, hmm, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "04.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 3.0,
+   "spoken": "I\u2014 thank, uh, you,, hmm, goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "reschedule-00040",
+ "tier": 3,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.02,
+   "gain_wobble_db": 0.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 40,
+   "snr_db": 25.0
+  },
+  "disfluency": {
+   "false_start": true,
+   "fillers": 2,
+   "seed": 40,
+   "self_correction": false
+  },
+  "tts": "kokoro",
+  "voice": "bm_lewis"
+ }
+}

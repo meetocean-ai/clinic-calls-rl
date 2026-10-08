@@ -1,0 +1,287 @@
+{
+ "compartment": "Organization/27ec9203-fe70-4717-9027-a93602248eec",
+ "entry": [
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "1997-08-26",
+    "id": "329f9828-7ba1-4ce2-8968-ecca5b91b3d1",
+    "managingOrganization": {
+     "reference": "Organization/27ec9203-fe70-4717-9027-a93602248eec"
+    },
+    "name": [
+     {
+      "family": "Coldbrook",
+      "given": [
+       "Dakota"
+      ],
+      "use": "official"
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005550004"
+     },
+     {
+      "system": "email",
+      "value": "acole@example.net"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "1998-09-21",
+    "id": "b1ff2aaa-9b0b-4726-af14-c6be639d5b3e",
+    "managingOrganization": {
+     "reference": "Organization/27ec9203-fe70-4717-9027-a93602248eec"
+    },
+    "name": [
+     {
+      "family": "Coldbrook",
+      "given": [
+       "Tatum"
+      ],
+      "use": "official"
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005550004"
+     },
+     {
+      "system": "email",
+      "value": "carlsonaaron@example.com"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/27ec9203-fe70-4717-9027-a93602248eec"
+      }
+     }
+    ],
+    "id": "bb3d5d61-e248-412f-a9aa-837ad30bbd46",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1296012973"
+     }
+    ],
+    "name": [
+     {
+      "family": "Facchinato",
+      "given": [
+       "Jo"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/27ec9203-fe70-4717-9027-a93602248eec"
+      }
+     }
+    ],
+    "id": "c2235b66-5c57-4d4f-b76b-6af99bcfbc23",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1715046764"
+     }
+    ],
+    "name": [
+     {
+      "family": "Eddins",
+      "given": [
+       "Robin"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/27ec9203-fe70-4717-9027-a93602248eec"
+      }
+     }
+    ],
+    "id": "c49c2d90-35ba-4f0e-8c84-cae0d7e3a3ff",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1946697026"
+     }
+    ],
+    "name": [
+     {
+      "family": "Campos",
+      "given": [
+       "Ana"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "description": "Follow-up",
+    "end": "2026-10-12T15:30:00-07:00",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/27ec9203-fe70-4717-9027-a93602248eec"
+      }
+     }
+    ],
+    "id": "b8c932d1-4314-4bbf-a68a-d95b8142f99e",
+    "participant": [
+     {
+      "actor": {
+       "display": "Tatum Coldbrook",
+       "reference": "Patient/b1ff2aaa-9b0b-4726-af14-c6be639d5b3e"
+      },
+      "status": "accepted"
+     },
+     {
+      "actor": {
+       "display": "Dr. Eddins",
+       "reference": "Practitioner/c2235b66-5c57-4d4f-b76b-6af99bcfbc23"
+      },
+      "status": "accepted"
+     }
+    ],
+    "resourceType": "Appointment",
+    "start": "2026-10-12T15:00:00-07:00",
+    "status": "booked"
+   }
+  },
+  {
+   "resource": {
+    "authoredOn": "2026-10-08T00:56:48.746146+00:00",
+    "code": {
+     "coding": [
+      {
+       "code": "warm-transfer",
+       "display": "Warm transfer to staff",
+       "system": "https://ocean-ehr.com/fhir/CodeSystem/agent-action"
+      }
+     ]
+    },
+    "description": "caller transferred",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/27ec9203-fe70-4717-9027-a93602248eec"
+      }
+     }
+    ],
+    "for": {
+     "display": "Tatum Coldbrook",
+     "reference": "Patient/b1ff2aaa-9b0b-4726-af14-c6be639d5b3e"
+    },
+    "id": "eef55a55-50fe-4df2-9828-033fd9dbe87b",
+    "intent": "order",
+    "owner": {
+     "display": "Ocean AI Agent"
+    },
+    "priority": "routine",
+    "resourceType": "Task",
+    "status": "requested"
+   }
+  }
+ ],
+ "resourceType": "Bundle",
+ "total": 7,
+ "type": "collection",
+ "types": [
+  "Patient",
+  "Practitioner",
+  "PractitionerRole",
+  "Organization",
+  "Appointment",
+  "Encounter",
+  "EpisodeOfCare",
+  "ClinicalImpression",
+  "Observation",
+  "Condition",
+  "Procedure",
+  "CarePlan",
+  "Coverage",
+  "Claim",
+  "ClaimResponse",
+  "Communication",
+  "CommunicationRequest",
+  "Consent",
+  "DocumentReference",
+  "Task"
+ ]
+}

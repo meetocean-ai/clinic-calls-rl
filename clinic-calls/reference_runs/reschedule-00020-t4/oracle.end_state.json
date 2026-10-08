@@ -1,0 +1,382 @@
+{
+ "compartment": "Organization/4b9ef1d7-0b8d-483a-9e86-0177063612ae",
+ "entry": [
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "1960-08-17",
+    "id": "1954d09d-4e5f-4be9-9eab-4dc26ab83dc7",
+    "managingOrganization": {
+     "reference": "Organization/4b9ef1d7-0b8d-483a-9e86-0177063612ae"
+    },
+    "name": [
+     {
+      "family": "Fairweather",
+      "given": [
+       "Reese"
+      ],
+      "use": "official"
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005550007"
+     },
+     {
+      "system": "email",
+      "value": "marshallsara@example.com"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "1980-01-01",
+    "id": "31cd87ba-1bb1-4c8f-a6d0-fd323ec95201",
+    "managingOrganization": {
+     "reference": "Organization/4b9ef1d7-0b8d-483a-9e86-0177063612ae"
+    },
+    "name": [
+     {
+      "family": "Booked2",
+      "given": [
+       "Bystander"
+      ],
+      "use": "official"
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005559902"
+     },
+     {
+      "system": "email",
+      "value": "bystander2@example.com"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "1979-08-09",
+    "id": "796a9087-a57a-490e-8948-cc5800560deb",
+    "managingOrganization": {
+     "reference": "Organization/4b9ef1d7-0b8d-483a-9e86-0177063612ae"
+    },
+    "name": [
+     {
+      "family": "Fairweather",
+      "given": [
+       "Parker"
+      ],
+      "use": "official"
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005550007"
+     },
+     {
+      "system": "email",
+      "value": "hahnmatthew@example.org"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "birthDate": "1980-01-01",
+    "id": "e6ee9938-0c20-4b59-a2c1-c9f62e4563cd",
+    "managingOrganization": {
+     "reference": "Organization/4b9ef1d7-0b8d-483a-9e86-0177063612ae"
+    },
+    "name": [
+     {
+      "family": "Booked1",
+      "given": [
+       "Bystander"
+      ],
+      "use": "official"
+     }
+    ],
+    "resourceType": "Patient",
+    "telecom": [
+     {
+      "system": "phone",
+      "use": "mobile",
+      "value": "+15005559901"
+     },
+     {
+      "system": "email",
+      "value": "bystander1@example.com"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/4b9ef1d7-0b8d-483a-9e86-0177063612ae"
+      }
+     }
+    ],
+    "id": "4900228a-b5fe-4a24-981d-d5cb6319b323",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1715046764"
+     }
+    ],
+    "name": [
+     {
+      "family": "Eddins",
+      "given": [
+       "Robin"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/4b9ef1d7-0b8d-483a-9e86-0177063612ae"
+      }
+     }
+    ],
+    "id": "b6259aba-eec0-4b84-b6c0-dda0bb9b58c0",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1296012973"
+     }
+    ],
+    "name": [
+     {
+      "family": "Facchinato",
+      "given": [
+       "Jo"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "active": true,
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/4b9ef1d7-0b8d-483a-9e86-0177063612ae"
+      }
+     }
+    ],
+    "id": "faddd392-0181-4584-8cf3-0e54fd5b7df9",
+    "identifier": [
+     {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1946697026"
+     }
+    ],
+    "name": [
+     {
+      "family": "Campos",
+      "given": [
+       "Ana"
+      ],
+      "use": "official"
+     }
+    ],
+    "qualification": [
+     {
+      "code": {
+       "coding": [
+        {
+         "code": "111N00000X",
+         "system": "http://nucc.org/provider-taxonomy"
+        }
+       ]
+      }
+     }
+    ],
+    "resourceType": "Practitioner"
+   }
+  },
+  {
+   "resource": {
+    "description": "Follow-up",
+    "end": "2026-10-08T08:15:00-07:00",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/4b9ef1d7-0b8d-483a-9e86-0177063612ae"
+      }
+     }
+    ],
+    "id": "39bfc19c-8803-4d06-9916-b4f5ad25cda6",
+    "participant": [
+     {
+      "actor": {
+       "display": "Bystander Booked1",
+       "reference": "Patient/e6ee9938-0c20-4b59-a2c1-c9f62e4563cd"
+      },
+      "status": "accepted"
+     },
+     {
+      "actor": {
+       "display": "Robin Eddins",
+       "reference": "Practitioner/4900228a-b5fe-4a24-981d-d5cb6319b323"
+      },
+      "status": "accepted"
+     }
+    ],
+    "resourceType": "Appointment",
+    "start": "2026-10-08T08:00:00-07:00",
+    "status": "booked"
+   }
+  },
+  {
+   "resource": {
+    "description": "Follow-up",
+    "end": "2026-10-08T08:45:00-07:00",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/4b9ef1d7-0b8d-483a-9e86-0177063612ae"
+      }
+     }
+    ],
+    "id": "c8639924-6b6a-4b98-b5e6-83cfbe3cb747",
+    "participant": [
+     {
+      "actor": {
+       "display": "Parker Fairweather",
+       "reference": "Patient/796a9087-a57a-490e-8948-cc5800560deb"
+      },
+      "status": "accepted"
+     },
+     {
+      "actor": {
+       "display": "Dr. Campos",
+       "reference": "Practitioner/4900228a-b5fe-4a24-981d-d5cb6319b323"
+      },
+      "status": "accepted"
+     }
+    ],
+    "resourceType": "Appointment",
+    "start": "2026-10-08T08:30:00-07:00",
+    "status": "booked"
+   }
+  },
+  {
+   "resource": {
+    "description": "Follow-up",
+    "end": "2026-10-08T08:30:00-07:00",
+    "extension": [
+     {
+      "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+      "valueReference": {
+       "reference": "Organization/4b9ef1d7-0b8d-483a-9e86-0177063612ae"
+      }
+     }
+    ],
+    "id": "caf69aba-745b-41c2-921d-3d69b1f2f62a",
+    "participant": [
+     {
+      "actor": {
+       "display": "Bystander Booked2",
+       "reference": "Patient/31cd87ba-1bb1-4c8f-a6d0-fd323ec95201"
+      },
+      "status": "accepted"
+     },
+     {
+      "actor": {
+       "display": "Robin Eddins",
+       "reference": "Practitioner/4900228a-b5fe-4a24-981d-d5cb6319b323"
+      },
+      "status": "accepted"
+     }
+    ],
+    "resourceType": "Appointment",
+    "start": "2026-10-08T08:15:00-07:00",
+    "status": "booked"
+   }
+  }
+ ],
+ "resourceType": "Bundle",
+ "total": 10,
+ "type": "collection",
+ "types": [
+  "Patient",
+  "Practitioner",
+  "PractitionerRole",
+  "Organization",
+  "Appointment",
+  "Encounter",
+  "EpisodeOfCare",
+  "ClinicalImpression",
+  "Observation",
+  "Condition",
+  "Procedure",
+  "CarePlan",
+  "Coverage",
+  "Claim",
+  "ClaimResponse",
+  "Communication",
+  "CommunicationRequest",
+  "Consent",
+  "DocumentReference",
+  "Task"
+ ]
+}

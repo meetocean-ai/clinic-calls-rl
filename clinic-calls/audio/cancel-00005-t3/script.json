@@ -1,0 +1,58 @@
+{
+ "key": "cancel-00005-t3",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 6.8,
+   "spoken": "Hi,, let me think, I need to, er, cancel my appointment on Tuesday, October 13 at 2 PM.",
+   "text": "Hi, I need to cancel my appointment on Tuesday, October 13 at 2 PM."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.275,
+   "spoken": "It's October 11, 1963.",
+   "text": "It's 1963-10-11."
+  },
+  {
+   "file": "02.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.725,
+   "spoken": "Yes,, er, that, let me think, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "03.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 2.8,
+   "spoken": "Thank, er, you,, let me think, goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "cancel-00005",
+ "tier": 3,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.02,
+   "gain_wobble_db": 3.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 5,
+   "snr_db": 15.0
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 2,
+   "seed": 5,
+   "self_correction": false
+  },
+  "tts": "kokoro",
+  "voice": "bf_isabella"
+ }
+}

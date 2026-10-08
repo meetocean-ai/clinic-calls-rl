@@ -1,0 +1,274 @@
+{
+ "bundle": {
+  "compartment": "Organization/e08bb11b-debf-4da3-a8f9-0313506ab1d6",
+  "entry": [
+   {
+    "resource": {
+     "active": true,
+     "birthDate": "1973-05-13",
+     "id": "b3087227-d67f-4a61-8dff-c2ed96438600",
+     "managingOrganization": {
+      "reference": "Organization/e08bb11b-debf-4da3-a8f9-0313506ab1d6"
+     },
+     "name": [
+      {
+       "family": "Eastwick",
+       "given": [
+        "Kendall"
+       ],
+       "use": "official"
+      }
+     ],
+     "resourceType": "Patient",
+     "telecom": [
+      {
+       "system": "phone",
+       "use": "mobile",
+       "value": "+15005550002"
+      },
+      {
+       "system": "email",
+       "value": "jonathanlogan@example.org"
+      }
+     ]
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/e08bb11b-debf-4da3-a8f9-0313506ab1d6"
+       }
+      }
+     ],
+     "id": "98616812-2c35-4e45-aedf-83d12f7e69e3",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1946697026"
+      }
+     ],
+     "name": [
+      {
+       "family": "Campos",
+       "given": [
+        "Ana"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/e08bb11b-debf-4da3-a8f9-0313506ab1d6"
+       }
+      }
+     ],
+     "id": "ba06485d-f2dc-452a-833c-3420c976d9a9",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1715046764"
+      }
+     ],
+     "name": [
+      {
+       "family": "Eddins",
+       "given": [
+        "Robin"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/e08bb11b-debf-4da3-a8f9-0313506ab1d6"
+       }
+      }
+     ],
+     "id": "bcded1ca-1f0a-4f5c-a6d7-ab73f7ccba98",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1296012973"
+      }
+     ],
+     "name": [
+      {
+       "family": "Facchinato",
+       "given": [
+        "Jo"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   }
+  ],
+  "resourceType": "Bundle",
+  "total": 4,
+  "type": "collection",
+  "types": [
+   "Patient",
+   "Practitioner",
+   "PractitionerRole",
+   "Organization",
+   "Appointment",
+   "Encounter",
+   "EpisodeOfCare",
+   "ClinicalImpression",
+   "Observation",
+   "Condition",
+   "Procedure",
+   "CarePlan",
+   "Coverage",
+   "Claim",
+   "ClaimResponse",
+   "Communication",
+   "CommunicationRequest",
+   "Consent",
+   "DocumentReference",
+   "Task"
+  ]
+ },
+ "schema_version": 1,
+ "task": {
+  "appointment": null,
+  "caller_verifiable": true,
+  "chaos": [
+   "no_availability"
+  ],
+  "claimed_dob": "1973-05-13",
+  "cooperation": 1,
+  "detour_question": null,
+  "duplicate": null,
+  "expect_transfer": false,
+  "family": "booking",
+  "goal": "Book a follow-up visit with Dr. Eddins. Any day works, but ONLY with Dr. Eddins \u2014 if the agent offers a different provider, decline. If the agent says Dr. Eddins has no availability, ask to be put on the waitlist and accept the waitlist. Once the agent confirms it is done, say thank you and goodbye.",
+  "id": "booking-00015",
+  "lookalike": null,
+  "misremembered_date": null,
+  "misstated_dob": null,
+  "names_provider": true,
+  "opening_line": "Hi, I'd like to book a follow-up visit with Dr. Eddins, please.",
+  "patient": {
+   "dob": "1973-05-13",
+   "family": "Eastwick",
+   "given": "Kendall",
+   "phone": "+15005550002"
+  },
+  "payer": null,
+  "persona": "hostile",
+  "provenance": [
+   "services/agent/agents/tools_fhir.py::book_appointment",
+   "services/agent/agents/specialists/scheduler.py::book_appointment"
+  ],
+  "provider": {
+   "display": "Dr. Eddins",
+   "family": "Eddins",
+   "given": "Robin"
+  },
+  "realism": [
+   "interruptions",
+   "off_topic_aside"
+  ],
+  "red_flag": null,
+  "requested_slot": null,
+  "schema_version": 3,
+  "seed": 15,
+  "split": "heldout",
+  "switch_to": null,
+  "tier": 3,
+  "today": "2026-10-07",
+  "urgent": false
+ },
+ "world": {
+  "baseline": {
+   "appointments": {},
+   "n_appointments": 0,
+   "n_coverage": 0,
+   "n_patients": 1,
+   "n_tasks": 0,
+   "n_transfers": 0
+  },
+  "bystander_patient_id": null,
+  "clinic_tz": "America/Los_Angeles",
+  "duplicate_patient_id": null,
+  "organization_id": "e08bb11b-debf-4da3-a8f9-0313506ab1d6",
+  "patient_id": "b3087227-d67f-4a61-8dff-c2ed96438600",
+  "practitioners": {
+   "Dr. Campos": {
+    "display": "Dr. Campos",
+    "id": "98616812-2c35-4e45-aedf-83d12f7e69e3"
+   },
+   "Dr. Eddins": {
+    "display": "Dr. Eddins",
+    "id": "ba06485d-f2dc-452a-833c-3420c976d9a9"
+   },
+   "Dr. Facchinato": {
+    "display": "Dr. Facchinato",
+    "id": "bcded1ca-1f0a-4f5c-a6d7-ab73f7ccba98"
+   }
+  },
+  "requested_bystander_id": null,
+  "requested_start": null,
+  "target_appointment_id": null,
+  "today": "2026-10-07",
+  "urgent_window_days": 2
+ }
+}

@@ -1,0 +1,66 @@
+{
+ "key": "booking-00020-t3",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 6.875,
+   "spoken": "Hi, I'd, let me think, like to book a, um, follow-up visit with Dr. Facchinato, please.",
+   "text": "Hi, I'd like to book a follow-up visit with Dr. Facchinato, please."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.575,
+   "spoken": "It's July 20, 1994.",
+   "text": "It's 1994-07-20."
+  },
+  {
+   "file": "02.wav",
+   "kind": "detour",
+   "sample_rate": 8000,
+   "seconds": 5.2,
+   "spoken": "Is there, let me think, a balance on my, um, account I should know about?",
+   "text": "Is there a balance on my account I should know about?"
+  },
+  {
+   "file": "03.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.975,
+   "spoken": "Yes,, let me think, that, um, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "04.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 3.175,
+   "spoken": "Thank, let me think, you,, um, goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "booking-00020",
+ "tier": 3,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.0,
+   "gain_wobble_db": 0.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 20,
+   "snr_db": 25.0
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 2,
+   "seed": 20,
+   "self_correction": false
+  },
+  "tts": "kokoro",
+  "voice": "am_michael"
+ }
+}

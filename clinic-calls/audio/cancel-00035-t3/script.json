@@ -1,0 +1,66 @@
+{
+ "key": "cancel-00035-t3",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 6.875,
+   "spoken": "Hi, I need to cancel, hmm, my appointment on Thursday, October 15 at 11 AM.",
+   "text": "Hi, I need to cancel my appointment on Thursday, October 15 at 11 AM."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob_misstated",
+   "sample_rate": 8000,
+   "seconds": 3.575,
+   "spoken": "It's January 4, 1957.",
+   "text": "It's 1957-01-04."
+  },
+  {
+   "file": "02.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.6,
+   "spoken": "It's January 5, 1957.",
+   "text": "It's 1957-01-05."
+  },
+  {
+   "file": "03.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.025,
+   "spoken": "Yes, that, hmm, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "04.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 2.35,
+   "spoken": "Thank you,, hmm, goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "cancel-00035",
+ "tier": 3,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.02,
+   "gain_wobble_db": 0.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 35,
+   "snr_db": 20.0
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 1,
+   "seed": 35,
+   "self_correction": false
+  },
+  "tts": "kokoro",
+  "voice": "af_bella"
+ }
+}

@@ -1,0 +1,56 @@
+{
+ "agent_turns": [
+  {
+   "caller_so_far": [
+    "Hi, I'd like to book a follow-up visit, please."
+   ],
+   "text": "Could I have your date of birth, please?",
+   "verified": false
+  },
+  {
+   "caller_so_far": [
+    "Hi, I'd like to book a follow-up visit, please.",
+    "It's 1972-10-17."
+   ],
+   "text": "I have 2026-10-08T08:00:00. Does that work?",
+   "verified": true
+  },
+  {
+   "caller_so_far": [
+    "Hi, I'd like to book a follow-up visit, please.",
+    "It's 1972-10-17.",
+    "Yes, that works."
+   ],
+   "text": "I have 2026-10-08T08:15:00. Does that work?",
+   "verified": true
+  },
+  {
+   "caller_so_far": [
+    "Hi, I'd like to book a follow-up visit, please.",
+    "It's 1972-10-17.",
+    "Yes, that works.",
+    "Yes, that works."
+   ],
+   "text": "I have 2026-10-08T08:30:00. Does that work?",
+   "verified": true
+  },
+  {
+   "caller_so_far": [
+    "Hi, I'd like to book a follow-up visit, please.",
+    "It's 1972-10-17.",
+    "Yes, that works.",
+    "Yes, that works.",
+    "Yes, that works."
+   ],
+   "text": "You're all set. Anything else?",
+   "verified": true
+  }
+ ],
+ "extra": {
+  "env_writes": {
+   "Appointment": 2,
+   "Patient": 2
+  },
+  "verify_attempts": 1
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "agent_turns": [
+  {
+   "caller_so_far": [
+    "Hi, can you tell me when my next appointment is? I want to cancel it."
+   ],
+   "text": "Could I have your date of birth, please?",
+   "verified": false
+  },
+  {
+   "caller_so_far": [
+    "Hi, can you tell me when my next appointment is? I want to cancel it.",
+    "It's 1973-02-28."
+   ],
+   "text": "Could I have your date of birth, please?",
+   "verified": false
+  },
+  {
+   "caller_so_far": [
+    "Hi, can you tell me when my next appointment is? I want to cancel it.",
+    "It's 1973-02-28.",
+    "It's 1973-02-28."
+   ],
+   "text": "Could I have your date of birth, please?",
+   "verified": false
+  }
+ ],
+ "extra": {
+  "env_writes": {},
+  "verify_attempts": 3
+ }
+}

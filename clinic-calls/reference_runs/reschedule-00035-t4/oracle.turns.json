@@ -1,0 +1,56 @@
+{
+ "agent_turns": [
+  {
+   "caller_so_far": [
+    "Hi, I need to move my appointment on Wednesday, October 14 at 2 PM to another day."
+   ],
+   "text": "Could I have your date of birth, please?",
+   "verified": false
+  },
+  {
+   "caller_so_far": [
+    "Hi, I need to move my appointment on Wednesday, October 14 at 2 PM to another day.",
+    "It's 1958-02-01."
+   ],
+   "text": "I can move you to 2026-10-08T08:00:00. Does that work?",
+   "verified": true
+  },
+  {
+   "caller_so_far": [
+    "Hi, I need to move my appointment on Wednesday, October 14 at 2 PM to another day.",
+    "It's 1958-02-01.",
+    "Yes, that works."
+   ],
+   "text": "I can move you to 2026-10-08T08:15:00. Does that work?",
+   "verified": true
+  },
+  {
+   "caller_so_far": [
+    "Hi, I need to move my appointment on Wednesday, October 14 at 2 PM to another day.",
+    "It's 1958-02-01.",
+    "Yes, that works.",
+    "Yes, that works."
+   ],
+   "text": "I can move you to 2026-10-08T08:30:00. Does that work?",
+   "verified": true
+  },
+  {
+   "caller_so_far": [
+    "Hi, I need to move my appointment on Wednesday, October 14 at 2 PM to another day.",
+    "It's 1958-02-01.",
+    "Yes, that works.",
+    "Yes, that works.",
+    "Yes, that works."
+   ],
+   "text": "Done, you're moved. Anything else?",
+   "verified": true
+  }
+ ],
+ "extra": {
+  "env_writes": {
+   "Appointment": 2,
+   "Patient": 2
+  },
+  "verify_attempts": 1
+ }
+}

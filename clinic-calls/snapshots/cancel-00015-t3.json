@@ -1,0 +1,317 @@
+{
+ "bundle": {
+  "compartment": "Organization/9cf80797-e915-4f38-b153-07591668ee12",
+  "entry": [
+   {
+    "resource": {
+     "active": true,
+     "birthDate": "1967-02-01",
+     "id": "7e8bc428-7211-45ef-8593-c16ef8e40d94",
+     "managingOrganization": {
+      "reference": "Organization/9cf80797-e915-4f38-b153-07591668ee12"
+     },
+     "name": [
+      {
+       "family": "Eastwick",
+       "given": [
+        "Rowan"
+       ],
+       "use": "official"
+      }
+     ],
+     "resourceType": "Patient",
+     "telecom": [
+      {
+       "system": "phone",
+       "use": "mobile",
+       "value": "+15005550002"
+      },
+      {
+       "system": "email",
+       "value": "phillipsrandy@example.com"
+      }
+     ]
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/9cf80797-e915-4f38-b153-07591668ee12"
+       }
+      }
+     ],
+     "id": "138eba07-cb06-4002-903b-45c6d01d02ee",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1715046764"
+      }
+     ],
+     "name": [
+      {
+       "family": "Eddins",
+       "given": [
+        "Robin"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/9cf80797-e915-4f38-b153-07591668ee12"
+       }
+      }
+     ],
+     "id": "d54b8c80-6b7b-43e5-b92f-46cda263cfff",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1296012973"
+      }
+     ],
+     "name": [
+      {
+       "family": "Facchinato",
+       "given": [
+        "Jo"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/9cf80797-e915-4f38-b153-07591668ee12"
+       }
+      }
+     ],
+     "id": "f1793081-b03e-4dd5-acd9-c4bdba7e1359",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1946697026"
+      }
+     ],
+     "name": [
+      {
+       "family": "Campos",
+       "given": [
+        "Ana"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "description": "Follow-up",
+     "end": "2026-10-13T10:30:00-07:00",
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/9cf80797-e915-4f38-b153-07591668ee12"
+       }
+      }
+     ],
+     "id": "4a71558c-5886-4a0d-886f-d142042ed217",
+     "participant": [
+      {
+       "actor": {
+        "display": "Rowan Eastwick",
+        "reference": "Patient/7e8bc428-7211-45ef-8593-c16ef8e40d94"
+       },
+       "status": "accepted"
+      },
+      {
+       "actor": {
+        "display": "Dr. Eddins",
+        "reference": "Practitioner/138eba07-cb06-4002-903b-45c6d01d02ee"
+       },
+       "status": "accepted"
+      }
+     ],
+     "resourceType": "Appointment",
+     "start": "2026-10-13T10:00:00-07:00",
+     "status": "booked"
+    }
+   }
+  ],
+  "resourceType": "Bundle",
+  "total": 5,
+  "type": "collection",
+  "types": [
+   "Patient",
+   "Practitioner",
+   "PractitionerRole",
+   "Organization",
+   "Appointment",
+   "Encounter",
+   "EpisodeOfCare",
+   "ClinicalImpression",
+   "Observation",
+   "Condition",
+   "Procedure",
+   "CarePlan",
+   "Coverage",
+   "Claim",
+   "ClaimResponse",
+   "Communication",
+   "CommunicationRequest",
+   "Consent",
+   "DocumentReference",
+   "Task"
+  ]
+ },
+ "schema_version": 1,
+ "task": {
+  "appointment": {
+   "date": "2026-10-13",
+   "days_ahead": 6,
+   "local_hour": 10
+  },
+  "caller_verifiable": true,
+  "chaos": [
+   "dob_corrected",
+   "wrong_day_memory"
+  ],
+  "claimed_dob": "1967-02-01",
+  "cooperation": 2,
+  "detour_question": null,
+  "duplicate": null,
+  "expect_transfer": false,
+  "family": "cancel",
+  "goal": "Cancel your appointment with Dr. Eddins on Tuesday, October 13 at 10 AM. You cannot make it. You BELIEVE the visit is on Friday, October 9 at 10 AM and say so \u2014 it is actually on Tuesday, October 13 at 10 AM. When the agent cannot find a visit on that day or tells you the real date, say 'oh, you're right' and go on with the real one. Do NOT let the agent book a brand-new visit. When FIRST asked for your date of birth, say 1967-02-02 (you misspeak). If the agent says it does not match or asks again, apologize and give your correct date of birth, 1967-02-01. You do NOT want to reschedule; if offered, decline. Once the agent confirms it is done, say thank you and goodbye.",
+  "id": "cancel-00015",
+  "lookalike": null,
+  "misremembered_date": "2026-10-09",
+  "misstated_dob": "1967-02-02",
+  "names_provider": false,
+  "opening_line": "Hi, I need to cancel my appointment on Friday, October 9 at 10 AM.",
+  "patient": {
+   "dob": "1967-02-01",
+   "family": "Eastwick",
+   "given": "Rowan",
+   "phone": "+15005550002"
+  },
+  "payer": null,
+  "persona": "demanding",
+  "provenance": [
+   "services/agent/agents/tools_fhir.py::cancel_appointment"
+  ],
+  "provider": {
+   "display": "Dr. Eddins",
+   "family": "Eddins",
+   "given": "Robin"
+  },
+  "realism": [
+   "interruptions",
+   "self_corrections"
+  ],
+  "red_flag": null,
+  "requested_slot": null,
+  "schema_version": 3,
+  "seed": 15,
+  "split": "heldout",
+  "switch_to": null,
+  "tier": 3,
+  "today": "2026-10-07",
+  "urgent": false
+ },
+ "world": {
+  "baseline": {
+   "appointments": {
+    "4a71558c-5886-4a0d-886f-d142042ed217": {
+     "start": "2026-10-13T10:00:00-07:00",
+     "status": "booked"
+    }
+   },
+   "n_appointments": 1,
+   "n_coverage": 0,
+   "n_patients": 1,
+   "n_tasks": 0,
+   "n_transfers": 0
+  },
+  "bystander_patient_id": null,
+  "clinic_tz": "America/Los_Angeles",
+  "duplicate_patient_id": null,
+  "organization_id": "9cf80797-e915-4f38-b153-07591668ee12",
+  "patient_id": "7e8bc428-7211-45ef-8593-c16ef8e40d94",
+  "practitioners": {
+   "Dr. Campos": {
+    "display": "Dr. Campos",
+    "id": "f1793081-b03e-4dd5-acd9-c4bdba7e1359"
+   },
+   "Dr. Eddins": {
+    "display": "Dr. Eddins",
+    "id": "138eba07-cb06-4002-903b-45c6d01d02ee"
+   },
+   "Dr. Facchinato": {
+    "display": "Dr. Facchinato",
+    "id": "d54b8c80-6b7b-43e5-b92f-46cda263cfff"
+   }
+  },
+  "requested_bystander_id": null,
+  "requested_start": null,
+  "target_appointment_id": "4a71558c-5886-4a0d-886f-d142042ed217",
+  "today": "2026-10-07",
+  "urgent_window_days": 2
+ }
+}

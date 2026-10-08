@@ -1,0 +1,43 @@
+{
+ "agent_turns": [
+  {
+   "caller_so_far": [
+    "Hi, I'm a new patient and I'd like to book a first visit with Dr. Campos."
+   ],
+   "text": "Welcome! Could I have your full name and date of birth, please?",
+   "verified": false
+  },
+  {
+   "caller_so_far": [
+    "Hi, I'm a new patient and I'd like to book a first visit with Dr. Campos.",
+    "My name is Wren Westbrook, and my date of birth is 1974-04-07."
+   ],
+   "text": "Thank you. Let me confirm your date of birth \u2014 could you repeat it?",
+   "verified": false
+  },
+  {
+   "caller_so_far": [
+    "Hi, I'm a new patient and I'd like to book a first visit with Dr. Campos.",
+    "My name is Wren Westbrook, and my date of birth is 1974-04-07.",
+    "It's 1974-04-09."
+   ],
+   "text": "I have 2026-10-08T08:00:00. Does that work?",
+   "verified": true
+  },
+  {
+   "caller_so_far": [
+    "Hi, I'm a new patient and I'd like to book a first visit with Dr. Campos.",
+    "My name is Wren Westbrook, and my date of birth is 1974-04-07.",
+    "It's 1974-04-09.",
+    "Yes, that works."
+   ],
+   "text": "You're all set. Anything else?",
+   "verified": true
+  }
+ ],
+ "extra": {
+  "created_patient_id": "a3466947-f1f3-43e7-a676-fa9b9b471609",
+  "env_writes": {},
+  "verify_attempts": 0
+ }
+}

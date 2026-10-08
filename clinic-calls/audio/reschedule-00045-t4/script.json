@@ -1,0 +1,58 @@
+{
+ "key": "reschedule-00045-t4",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 8.45,
+   "spoken": "I\u2014 hi,, hmm, I need to move, you know, my appoint\u2014 sorry, I mean appointment on Tuesday, October 13 at 3 PM to another day.",
+   "text": "Hi, I need to move my appointment on Tuesday, October 13 at 3 PM to another day."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.925,
+   "spoken": "I\u2014 it's November 27, 1951.",
+   "text": "It's 1951-11-27."
+  },
+  {
+   "file": "02.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.55,
+   "spoken": "I\u2014 yes,, hmm, that, you know, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "03.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 3.775,
+   "spoken": "I\u2014 thank, hmm, you,, you know, good\u2014 sorry, I mean goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "reschedule-00045",
+ "tier": 4,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.05,
+   "gain_wobble_db": 6.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 45,
+   "snr_db": 5.0
+  },
+  "disfluency": {
+   "false_start": true,
+   "fillers": 2,
+   "seed": 45,
+   "self_correction": true
+  },
+  "tts": "kokoro",
+  "voice": "af_sky"
+ }
+}

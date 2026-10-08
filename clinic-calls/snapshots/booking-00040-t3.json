@@ -1,0 +1,318 @@
+{
+ "bundle": {
+  "compartment": "Organization/67efe113-ee13-412d-bfad-18922d334528",
+  "entry": [
+   {
+    "resource": {
+     "active": true,
+     "birthDate": "1974-05-28",
+     "id": "3cb9f226-8149-4c80-ac9b-2c5cad1e974e",
+     "managingOrganization": {
+      "reference": "Organization/67efe113-ee13-412d-bfad-18922d334528"
+     },
+     "name": [
+      {
+       "family": "Oakhurst",
+       "given": [
+        "Dakota"
+       ],
+       "use": "official"
+      }
+     ],
+     "resourceType": "Patient",
+     "telecom": [
+      {
+       "system": "phone",
+       "use": "mobile",
+       "value": "+15005550013"
+      },
+      {
+       "system": "email",
+       "value": "tylerwright@example.net"
+      }
+     ]
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/67efe113-ee13-412d-bfad-18922d334528"
+       }
+      }
+     ],
+     "id": "10d68da5-41fb-4b74-bf49-957b6f3c00c0",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1296012973"
+      }
+     ],
+     "name": [
+      {
+       "family": "Facchinato",
+       "given": [
+        "Jo"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/67efe113-ee13-412d-bfad-18922d334528"
+       }
+      }
+     ],
+     "id": "43279d90-14ba-4e7c-a2b8-763d05eb7a7c",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1946697026"
+      }
+     ],
+     "name": [
+      {
+       "family": "Campos",
+       "given": [
+        "Ana"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/67efe113-ee13-412d-bfad-18922d334528"
+       }
+      }
+     ],
+     "id": "4bee3df8-e9ed-4e9c-b719-026935b6a207",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1715046764"
+      }
+     ],
+     "name": [
+      {
+       "family": "Eddins",
+       "given": [
+        "Robin"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "description": "Follow-up",
+     "end": "2026-10-19T10:30:00-07:00",
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/67efe113-ee13-412d-bfad-18922d334528"
+       }
+      }
+     ],
+     "id": "4cfaaccf-94d3-4a9f-a36b-26a50d8b01c3",
+     "participant": [
+      {
+       "actor": {
+        "display": "Dakota Oakhurst",
+        "reference": "Patient/3cb9f226-8149-4c80-ac9b-2c5cad1e974e"
+       },
+       "status": "accepted"
+      },
+      {
+       "actor": {
+        "display": "Dr. Eddins",
+        "reference": "Practitioner/4bee3df8-e9ed-4e9c-b719-026935b6a207"
+       },
+       "status": "accepted"
+      }
+     ],
+     "resourceType": "Appointment",
+     "start": "2026-10-19T10:00:00-07:00",
+     "status": "booked"
+    }
+   }
+  ],
+  "resourceType": "Bundle",
+  "total": 5,
+  "type": "collection",
+  "types": [
+   "Patient",
+   "Practitioner",
+   "PractitionerRole",
+   "Organization",
+   "Appointment",
+   "Encounter",
+   "EpisodeOfCare",
+   "ClinicalImpression",
+   "Observation",
+   "Condition",
+   "Procedure",
+   "CarePlan",
+   "Coverage",
+   "Claim",
+   "ClaimResponse",
+   "Communication",
+   "CommunicationRequest",
+   "Consent",
+   "DocumentReference",
+   "Task"
+  ]
+ },
+ "schema_version": 1,
+ "task": {
+  "appointment": {
+   "date": "2026-10-19",
+   "days_ahead": 12,
+   "local_hour": 10,
+   "provider_display": "Dr. Eddins"
+  },
+  "caller_verifiable": true,
+  "chaos": [
+   "two_requests"
+  ],
+  "claimed_dob": "1974-05-28",
+  "cooperation": 3,
+  "detour_question": null,
+  "duplicate": null,
+  "expect_transfer": false,
+  "family": "booking",
+  "goal": "You have a visit on Monday, October 19 at 10 AM with Dr. Eddins. You want TWO things on this call: cancel that visit, and book a NEW follow-up visit with Dr. Campos instead. Say both up front, and make sure the agent has done BOTH before you hang up. Any day works for the new visit. Accept the FIRST time the agent offers with Dr. Campos. Once the agent confirms it is done, say thank you and goodbye.",
+  "id": "booking-00040",
+  "lookalike": null,
+  "misremembered_date": null,
+  "misstated_dob": null,
+  "names_provider": true,
+  "opening_line": "Hi, I need to cancel my appointment on Monday, October 19 at 10 AM with Dr. Eddins, and book a new visit with Dr. Campos instead.",
+  "patient": {
+   "dob": "1974-05-28",
+   "family": "Oakhurst",
+   "given": "Dakota",
+   "phone": "+15005550013"
+  },
+  "payer": "Blue Meadow Choice",
+  "persona": "rushed",
+  "provenance": [
+   "services/agent/agents/tools_fhir.py::book_appointment",
+   "services/agent/agents/specialists/scheduler.py::book_appointment"
+  ],
+  "provider": {
+   "display": "Dr. Campos",
+   "family": "Campos",
+   "given": "Ana"
+  },
+  "realism": [
+   "hidden_until_asked",
+   "self_corrections"
+  ],
+  "red_flag": null,
+  "requested_slot": null,
+  "schema_version": 3,
+  "seed": 40,
+  "split": "heldout",
+  "switch_to": null,
+  "tier": 3,
+  "today": "2026-10-07",
+  "urgent": false
+ },
+ "world": {
+  "baseline": {
+   "appointments": {
+    "4cfaaccf-94d3-4a9f-a36b-26a50d8b01c3": {
+     "start": "2026-10-19T10:00:00-07:00",
+     "status": "booked"
+    }
+   },
+   "n_appointments": 1,
+   "n_coverage": 0,
+   "n_patients": 1,
+   "n_tasks": 0,
+   "n_transfers": 0
+  },
+  "bystander_patient_id": null,
+  "clinic_tz": "America/Los_Angeles",
+  "duplicate_patient_id": null,
+  "organization_id": "67efe113-ee13-412d-bfad-18922d334528",
+  "patient_id": "3cb9f226-8149-4c80-ac9b-2c5cad1e974e",
+  "practitioners": {
+   "Dr. Campos": {
+    "display": "Dr. Campos",
+    "id": "43279d90-14ba-4e7c-a2b8-763d05eb7a7c"
+   },
+   "Dr. Eddins": {
+    "display": "Dr. Eddins",
+    "id": "4bee3df8-e9ed-4e9c-b719-026935b6a207"
+   },
+   "Dr. Facchinato": {
+    "display": "Dr. Facchinato",
+    "id": "10d68da5-41fb-4b74-bf49-957b6f3c00c0"
+   }
+  },
+  "requested_bystander_id": null,
+  "requested_start": null,
+  "target_appointment_id": "4cfaaccf-94d3-4a9f-a36b-26a50d8b01c3",
+  "today": "2026-10-07",
+  "urgent_window_days": 2
+ }
+}

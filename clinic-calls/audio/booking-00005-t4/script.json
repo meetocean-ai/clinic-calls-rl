@@ -1,0 +1,66 @@
+{
+ "key": "booking-00005-t4",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 6.425,
+   "spoken": "Hi, I'd like to, you know, book a foll\u2014 no, wait, follow-up, um, visit with Dr. Facchinato,, hmm, please.",
+   "text": "Hi, I'd like to book a follow-up visit with Dr. Facchinato, please."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob_misstated",
+   "sample_rate": 8000,
+   "seconds": 2.925,
+   "spoken": "It's January 5, 2000.",
+   "text": "It's 2000-01-05."
+  },
+  {
+   "file": "02.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 2.975,
+   "spoken": "It's January 7, 2000.",
+   "text": "It's 2000-01-07."
+  },
+  {
+   "file": "03.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.5,
+   "spoken": "Yes,, hmm, that, um, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "04.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 3.275,
+   "spoken": "Thank, hmm, you,, um, good\u2014 no, wait, goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "booking-00005",
+ "tier": 4,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.02,
+   "gain_wobble_db": 3.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 5,
+   "snr_db": 10.0
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 3,
+   "seed": 5,
+   "self_correction": true
+  },
+  "tts": "kokoro",
+  "voice": "bf_isabella"
+ }
+}

@@ -1,0 +1,82 @@
+{
+ "key": "new_patient_intake-00015-t3",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 8.05,
+   "spoken": "Hi, I'm a, let me think, new pati\u2014 sorry, I mean patient, let me think, and I'd like to book a first visit with Dr. Facchinato.",
+   "text": "Hi, I'm a new patient and I'd like to book a first visit with Dr. Facchinato."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob_misstated",
+   "sample_rate": 8000,
+   "seconds": 3.1,
+   "spoken": "It's January 8, 1961.",
+   "text": "It's 1961-01-08."
+  },
+  {
+   "file": "02.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.325,
+   "spoken": "It's January 9, 1961.",
+   "text": "It's 1961-01-09."
+  },
+  {
+   "file": "03.wav",
+   "kind": "name",
+   "sample_rate": 8000,
+   "seconds": 4.55,
+   "spoken": "My, let me think, name is, let me think, Harp\u2014 sorry, I mean Harper Marlowe.",
+   "text": "My name is Harper Marlowe."
+  },
+  {
+   "file": "04.wav",
+   "kind": "name_and_dob",
+   "sample_rate": 8000,
+   "seconds": 8.6,
+   "spoken": "My name is, let me think, Harp\u2014 sorry, I mean Harper Marlowe,, let me think, and my date of birth is January 9, 1961.",
+   "text": "My name is Harper Marlowe, and my date of birth is 1961-01-09."
+  },
+  {
+   "file": "05.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.975,
+   "spoken": "Yes,, let me think, that, let me think, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "06.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 4.175,
+   "spoken": "Thank, let me think, you,, let me think, good\u2014 sorry, I mean goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "new_patient_intake-00015",
+ "tier": 3,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.0,
+   "gain_wobble_db": 3.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 15,
+   "snr_db": 15.0
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 2,
+   "seed": 15,
+   "self_correction": true
+  },
+  "tts": "kokoro",
+  "voice": "am_adam"
+ }
+}

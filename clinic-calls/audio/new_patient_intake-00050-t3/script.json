@@ -1,0 +1,74 @@
+{
+ "key": "new_patient_intake-00050-t3",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 7.45,
+   "spoken": "Hi, I'm a new pati\u2014 sorry, I mean patient and, uh, I'd like to book a first, let me think, visit with Dr. Campos.",
+   "text": "Hi, I'm a new patient and I'd like to book a first visit with Dr. Campos."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.325,
+   "spoken": "It's August 24, 1974.",
+   "text": "It's 1974-08-24."
+  },
+  {
+   "file": "02.wav",
+   "kind": "name",
+   "sample_rate": 8000,
+   "seconds": 4.45,
+   "spoken": "My name is, uh, Dako\u2014 sorry, I mean Dakota, let me think, Northcott.",
+   "text": "My name is Dakota Northcott."
+  },
+  {
+   "file": "03.wav",
+   "kind": "name_and_dob",
+   "sample_rate": 8000,
+   "seconds": 8.1,
+   "spoken": "My name is Dako\u2014 no, wait, Dakota Northcott, and, uh, my date of birth, um, is August 24, 1974.",
+   "text": "My name is Dakota Northcott, and my date of birth is 1974-08-24."
+  },
+  {
+   "file": "04.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.15,
+   "spoken": "Yes,, er, that, uh, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "05.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 3.25,
+   "spoken": "Thank, er, you,, uh, good\u2014 sorry, I mean goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "new_patient_intake-00050",
+ "tier": 3,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.01,
+   "gain_wobble_db": 0.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 50,
+   "snr_db": 20.0
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 2,
+   "seed": 50,
+   "self_correction": true
+  },
+  "tts": "kokoro",
+  "voice": "af_heart"
+ }
+}

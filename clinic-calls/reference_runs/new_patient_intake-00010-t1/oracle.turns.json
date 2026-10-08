@@ -1,0 +1,43 @@
+{
+ "agent_turns": [
+  {
+   "caller_so_far": [
+    "Hi, I'm a new patient and I'd like to book a first visit with Dr. Facchinato."
+   ],
+   "text": "Welcome! Could I have your full name and date of birth, please?",
+   "verified": false
+  },
+  {
+   "caller_so_far": [
+    "Hi, I'm a new patient and I'd like to book a first visit with Dr. Facchinato.",
+    "My name is Logan Kingsley, and my date of birth is 1964-03-10."
+   ],
+   "text": "Thank you. Let me confirm your date of birth \u2014 could you repeat it?",
+   "verified": false
+  },
+  {
+   "caller_so_far": [
+    "Hi, I'm a new patient and I'd like to book a first visit with Dr. Facchinato.",
+    "My name is Logan Kingsley, and my date of birth is 1964-03-10.",
+    "It's 1964-03-10."
+   ],
+   "text": "I have 2026-10-08T08:00:00. Does that work?",
+   "verified": true
+  },
+  {
+   "caller_so_far": [
+    "Hi, I'm a new patient and I'd like to book a first visit with Dr. Facchinato.",
+    "My name is Logan Kingsley, and my date of birth is 1964-03-10.",
+    "It's 1964-03-10.",
+    "Yes, that works."
+   ],
+   "text": "You're all set. Anything else?",
+   "verified": true
+  }
+ ],
+ "extra": {
+  "created_patient_id": "13f05d0b-6d48-4ff8-9e12-c0f99776730d",
+  "env_writes": {},
+  "verify_attempts": 0
+ }
+}

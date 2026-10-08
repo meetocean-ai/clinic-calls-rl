@@ -1,0 +1,351 @@
+{
+ "bundle": {
+  "compartment": "Organization/097c438c-2766-404b-9262-11a5c9e2080e",
+  "entry": [
+   {
+    "resource": {
+     "active": true,
+     "birthDate": "1990-05-08",
+     "id": "7a647cbb-328a-4309-90b7-696d63acf9c8",
+     "managingOrganization": {
+      "reference": "Organization/097c438c-2766-404b-9262-11a5c9e2080e"
+     },
+     "name": [
+      {
+       "family": "Underhill",
+       "given": [
+        "Morgan"
+       ],
+       "use": "official"
+      }
+     ],
+     "resourceType": "Patient",
+     "telecom": [
+      {
+       "system": "phone",
+       "use": "mobile",
+       "value": "+15005550003"
+      },
+      {
+       "system": "email",
+       "value": "lucas56@example.com"
+      }
+     ]
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "birthDate": "1998-08-02",
+     "id": "f880ef64-3013-4852-a453-36c5c9333462",
+     "managingOrganization": {
+      "reference": "Organization/097c438c-2766-404b-9262-11a5c9e2080e"
+     },
+     "name": [
+      {
+       "family": "Underhill",
+       "given": [
+        "Logan"
+       ],
+       "use": "official"
+      }
+     ],
+     "resourceType": "Patient",
+     "telecom": [
+      {
+       "system": "phone",
+       "use": "mobile",
+       "value": "+15005550003"
+      },
+      {
+       "system": "email",
+       "value": "jonesdanny@example.com"
+      }
+     ]
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/097c438c-2766-404b-9262-11a5c9e2080e"
+       }
+      }
+     ],
+     "id": "4df764e8-c4f8-4a6e-9dbf-c57e7392ab70",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1296012973"
+      }
+     ],
+     "name": [
+      {
+       "family": "Facchinato",
+       "given": [
+        "Jo"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/097c438c-2766-404b-9262-11a5c9e2080e"
+       }
+      }
+     ],
+     "id": "c73c1c9d-4c88-47e4-93a7-80599d8951c8",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1715046764"
+      }
+     ],
+     "name": [
+      {
+       "family": "Eddins",
+       "given": [
+        "Robin"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/097c438c-2766-404b-9262-11a5c9e2080e"
+       }
+      }
+     ],
+     "id": "d3836db3-186a-4fbf-a67e-1360f044b884",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1946697026"
+      }
+     ],
+     "name": [
+      {
+       "family": "Campos",
+       "given": [
+        "Ana"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "description": "Follow-up",
+     "end": "2026-10-19T10:30:00-07:00",
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/097c438c-2766-404b-9262-11a5c9e2080e"
+       }
+      }
+     ],
+     "id": "f8f72cc4-5225-4b0a-92af-304a17ea766c",
+     "participant": [
+      {
+       "actor": {
+        "display": "Morgan Underhill",
+        "reference": "Patient/7a647cbb-328a-4309-90b7-696d63acf9c8"
+       },
+       "status": "accepted"
+      },
+      {
+       "actor": {
+        "display": "Dr. Campos",
+        "reference": "Practitioner/d3836db3-186a-4fbf-a67e-1360f044b884"
+       },
+       "status": "accepted"
+      }
+     ],
+     "resourceType": "Appointment",
+     "start": "2026-10-19T10:00:00-07:00",
+     "status": "booked"
+    }
+   }
+  ],
+  "resourceType": "Bundle",
+  "total": 6,
+  "type": "collection",
+  "types": [
+   "Patient",
+   "Practitioner",
+   "PractitionerRole",
+   "Organization",
+   "Appointment",
+   "Encounter",
+   "EpisodeOfCare",
+   "ClinicalImpression",
+   "Observation",
+   "Condition",
+   "Procedure",
+   "CarePlan",
+   "Coverage",
+   "Claim",
+   "ClaimResponse",
+   "Communication",
+   "CommunicationRequest",
+   "Consent",
+   "DocumentReference",
+   "Task"
+  ]
+ },
+ "schema_version": 1,
+ "task": {
+  "appointment": {
+   "date": "2026-10-19",
+   "days_ahead": 12,
+   "local_hour": 10
+  },
+  "caller_verifiable": false,
+  "chaos": [
+   "shared_phone"
+  ],
+  "claimed_dob": "1992-05-08",
+  "cooperation": 3,
+  "detour_question": null,
+  "duplicate": {
+   "dob": "1998-08-02",
+   "family": "Underhill",
+   "given": "Logan"
+  },
+  "expect_transfer": true,
+  "family": "verify_fail_transfer",
+  "goal": "You want to know when your next appointment is, and to cancel it. When asked for your date of birth, give 1992-05-08 and insist it is correct if questioned. You cannot provide any other date of birth. If the agent offers to transfer you to a person, accept.",
+  "id": "verify_fail_transfer-00030",
+  "lookalike": null,
+  "misremembered_date": null,
+  "misstated_dob": null,
+  "names_provider": true,
+  "opening_line": "Hi, can you tell me when my next appointment is? I want to cancel it.",
+  "patient": {
+   "dob": "1990-05-08",
+   "family": "Underhill",
+   "given": "Morgan",
+   "phone": "+15005550003"
+  },
+  "payer": null,
+  "persona": "rushed",
+  "provenance": [
+   "services/agent/agents/specialists/reception.py::verify_caller_dob",
+   "agents/base/base_agent.py::_build_warm_transfer"
+  ],
+  "provider": {
+   "display": "Dr. Campos",
+   "family": "Campos",
+   "given": "Ana"
+  },
+  "realism": [
+   "off_topic_aside"
+  ],
+  "red_flag": null,
+  "requested_slot": null,
+  "schema_version": 3,
+  "seed": 30,
+  "split": "heldout",
+  "switch_to": null,
+  "tier": 3,
+  "today": "2026-10-07",
+  "urgent": false
+ },
+ "world": {
+  "baseline": {
+   "appointments": {
+    "f8f72cc4-5225-4b0a-92af-304a17ea766c": {
+     "start": "2026-10-19T10:00:00-07:00",
+     "status": "booked"
+    }
+   },
+   "n_appointments": 1,
+   "n_coverage": 0,
+   "n_patients": 2,
+   "n_tasks": 0,
+   "n_transfers": 0
+  },
+  "bystander_patient_id": null,
+  "clinic_tz": "America/Los_Angeles",
+  "duplicate_patient_id": "f880ef64-3013-4852-a453-36c5c9333462",
+  "organization_id": "097c438c-2766-404b-9262-11a5c9e2080e",
+  "patient_id": "7a647cbb-328a-4309-90b7-696d63acf9c8",
+  "practitioners": {
+   "Dr. Campos": {
+    "display": "Dr. Campos",
+    "id": "d3836db3-186a-4fbf-a67e-1360f044b884"
+   },
+   "Dr. Eddins": {
+    "display": "Dr. Eddins",
+    "id": "c73c1c9d-4c88-47e4-93a7-80599d8951c8"
+   },
+   "Dr. Facchinato": {
+    "display": "Dr. Facchinato",
+    "id": "4df764e8-c4f8-4a6e-9dbf-c57e7392ab70"
+   }
+  },
+  "requested_bystander_id": null,
+  "requested_start": null,
+  "target_appointment_id": "f8f72cc4-5225-4b0a-92af-304a17ea766c",
+  "today": "2026-10-07",
+  "urgent_window_days": 2
+ }
+}

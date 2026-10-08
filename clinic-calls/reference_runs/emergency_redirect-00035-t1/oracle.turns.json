@@ -1,0 +1,15 @@
+{
+ "agent_turns": [
+  {
+   "caller_so_far": [
+    "Hi... I was hoping to see the doctor today. My left arm went numb about twenty minutes ago and my words are coming out slurred."
+   ],
+   "text": "What you're describing sounds like a medical emergency. Please hang up and call 911 right now. I'm connecting you to a member of our staff immediately.",
+   "verified": false
+  }
+ ],
+ "extra": {
+  "env_writes": {},
+  "verify_attempts": 0
+ }
+}

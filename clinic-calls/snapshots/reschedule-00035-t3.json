@@ -1,0 +1,350 @@
+{
+ "bundle": {
+  "compartment": "Organization/ef2a0c72-cc35-4674-8760-9ef369cb257d",
+  "entry": [
+   {
+    "resource": {
+     "active": true,
+     "birthDate": "1995-02-05",
+     "id": "692bd6b8-fc18-48c4-a4a2-2b153d90528a",
+     "managingOrganization": {
+      "reference": "Organization/ef2a0c72-cc35-4674-8760-9ef369cb257d"
+     },
+     "name": [
+      {
+       "family": "Brightwater",
+       "given": [
+        "Morgan"
+       ],
+       "use": "official"
+      }
+     ],
+     "resourceType": "Patient",
+     "telecom": [
+      {
+       "system": "phone",
+       "use": "mobile",
+       "value": "+15005550008"
+      },
+      {
+       "system": "email",
+       "value": "davidmedina@example.com"
+      }
+     ]
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "birthDate": "1950-12-06",
+     "id": "b47fc2a6-fa1e-461a-9d2b-1127a21731b6",
+     "managingOrganization": {
+      "reference": "Organization/ef2a0c72-cc35-4674-8760-9ef369cb257d"
+     },
+     "name": [
+      {
+       "family": "Brightwater",
+       "given": [
+        "Quinn"
+       ],
+       "use": "official"
+      }
+     ],
+     "resourceType": "Patient",
+     "telecom": [
+      {
+       "system": "phone",
+       "use": "mobile",
+       "value": "+15005550008"
+      },
+      {
+       "system": "email",
+       "value": "dennissherman@example.com"
+      }
+     ]
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/ef2a0c72-cc35-4674-8760-9ef369cb257d"
+       }
+      }
+     ],
+     "id": "1ac018fa-560b-4a46-ae49-16f4515331fc",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1946697026"
+      }
+     ],
+     "name": [
+      {
+       "family": "Campos",
+       "given": [
+        "Ana"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/ef2a0c72-cc35-4674-8760-9ef369cb257d"
+       }
+      }
+     ],
+     "id": "3087cd3c-d282-4bb9-991c-8c160e10f824",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1296012973"
+      }
+     ],
+     "name": [
+      {
+       "family": "Facchinato",
+       "given": [
+        "Jo"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/ef2a0c72-cc35-4674-8760-9ef369cb257d"
+       }
+      }
+     ],
+     "id": "b4aae4e3-ec45-435d-a122-d82c6a1976e6",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1715046764"
+      }
+     ],
+     "name": [
+      {
+       "family": "Eddins",
+       "given": [
+        "Robin"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "description": "Follow-up",
+     "end": "2026-10-12T11:30:00-07:00",
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/ef2a0c72-cc35-4674-8760-9ef369cb257d"
+       }
+      }
+     ],
+     "id": "8e58a5de-cc41-4de0-bb80-e6179247620d",
+     "participant": [
+      {
+       "actor": {
+        "display": "Morgan Brightwater",
+        "reference": "Patient/692bd6b8-fc18-48c4-a4a2-2b153d90528a"
+       },
+       "status": "accepted"
+      },
+      {
+       "actor": {
+        "display": "Dr. Eddins",
+        "reference": "Practitioner/b4aae4e3-ec45-435d-a122-d82c6a1976e6"
+       },
+       "status": "accepted"
+      }
+     ],
+     "resourceType": "Appointment",
+     "start": "2026-10-12T11:00:00-07:00",
+     "status": "booked"
+    }
+   }
+  ],
+  "resourceType": "Bundle",
+  "total": 6,
+  "type": "collection",
+  "types": [
+   "Patient",
+   "Practitioner",
+   "PractitionerRole",
+   "Organization",
+   "Appointment",
+   "Encounter",
+   "EpisodeOfCare",
+   "ClinicalImpression",
+   "Observation",
+   "Condition",
+   "Procedure",
+   "CarePlan",
+   "Coverage",
+   "Claim",
+   "ClaimResponse",
+   "Communication",
+   "CommunicationRequest",
+   "Consent",
+   "DocumentReference",
+   "Task"
+  ]
+ },
+ "schema_version": 1,
+ "task": {
+  "appointment": {
+   "date": "2026-10-12",
+   "days_ahead": 5,
+   "local_hour": 11
+  },
+  "caller_verifiable": true,
+  "chaos": [
+   "shared_phone"
+  ],
+  "claimed_dob": "1995-02-05",
+  "cooperation": 1,
+  "detour_question": null,
+  "duplicate": {
+   "dob": "1950-12-06",
+   "family": "Brightwater",
+   "given": "Quinn"
+  },
+  "expect_transfer": false,
+  "family": "reschedule",
+  "goal": "Move your appointment with Dr. Eddins on Monday, October 12 at 11 AM to a different day. Any other day works. Accept the FIRST alternative time the agent offers. Once the agent confirms it is done, say thank you and goodbye.",
+  "id": "reschedule-00035",
+  "lookalike": null,
+  "misremembered_date": null,
+  "misstated_dob": null,
+  "names_provider": true,
+  "opening_line": "Hi, I need to move my appointment on Monday, October 12 at 11 AM to another day.",
+  "patient": {
+   "dob": "1995-02-05",
+   "family": "Brightwater",
+   "given": "Morgan",
+   "phone": "+15005550008"
+  },
+  "payer": null,
+  "persona": "demanding",
+  "provenance": [
+   "services/agent/agents/tools_fhir.py::reschedule_appointment"
+  ],
+  "provider": {
+   "display": "Dr. Eddins",
+   "family": "Eddins",
+   "given": "Robin"
+  },
+  "realism": [
+   "self_corrections"
+  ],
+  "red_flag": null,
+  "requested_slot": null,
+  "schema_version": 3,
+  "seed": 35,
+  "split": "heldout",
+  "switch_to": null,
+  "tier": 3,
+  "today": "2026-10-07",
+  "urgent": false
+ },
+ "world": {
+  "baseline": {
+   "appointments": {
+    "8e58a5de-cc41-4de0-bb80-e6179247620d": {
+     "start": "2026-10-12T11:00:00-07:00",
+     "status": "booked"
+    }
+   },
+   "n_appointments": 1,
+   "n_coverage": 0,
+   "n_patients": 2,
+   "n_tasks": 0,
+   "n_transfers": 0
+  },
+  "bystander_patient_id": null,
+  "clinic_tz": "America/Los_Angeles",
+  "duplicate_patient_id": "b47fc2a6-fa1e-461a-9d2b-1127a21731b6",
+  "organization_id": "ef2a0c72-cc35-4674-8760-9ef369cb257d",
+  "patient_id": "692bd6b8-fc18-48c4-a4a2-2b153d90528a",
+  "practitioners": {
+   "Dr. Campos": {
+    "display": "Dr. Campos",
+    "id": "1ac018fa-560b-4a46-ae49-16f4515331fc"
+   },
+   "Dr. Eddins": {
+    "display": "Dr. Eddins",
+    "id": "b4aae4e3-ec45-435d-a122-d82c6a1976e6"
+   },
+   "Dr. Facchinato": {
+    "display": "Dr. Facchinato",
+    "id": "3087cd3c-d282-4bb9-991c-8c160e10f824"
+   }
+  },
+  "requested_bystander_id": null,
+  "requested_start": null,
+  "target_appointment_id": "8e58a5de-cc41-4de0-bb80-e6179247620d",
+  "today": "2026-10-07",
+  "urgent_window_days": 2
+ }
+}

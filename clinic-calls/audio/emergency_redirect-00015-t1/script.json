@@ -1,0 +1,58 @@
+{
+ "key": "emergency_redirect-00015-t1",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 8.1,
+   "spoken": "Hi... I was hoping to see the doctor today. The worst headache of my life came on all at once and I can't see properly out of one eye.",
+   "text": "Hi... I was hoping to see the doctor today. The worst headache of my life came on all at once and I can't see properly out of one eye."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 2.825,
+   "spoken": "It's September 8, 1981.",
+   "text": "It's 1981-09-08."
+  },
+  {
+   "file": "02.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 1.75,
+   "spoken": "Yes, that works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "03.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 1.925,
+   "spoken": "Thank you, goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "emergency_redirect-00015",
+ "tier": 1,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.0,
+   "gain_wobble_db": 0.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 15,
+   "snr_db": null
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 0,
+   "seed": 15,
+   "self_correction": false
+  },
+  "tts": "kokoro",
+  "voice": "am_adam"
+ }
+}

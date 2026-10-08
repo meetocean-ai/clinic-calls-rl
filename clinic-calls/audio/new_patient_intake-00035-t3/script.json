@@ -1,0 +1,74 @@
+{
+ "key": "new_patient_intake-00035-t3",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 5.625,
+   "spoken": "Hi, I'm a new patient, hmm, and I'd like to book a first visit with Dr. Eddins.",
+   "text": "Hi, I'm a new patient and I'd like to book a first visit with Dr. Eddins."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.6,
+   "spoken": "It's December 16, 1985.",
+   "text": "It's 1985-12-16."
+  },
+  {
+   "file": "02.wav",
+   "kind": "name",
+   "sample_rate": 8000,
+   "seconds": 2.9,
+   "spoken": "My name is, hmm, Sawyer Oakhurst.",
+   "text": "My name is Sawyer Oakhurst."
+  },
+  {
+   "file": "03.wav",
+   "kind": "name_and_dob",
+   "sample_rate": 8000,
+   "seconds": 7.125,
+   "spoken": "My name is Sawyer Oakhurst,, hmm, and my date of birth is December 16, 1985.",
+   "text": "My name is Sawyer Oakhurst, and my date of birth is 1985-12-16."
+  },
+  {
+   "file": "04.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.025,
+   "spoken": "Yes, that, hmm, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "05.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 2.35,
+   "spoken": "Thank you,, hmm, goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "new_patient_intake-00035",
+ "tier": 3,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.02,
+   "gain_wobble_db": 0.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 35,
+   "snr_db": 20.0
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 1,
+   "seed": 35,
+   "self_correction": false
+  },
+  "tts": "kokoro",
+  "voice": "af_bella"
+ }
+}

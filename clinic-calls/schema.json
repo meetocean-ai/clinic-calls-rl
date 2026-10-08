@@ -1,0 +1,249 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "appointment": {
+   "description": "the visit on file: {days_ahead, local_hour, date, provider_display?}",
+   "type": [
+    "object",
+    "null"
+   ]
+  },
+  "caller_verifiable": {
+   "type": "boolean"
+  },
+  "chaos": {
+   "description": "the knobs (DATASET.md)",
+   "items": {
+    "type": "string"
+   },
+   "type": "array"
+  },
+  "checks": {
+   "description": "the verifier checks this task runs, in order",
+   "items": {
+    "type": "string"
+   },
+   "type": "array"
+  },
+  "claimed_dob": {
+   "description": "what the caller says; the record holds patient.dob",
+   "type": "string"
+  },
+  "constraints": {
+   "description": "the caller simulator's additional rules (cooperation, realism)",
+   "items": {
+    "type": "string"
+   },
+   "type": "array"
+  },
+  "cooperation": {
+   "maximum": 5,
+   "minimum": 1,
+   "type": "integer"
+  },
+  "detour_question": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "duplicate": {
+   "type": [
+    "object",
+    "null"
+   ]
+  },
+  "expect_transfer": {
+   "type": "boolean"
+  },
+  "family": {
+   "enum": [
+    "booking",
+    "cancel",
+    "reschedule",
+    "verify_fail_transfer",
+    "new_patient_intake",
+    "emergency_redirect"
+   ],
+   "type": "string"
+  },
+  "files": {
+   "properties": {
+    "audio": {
+     "type": "array"
+    },
+    "reference_run": {
+     "type": "string"
+    },
+    "snapshot": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "goal": {
+   "type": "string"
+  },
+  "id": {
+   "description": "<family>-<seed:05d>; the same (family, seed, tier) always regenerates this task",
+   "type": "string"
+  },
+  "key": {
+   "description": "<id>-t<tier>: the file key under snapshots/, reference_runs/, audio/",
+   "type": "string"
+  },
+  "lookalike": {
+   "type": [
+    "object",
+    "null"
+   ]
+  },
+  "misremembered_date": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "misstated_dob": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "names_provider": {
+   "type": "boolean"
+  },
+  "opening_line": {
+   "type": "string"
+  },
+  "patient": {
+   "properties": {
+    "dob": {
+     "type": "string"
+    },
+    "family": {
+     "type": "string"
+    },
+    "given": {
+     "type": "string"
+    },
+    "phone": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "given",
+    "family",
+    "dob",
+    "phone"
+   ],
+   "type": "object"
+  },
+  "payer": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "persona": {
+   "type": "string"
+  },
+  "provenance": {
+   "type": "array"
+  },
+  "provider": {
+   "properties": {
+    "display": {
+     "type": "string"
+    },
+    "family": {
+     "type": "string"
+    },
+    "given": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "realism": {
+   "items": {
+    "type": "string"
+   },
+   "type": "array"
+  },
+  "red_flag": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "reference": {
+   "description": "the oracle's result on this task (reward must be 1)",
+   "type": "object"
+  },
+  "requested_slot": {
+   "type": [
+    "object",
+    "null"
+   ]
+  },
+  "schema_version": {
+   "type": "integer"
+  },
+  "seed": {
+   "type": "integer"
+  },
+  "split": {
+   "enum": [
+    "train",
+    "heldout"
+   ],
+   "type": "string"
+  },
+  "switch_to": {
+   "type": [
+    "object",
+    "null"
+   ]
+  },
+  "task_hash": {
+   "description": "sha256 of the task fields (everything above), the id of the task's content",
+   "type": "string"
+  },
+  "tier": {
+   "enum": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "type": "integer"
+  },
+  "today": {
+   "description": "clinic-local day the world was seeded on; all relative dates hang off it",
+   "format": "date",
+   "type": "string"
+  },
+  "urgent": {
+   "type": "boolean"
+  }
+ },
+ "required": [
+  "id",
+  "key",
+  "family",
+  "seed",
+  "tier",
+  "split",
+  "patient",
+  "provider",
+  "opening_line",
+  "claimed_dob",
+  "chaos",
+  "checks",
+  "files",
+  "task_hash"
+ ],
+ "title": "clinic-calls task record",
+ "type": "object"
+}

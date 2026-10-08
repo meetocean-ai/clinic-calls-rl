@@ -1,0 +1,58 @@
+{
+ "key": "cancel-00025-t4",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 7.175,
+   "spoken": "We\u2014 hi, I need, um, to canc\u2014 sorry, I mean cancel my appointment, let me think, on, er, Thursday, October 15 at 2 PM.",
+   "text": "Hi, I need to cancel my appointment on Thursday, October 15 at 2 PM."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.325,
+   "spoken": "So I\u2014 it's October 16, 1986.",
+   "text": "It's 1986-10-16."
+  },
+  {
+   "file": "02.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.65,
+   "spoken": "So I\u2014 yes,, um, that, hmm, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "03.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 3.325,
+   "spoken": "So I\u2014 thank, um, you,, hmm, good\u2014 sorry, I mean goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "cancel-00025",
+ "tier": 4,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.05,
+   "gain_wobble_db": 3.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 25,
+   "snr_db": 15.0
+  },
+  "disfluency": {
+   "false_start": true,
+   "fillers": 3,
+   "seed": 25,
+   "self_correction": true
+  },
+  "tts": "kokoro",
+  "voice": "am_liam"
+ }
+}

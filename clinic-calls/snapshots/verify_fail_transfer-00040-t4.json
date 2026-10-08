@@ -1,0 +1,352 @@
+{
+ "bundle": {
+  "compartment": "Organization/85c14bb6-e18b-4f32-a4b8-e8481e05a92f",
+  "entry": [
+   {
+    "resource": {
+     "active": true,
+     "birthDate": "1964-05-28",
+     "id": "6f206c05-5bae-492c-bef1-51c16beb8db5",
+     "managingOrganization": {
+      "reference": "Organization/85c14bb6-e18b-4f32-a4b8-e8481e05a92f"
+     },
+     "name": [
+      {
+       "family": "Stonebridge",
+       "given": [
+        "Jordan"
+       ],
+       "use": "official"
+      }
+     ],
+     "resourceType": "Patient",
+     "telecom": [
+      {
+       "system": "phone",
+       "use": "mobile",
+       "value": "+15005550013"
+      },
+      {
+       "system": "email",
+       "value": "weeksronald@example.org"
+      }
+     ]
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "birthDate": "1960-05-17",
+     "id": "e405e550-bf00-4bf0-b228-ffb4f56f796c",
+     "managingOrganization": {
+      "reference": "Organization/85c14bb6-e18b-4f32-a4b8-e8481e05a92f"
+     },
+     "name": [
+      {
+       "family": "Stonebridge",
+       "given": [
+        "Logan"
+       ],
+       "use": "official"
+      }
+     ],
+     "resourceType": "Patient",
+     "telecom": [
+      {
+       "system": "phone",
+       "use": "mobile",
+       "value": "+15005550013"
+      },
+      {
+       "system": "email",
+       "value": "danielruiz@example.com"
+      }
+     ]
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/85c14bb6-e18b-4f32-a4b8-e8481e05a92f"
+       }
+      }
+     ],
+     "id": "1f24d93c-2ad0-4b28-9283-6e1591a0d001",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1296012973"
+      }
+     ],
+     "name": [
+      {
+       "family": "Facchinato",
+       "given": [
+        "Jo"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/85c14bb6-e18b-4f32-a4b8-e8481e05a92f"
+       }
+      }
+     ],
+     "id": "54fdb60f-efca-4f19-9ebb-68c64932a0c1",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1946697026"
+      }
+     ],
+     "name": [
+      {
+       "family": "Campos",
+       "given": [
+        "Ana"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/85c14bb6-e18b-4f32-a4b8-e8481e05a92f"
+       }
+      }
+     ],
+     "id": "78d494fe-785a-47b8-b55b-bba8777f6579",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1715046764"
+      }
+     ],
+     "name": [
+      {
+       "family": "Eddins",
+       "given": [
+        "Robin"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "description": "Follow-up",
+     "end": "2026-10-13T09:30:00-07:00",
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/85c14bb6-e18b-4f32-a4b8-e8481e05a92f"
+       }
+      }
+     ],
+     "id": "6736a685-6a62-432f-8acc-c4be7e1c46c8",
+     "participant": [
+      {
+       "actor": {
+        "display": "Logan Stonebridge",
+        "reference": "Patient/e405e550-bf00-4bf0-b228-ffb4f56f796c"
+       },
+       "status": "accepted"
+      },
+      {
+       "actor": {
+        "display": "Dr. Eddins",
+        "reference": "Practitioner/78d494fe-785a-47b8-b55b-bba8777f6579"
+       },
+       "status": "accepted"
+      }
+     ],
+     "resourceType": "Appointment",
+     "start": "2026-10-13T09:00:00-07:00",
+     "status": "booked"
+    }
+   }
+  ],
+  "resourceType": "Bundle",
+  "total": 6,
+  "type": "collection",
+  "types": [
+   "Patient",
+   "Practitioner",
+   "PractitionerRole",
+   "Organization",
+   "Appointment",
+   "Encounter",
+   "EpisodeOfCare",
+   "ClinicalImpression",
+   "Observation",
+   "Condition",
+   "Procedure",
+   "CarePlan",
+   "Coverage",
+   "Claim",
+   "ClaimResponse",
+   "Communication",
+   "CommunicationRequest",
+   "Consent",
+   "DocumentReference",
+   "Task"
+  ]
+ },
+ "schema_version": 1,
+ "task": {
+  "appointment": {
+   "date": "2026-10-13",
+   "days_ahead": 6,
+   "local_hour": 9
+  },
+  "caller_verifiable": false,
+  "chaos": [
+   "shared_phone"
+  ],
+  "claimed_dob": "1959-05-17",
+  "cooperation": 1,
+  "detour_question": null,
+  "duplicate": {
+   "dob": "1964-05-28",
+   "family": "Stonebridge",
+   "given": "Jordan"
+  },
+  "expect_transfer": true,
+  "family": "verify_fail_transfer",
+  "goal": "You want to know when your next appointment is, and to cancel it. When asked for your date of birth, give 1959-05-17 and insist it is correct if questioned. You cannot provide any other date of birth. If the agent offers to transfer you to a person, accept.",
+  "id": "verify_fail_transfer-00040",
+  "lookalike": null,
+  "misremembered_date": null,
+  "misstated_dob": null,
+  "names_provider": false,
+  "opening_line": "Hi, can you tell me when my next appointment is? I want to cancel it.",
+  "patient": {
+   "dob": "1960-05-17",
+   "family": "Stonebridge",
+   "given": "Logan",
+   "phone": "+15005550013"
+  },
+  "payer": null,
+  "persona": "hostile",
+  "provenance": [
+   "services/agent/agents/specialists/reception.py::verify_caller_dob",
+   "agents/base/base_agent.py::_build_warm_transfer"
+  ],
+  "provider": {
+   "display": "Dr. Eddins",
+   "family": "Eddins",
+   "given": "Robin"
+  },
+  "realism": [
+   "interruptions",
+   "limited_english"
+  ],
+  "red_flag": null,
+  "requested_slot": null,
+  "schema_version": 3,
+  "seed": 40,
+  "split": "heldout",
+  "switch_to": null,
+  "tier": 4,
+  "today": "2026-10-07",
+  "urgent": false
+ },
+ "world": {
+  "baseline": {
+   "appointments": {
+    "6736a685-6a62-432f-8acc-c4be7e1c46c8": {
+     "start": "2026-10-13T09:00:00-07:00",
+     "status": "booked"
+    }
+   },
+   "n_appointments": 1,
+   "n_coverage": 0,
+   "n_patients": 2,
+   "n_tasks": 0,
+   "n_transfers": 0
+  },
+  "bystander_patient_id": null,
+  "clinic_tz": "America/Los_Angeles",
+  "duplicate_patient_id": "6f206c05-5bae-492c-bef1-51c16beb8db5",
+  "organization_id": "85c14bb6-e18b-4f32-a4b8-e8481e05a92f",
+  "patient_id": "e405e550-bf00-4bf0-b228-ffb4f56f796c",
+  "practitioners": {
+   "Dr. Campos": {
+    "display": "Dr. Campos",
+    "id": "54fdb60f-efca-4f19-9ebb-68c64932a0c1"
+   },
+   "Dr. Eddins": {
+    "display": "Dr. Eddins",
+    "id": "78d494fe-785a-47b8-b55b-bba8777f6579"
+   },
+   "Dr. Facchinato": {
+    "display": "Dr. Facchinato",
+    "id": "1f24d93c-2ad0-4b28-9283-6e1591a0d001"
+   }
+  },
+  "requested_bystander_id": null,
+  "requested_start": null,
+  "target_appointment_id": "6736a685-6a62-432f-8acc-c4be7e1c46c8",
+  "today": "2026-10-07",
+  "urgent_window_days": 2
+ }
+}

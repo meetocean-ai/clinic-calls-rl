@@ -1,0 +1,58 @@
+{
+ "key": "reschedule-00015-t3",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 8.7,
+   "spoken": "Hi, I need, let me think, to move, let me think, my appoint\u2014 sorry, I mean appointment on Friday, October 16 at 3 PM to another day.",
+   "text": "Hi, I need to move my appointment on Friday, October 16 at 3 PM to another day."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 2.875,
+   "spoken": "It's March 4, 1959.",
+   "text": "It's 1959-03-04."
+  },
+  {
+   "file": "02.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.975,
+   "spoken": "Yes,, let me think, that, let me think, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "03.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 4.175,
+   "spoken": "Thank, let me think, you,, let me think, good\u2014 sorry, I mean goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "reschedule-00015",
+ "tier": 3,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.0,
+   "gain_wobble_db": 3.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 15,
+   "snr_db": 15.0
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 2,
+   "seed": 15,
+   "self_correction": true
+  },
+  "tts": "kokoro",
+  "voice": "am_adam"
+ }
+}

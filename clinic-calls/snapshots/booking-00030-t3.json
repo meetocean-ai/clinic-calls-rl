@@ -1,0 +1,342 @@
+{
+ "bundle": {
+  "compartment": "Organization/cfec4bbc-edb4-4d82-9896-15cb8296915a",
+  "entry": [
+   {
+    "resource": {
+     "active": true,
+     "birthDate": "1953-08-13",
+     "id": "53485150-5f61-49e6-9796-a64c2b259f27",
+     "managingOrganization": {
+      "reference": "Organization/cfec4bbc-edb4-4d82-9896-15cb8296915a"
+     },
+     "name": [
+      {
+       "family": "Fairweather",
+       "given": [
+        "Emerson"
+       ],
+       "use": "official"
+      }
+     ],
+     "resourceType": "Patient",
+     "telecom": [
+      {
+       "system": "phone",
+       "use": "mobile",
+       "value": "+15005550003"
+      },
+      {
+       "system": "email",
+       "value": "llee@example.com"
+      }
+     ]
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "birthDate": "1980-01-01",
+     "id": "b1e30454-b81d-4b65-b577-bc5485bdc74a",
+     "managingOrganization": {
+      "reference": "Organization/cfec4bbc-edb4-4d82-9896-15cb8296915a"
+     },
+     "name": [
+      {
+       "family": "Booked1",
+       "given": [
+        "Bystander"
+       ],
+       "use": "official"
+      }
+     ],
+     "resourceType": "Patient",
+     "telecom": [
+      {
+       "system": "phone",
+       "use": "mobile",
+       "value": "+15005559901"
+      },
+      {
+       "system": "email",
+       "value": "bystander1@example.com"
+      }
+     ]
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/cfec4bbc-edb4-4d82-9896-15cb8296915a"
+       }
+      }
+     ],
+     "id": "081f1ddc-84e1-4751-b38f-89f03c348557",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1296012973"
+      }
+     ],
+     "name": [
+      {
+       "family": "Facchinato",
+       "given": [
+        "Jo"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/cfec4bbc-edb4-4d82-9896-15cb8296915a"
+       }
+      }
+     ],
+     "id": "3ee8c833-47a8-4fd7-a787-c9a07808f7f2",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1715046764"
+      }
+     ],
+     "name": [
+      {
+       "family": "Eddins",
+       "given": [
+        "Robin"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "active": true,
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/cfec4bbc-edb4-4d82-9896-15cb8296915a"
+       }
+      }
+     ],
+     "id": "8f34b639-58e6-44b8-964e-1a2b65fdc493",
+     "identifier": [
+      {
+       "system": "http://hl7.org/fhir/sid/us-npi",
+       "value": "1946697026"
+      }
+     ],
+     "name": [
+      {
+       "family": "Campos",
+       "given": [
+        "Ana"
+       ],
+       "use": "official"
+      }
+     ],
+     "qualification": [
+      {
+       "code": {
+        "coding": [
+         {
+          "code": "111N00000X",
+          "system": "http://nucc.org/provider-taxonomy"
+         }
+        ]
+       }
+      }
+     ],
+     "resourceType": "Practitioner"
+    }
+   },
+   {
+    "resource": {
+     "description": "Follow-up",
+     "end": "2026-10-09T14:30:00-07:00",
+     "extension": [
+      {
+       "url": "https://ocean-ehr.com/fhir/StructureDefinition/organization-id",
+       "valueReference": {
+        "reference": "Organization/cfec4bbc-edb4-4d82-9896-15cb8296915a"
+       }
+      }
+     ],
+     "id": "3786ae5f-c640-42c9-81b7-8282f46d8c8d",
+     "participant": [
+      {
+       "actor": {
+        "display": "Bystander Booked1",
+        "reference": "Patient/b1e30454-b81d-4b65-b577-bc5485bdc74a"
+       },
+       "status": "accepted"
+      },
+      {
+       "actor": {
+        "display": "Dr. Facchinato",
+        "reference": "Practitioner/081f1ddc-84e1-4751-b38f-89f03c348557"
+       },
+       "status": "accepted"
+      }
+     ],
+     "resourceType": "Appointment",
+     "start": "2026-10-09T14:00:00-07:00",
+     "status": "booked"
+    }
+   }
+  ],
+  "resourceType": "Bundle",
+  "total": 6,
+  "type": "collection",
+  "types": [
+   "Patient",
+   "Practitioner",
+   "PractitionerRole",
+   "Organization",
+   "Appointment",
+   "Encounter",
+   "EpisodeOfCare",
+   "ClinicalImpression",
+   "Observation",
+   "Condition",
+   "Procedure",
+   "CarePlan",
+   "Coverage",
+   "Claim",
+   "ClaimResponse",
+   "Communication",
+   "CommunicationRequest",
+   "Consent",
+   "DocumentReference",
+   "Task"
+  ]
+ },
+ "schema_version": 1,
+ "task": {
+  "appointment": null,
+  "caller_verifiable": true,
+  "chaos": [
+   "exact_time_unavailable"
+  ],
+  "claimed_dob": "1953-08-13",
+  "cooperation": 2,
+  "detour_question": null,
+  "duplicate": null,
+  "expect_transfer": false,
+  "family": "booking",
+  "goal": "Book a follow-up visit with Dr. Facchinato. You want Friday, October 9 at 2 PM specifically \u2014 ask for that exact time by name. If the agent says it is not available, say once more that you really wanted Friday, October 9 at 2 PM; then accept the FIRST alternative time the agent offers with Dr. Facchinato. Decline any other provider. Once the agent confirms it is done, say thank you and goodbye.",
+  "id": "booking-00030",
+  "lookalike": null,
+  "misremembered_date": null,
+  "misstated_dob": null,
+  "names_provider": true,
+  "opening_line": "Hi, I'd like to book a follow-up visit with Dr. Facchinato on Friday, October 9 at 2 PM, please.",
+  "patient": {
+   "dob": "1953-08-13",
+   "family": "Fairweather",
+   "given": "Emerson",
+   "phone": "+15005550003"
+  },
+  "payer": "Northstar Health HMO",
+  "persona": "skeptical",
+  "provenance": [
+   "services/agent/agents/tools_fhir.py::book_appointment",
+   "services/agent/agents/specialists/scheduler.py::book_appointment"
+  ],
+  "provider": {
+   "display": "Dr. Facchinato",
+   "family": "Facchinato",
+   "given": "Jo"
+  },
+  "realism": [
+   "hidden_until_asked"
+  ],
+  "red_flag": null,
+  "requested_slot": {
+   "date": "2026-10-09",
+   "days_ahead": 2,
+   "local_hour": 14
+  },
+  "schema_version": 3,
+  "seed": 30,
+  "split": "heldout",
+  "switch_to": null,
+  "tier": 3,
+  "today": "2026-10-07",
+  "urgent": false
+ },
+ "world": {
+  "baseline": {
+   "appointments": {},
+   "n_appointments": 1,
+   "n_coverage": 0,
+   "n_patients": 2,
+   "n_tasks": 0,
+   "n_transfers": 0
+  },
+  "bystander_patient_id": "b1e30454-b81d-4b65-b577-bc5485bdc74a",
+  "clinic_tz": "America/Los_Angeles",
+  "duplicate_patient_id": null,
+  "organization_id": "cfec4bbc-edb4-4d82-9896-15cb8296915a",
+  "patient_id": "53485150-5f61-49e6-9796-a64c2b259f27",
+  "practitioners": {
+   "Dr. Campos": {
+    "display": "Dr. Campos",
+    "id": "8f34b639-58e6-44b8-964e-1a2b65fdc493"
+   },
+   "Dr. Eddins": {
+    "display": "Dr. Eddins",
+    "id": "3ee8c833-47a8-4fd7-a787-c9a07808f7f2"
+   },
+   "Dr. Facchinato": {
+    "display": "Dr. Facchinato",
+    "id": "081f1ddc-84e1-4751-b38f-89f03c348557"
+   }
+  },
+  "requested_bystander_id": "b1e30454-b81d-4b65-b577-bc5485bdc74a",
+  "requested_start": "2026-10-09T14:00:00-07:00",
+  "target_appointment_id": null,
+  "today": "2026-10-07",
+  "urgent_window_days": 2
+ }
+}

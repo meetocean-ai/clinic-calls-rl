@@ -1,0 +1,66 @@
+{
+ "key": "cancel-00020-t4",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 8.8,
+   "spoken": "Hi,, let me think, I, er, need to canc\u2014 sorry, I mean cancel my appointment on Monday, October 19 at 11 AM.",
+   "text": "Hi, I need to cancel my appointment on Monday, October 19 at 11 AM."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob_misstated",
+   "sample_rate": 8000,
+   "seconds": 3.65,
+   "spoken": "It's August 16, 1963.",
+   "text": "It's 1963-08-16."
+  },
+  {
+   "file": "02.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.6,
+   "spoken": "It's August 14, 1963.",
+   "text": "It's 1963-08-14."
+  },
+  {
+   "file": "03.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.85,
+   "spoken": "Yes,, er, that, let me think, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "04.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 4.175,
+   "spoken": "Thank, er, you,, let me think, good\u2014 sorry, I mean goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "cancel-00020",
+ "tier": 4,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.05,
+   "gain_wobble_db": 6.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 20,
+   "snr_db": 15.0
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 2,
+   "seed": 20,
+   "self_correction": true
+  },
+  "tts": "kokoro",
+  "voice": "am_michael"
+ }
+}

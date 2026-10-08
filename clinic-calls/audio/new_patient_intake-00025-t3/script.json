@@ -1,0 +1,82 @@
+{
+ "key": "new_patient_intake-00025-t3",
+ "lines": [
+  {
+   "file": "00.wav",
+   "kind": "opening",
+   "sample_rate": 8000,
+   "seconds": 5.25,
+   "spoken": "Hi,, hmm, I'm a new patient and I'd like to book a first visit, hmm, with Dr. Facchinato.",
+   "text": "Hi, I'm a new patient and I'd like to book a first visit with Dr. Facchinato."
+  },
+  {
+   "file": "01.wav",
+   "kind": "dob_misstated",
+   "sample_rate": 8000,
+   "seconds": 3.175,
+   "spoken": "It's September 14, 1951.",
+   "text": "It's 1951-09-14."
+  },
+  {
+   "file": "02.wav",
+   "kind": "dob",
+   "sample_rate": 8000,
+   "seconds": 3.225,
+   "spoken": "It's September 16, 1951.",
+   "text": "It's 1951-09-16."
+  },
+  {
+   "file": "03.wav",
+   "kind": "name",
+   "sample_rate": 8000,
+   "seconds": 3.225,
+   "spoken": "My name, um, is Avery, um, Ravenscroft.",
+   "text": "My name is Avery Ravenscroft."
+  },
+  {
+   "file": "04.wav",
+   "kind": "name_and_dob",
+   "sample_rate": 8000,
+   "seconds": 6.45,
+   "spoken": "My name is Avery Ravenscroft, and my date, um, of, um, birth is September 16, 1951.",
+   "text": "My name is Avery Ravenscroft, and my date of birth is 1951-09-16."
+  },
+  {
+   "file": "05.wav",
+   "kind": "yes",
+   "sample_rate": 8000,
+   "seconds": 2.325,
+   "spoken": "Yes,, um, that, um, works.",
+   "text": "Yes, that works."
+  },
+  {
+   "file": "06.wav",
+   "kind": "goodbye",
+   "sample_rate": 8000,
+   "seconds": 2.5,
+   "spoken": "Thank, um, you,, um, goodbye.",
+   "text": "Thank you, goodbye."
+  }
+ ],
+ "task_id": "new_patient_intake-00025",
+ "tier": 3,
+ "voice": {
+  "degradation": {
+   "bandlimit": true,
+   "frame_drop_p": 0.01,
+   "gain_wobble_db": 0.0,
+   "mu_law": true,
+   "sample_rate": 8000,
+   "seed": 25,
+   "snr_db": 15.0
+  },
+  "disfluency": {
+   "false_start": false,
+   "fillers": 2,
+   "seed": 25,
+   "self_correction": false
+  },
+  "tts": "kokoro",
+  "voice": "am_liam"
+ }
+}
