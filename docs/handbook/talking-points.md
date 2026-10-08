@@ -15,7 +15,7 @@ the recipe to train open text and speech models against it with GRPO.
 | Oracle (reads the task): fairness gate | 60/60 at tier 3, 60/60 at tier 4 |
 | Oracle hearing the caller through Whisper: the ear's own loss | 60/60 tier 3 (gap 0.000); 57/60 tier 4 (gap +0.050) |
 | Random policy: the floor | 0/60 at both tiers |
-| Qwen3-8B untrained, over the env's tools, scripted caller, tier 3 | text 0/132 recorded so far (role-plays the caller, hallucinates dates, never calls end_call); voice 4/110 recorded so far |
+| Qwen3-8B untrained, over the env's tools, scripted caller, tier 3, k=3 | text pass@1 0.172 (emergency_redirect 1.0, everything else ≈ 0: role-plays the caller, hallucinates dates, never books); voice 0.200; gap −0.028 — voice transfers more because the ear mishears the DOB, right for verify_fail_transfer, wrong for emergencies |
 | Caller audio quality (180 clips, Kokoro → phone line → Whisper) | 95% intelligible, 95% of the facts heard; tier 1 98%, tier 3 93%, tier 4 82% (tier 4 is the bad line by design) |
 | Environment throughput on a laptop | reset p95 0.2 s; 14,400 oracle episodes/hour at 8 concurrent; no tenant pool needed |
 | Dataset package | 160 tasks, 742 audio lines, 160/160 reference runs re-graded identically by the shipped grader, 51 MB |

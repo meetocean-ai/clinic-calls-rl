@@ -31,7 +31,7 @@ the data is synthetic.
 | oracle (reads the task; the fairness gate) | 60/60 | 60/60 |
 | oracle hearing the caller through a local Whisper (the ear's own loss) | 60/60 | 57/60 |
 | random | 0/60 | 0/60 |
-| Qwen3-8B, untrained, over the environment's tools (text) | 0/180 | — |
+| Qwen3-8B, untrained, over the environment's tools | text 0.172 / voice 0.200 (only emergency_redirect passes) | — |
 
 Dataset `tasks-v3+gen-c605a9eb4c`, verifier `verify-b4440d9c68`, methodology v1 — see the docs for what each means.
 
