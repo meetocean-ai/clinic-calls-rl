@@ -5,6 +5,7 @@ tools and say why each was chosen, and to explain how the system is built and me
 
 | file | read it when |
 |---|---|
+| [morning-glance.md](morning-glance.md) | you have five minutes and want the shape of it all back in your head |
 | [environment-setup.md](environment-setup.md) | you need to rebuild the development environment on a fresh Mac or Linux box (90 minutes, all free) |
 | [tools-and-frameworks.md](tools-and-frameworks.md) | someone asks "what did you use and why", or you need the gotchas we hit with each tool |
 | [system-design-notes.md](system-design-notes.md) | someone asks "how would you build a voice agent / an RL environment / a benchmark / HIPAA guardrails" |
