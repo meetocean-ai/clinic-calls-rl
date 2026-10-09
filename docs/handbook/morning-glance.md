@@ -22,7 +22,7 @@ agent said — and anyone can grade their own agent with the shipped verifier.
 
 ## Three numbers
 
-160 held-out tasks · 95% of caller audio intelligible / 95% of facts heard · ~425 live-FHIR environment tests, zero mocks · untrained Qwen3-8B: 0.17 text, 0.20 voice (only emergencies pass) — the bar a trained model must clear · the production agents: 0.94 (tier 3) and 0.98 (tier 4) in text, and every miss became a numbered bug (six found, six fixed).
+160 held-out tasks · 95% of caller audio intelligible / 95% of facts heard · ~425 live-FHIR environment tests, zero mocks · untrained Qwen3-8B: 0.17 text, 0.20 voice (only emergencies pass) — the bar a trained model must clear · the production agents: 0.94 (tier 3) and 0.98 (tier 4) in text, and every miss became a numbered bug (six found, five fixed, B-140 open).
 
 ## Three honest lessons
 
