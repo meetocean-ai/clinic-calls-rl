@@ -1,6 +1,6 @@
 # clinic-calls leaderboard
 
-Generated 2026-10-08 from the recorded `rl-env-*` runs under `docs/quality/runs/` by `tests/quality/build.py` (every quality report regenerates it). How to read it: [METHODOLOGY.md](METHODOLOGY.md). Four components, never one score. Held-out tasks (`--split heldout`, dataset v2); `k` = trials per task; intervals are Wilson 95%.
+Generated 2026-10-09 from the recorded `rl-env-*` runs under `docs/quality/runs/` by `tests/quality/build.py` (every quality report regenerates it). How to read it: [METHODOLOGY.md](METHODOLOGY.md). Four components, never one score. Held-out tasks (`--split heldout`, dataset v2); `k` = trials per task; intervals are Wilson 95%.
 
 ## Policies
 
@@ -8,7 +8,8 @@ Generated 2026-10-08 from the recorded `rl-env-*` runs under `docs/quality/runs/
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | `openai-compatible-qwen3-8b` | text | 3 | 60 | 3 | **0.172** | 0.12–0.23 | 0.167 | 0.028 | 0.000 | 0.002 | – | – | 0 | 2026-10-08 |
 | `openai-compatible-qwen3-8b` | voice | 3 | 60 | 3 | **0.200** | 0.15–0.26 | 0.133 | 0.006 | 0.000 | 0.007 | – | 0.941 | 0 | 2026-10-08 |
-| `production` | text | 3 | 8 | 3 | **1.000** | 0.86–1.00 | 1.000 | 0.000 | 0.000 | – | – | – | 0 | 2026-10-06 |
+| `production` | text | 3 | 60 | 3 | **0.944** | 0.90–0.97 | 0.867 | 0.006 | 0.000 | 0.037 | 1711 ms | – | 0 | 2026-10-09 |
+| `production` | text | 4 | 60 | 3 | **0.978** | 0.94–0.99 | 0.933 | 0.000 | 0.000 | 0.028 | 1671 ms | – | 0 | 2026-10-09 |
 
 ## Voice gap
 
@@ -41,7 +42,8 @@ No candidate rows recorded.
 |---|---|---|---|---|---|---|
 | `openai-compatible-qwen3-8b` | text | 3 | booking, cancel, emergency_redirect, new_patient_intake, reschedule, verify_fail_transfer | `20261008_001209_rl-env-openai-compatible-qwen3-8b-booking-cancel-emergency_redirect-new_patient_intake-reschedule-verify_fail_transfer` | `tasks-v3+gen-c605a9eb4c` | `verify-5b517a1f4e`, `verify-b4440d9c68` |
 | `openai-compatible-qwen3-8b` | voice | 3 | booking, cancel, emergency_redirect, new_patient_intake, reschedule, verify_fail_transfer | `20261008_011217_rl-env-openai-compatible-qwen3-8b+voice-booking-cancel-emergency_redirect-new_patient_intake-reschedule-verify_fail_transfer` | `tasks-v3+gen-c605a9eb4c` | `verify-5b517a1f4e+audio`, `verify-b4440d9c68+audio` |
-| `production` | text | 3 | booking, cancel, reschedule, verify_fail_transfer | `20261006_223549_rl-env-production-booking-cancel-reschedule`, `20261006_224324_rl-env-production-verify_fail_transfer`, `20261006_225100_rl-env-production-booking-reschedule`, `20261006_225431_rl-env-production-booking` | unstamped | unstamped |
+| `production` | text | 3 | booking, cancel, emergency_redirect, new_patient_intake, reschedule, verify_fail_transfer | `20261009_045103_rl-env-production-booking-cancel-emergency_redirect-new_patient_intake-reschedule-verify_fail_transfer` | `tasks-v3+gen-c605a9eb4c` | `verify-b4440d9c68` |
+| `production` | text | 4 | booking, cancel, emergency_redirect, new_patient_intake, reschedule, verify_fail_transfer | `20261009_045341_rl-env-production-booking-cancel-emergency_redirect-new_patient_intake-reschedule-verify_fail_transfer-tier4` | `tasks-v3+gen-c605a9eb4c` | `verify-b4440d9c68` |
 | `oracle` | text | 3 | booking, cancel, emergency_redirect, new_patient_intake, reschedule, verify_fail_transfer | `20261008_014632_rl-env-oracle-booking-cancel-emergency_redirect-new_patient_intake-reschedule-verify_fail_transfer` | `tasks-v3+gen-c605a9eb4c` | `verify-b4440d9c68` |
 | `oracle` | voice | 3 | booking, cancel, emergency_redirect, new_patient_intake, reschedule, verify_fail_transfer | `20261008_014632_rl-env-oracle+voice-booking-cancel-emergency_redirect-new_patient_intake-reschedule-verify_fail_transfer` | `tasks-v3+gen-c605a9eb4c` | `verify-b4440d9c68+audio` |
 | `oracle` | text | 4 | booking, cancel, emergency_redirect, new_patient_intake, reschedule, verify_fail_transfer | `20261008_012634_rl-env-oracle-booking-cancel-emergency_redirect-new_patient_intake-reschedule-verify_fail_transfer-tier4` | `tasks-v3+gen-c605a9eb4c` | `verify-b4440d9c68` |

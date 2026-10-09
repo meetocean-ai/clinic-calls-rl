@@ -167,6 +167,18 @@ class OraclePolicy:
         raise ValueError(task.family)
 
 
+def _tool_output_verified(raw) -> bool:
+    """LiveKit stringifies a tool's return value — as JSON on one path and as a Python repr (single quotes, `True`) on
+    another; `runtime.assertions._parse_tool_output` accepts both. The first version of this check looked for the JSON
+    spelling only, so a repr'd `{'verified': True}` left the caller "unverified" for the whole call and the safety gate
+    then flagged every visit the agent described after a real verification (138 false misses in the first production
+    sweep, 2026-10-08)."""
+    from runtime.assertions import _parse_tool_output
+
+    out = _parse_tool_output(raw if raw is not None else "")
+    return out.get("verified") is True
+
+
 class ProductionPolicy:
     """Reception → Scheduler, text mode, through runtime.inbound.drive_inbound."""
 
@@ -203,9 +215,15 @@ class ProductionPolicy:
         caller = await resolve_caller_by_phone(env.world.tenant, phone)
         # Unknown number: Reception still gets the SIP caller ID (agent_worker hands it over), so a registration
         # lands on the caller's phone.
+        from runtime.assertions import did_call
+
+        # A warm transfer ends the agent's part of a real call; the harness must stop there too, or the agent keeps
+        # talking to the caller it already handed off (the first production sweep saw nine post-transfer turns, repeated
+        # transfer Tasks, and one emergency caller booked after being transferred twice).
         conv = await drive_inbound(tenant=env.world.tenant, patient=caller, profile=env.world.patient.profile,
                                    unknown_caller=caller is None, collected={"caller_phone": phone} if caller is None else None,
-                                   max_turns=self.max_turns, simulator_wrap=_wrap)
+                                   max_turns=self.max_turns, simulator_wrap=_wrap,
+                                   stop_when=lambda evs: did_call(evs, "warm_transfer_to_human"))
         said = list(wrapped[0].said) if wrapped else [t.patient_message or "" for t in conv.turns]
         if wrapped:
             env.caller_lines = list(said)  # verify_patient's "did the caller say that DOB" check reads the clean lines
@@ -219,11 +237,14 @@ class ProductionPolicy:
             if wrapped and i < len(said):
                 obs["patient_text_clean"] = said[i]
             env.trajectory_record({"kind": "say", "text": turn.agent_message, "tools": [c.get("name") for c in turn.tool_calls],
+                                   "tool_results": [{"name": c.get("name"), "arguments": c.get("arguments"),
+                                                     "output": str(c.get("output"))[:400] if c.get("output") is not None else None}
+                                                    for c in turn.tool_calls],
                                    "turn_ms": turn.turn_ms, "ttft_ms": turn.ttft_ms}, obs)
             # Verification happens inside the turn's tool calls, before the agent speaks: Reception's verify_caller_dob /
             # register_new_patient report verified=True in their output.
             for c in turn.tool_calls:
-                if c.get("name") in ("verify_caller_dob", "register_new_patient") and '"verified": true' in json.dumps(c.get("output") or {}).lower():
+                if c.get("name") in ("verify_caller_dob", "register_new_patient") and _tool_output_verified(c.get("output")):
                     verified = True
             agent_turns.append({"text": turn.agent_message, "verified": verified, "caller_so_far": list(caller_so_far)})
         env.world.extra["agent_turns"] = agent_turns
@@ -231,7 +252,7 @@ class ProductionPolicy:
         env.tool_calls = sum(len(t.tool_calls) for t in conv.turns)
         names = [c.get("name") for t in conv.turns for c in t.tool_calls]
         env.world.extra["verify_attempts"] = names.count("verify_caller_dob")  # Reception's DOB check, for transfer_matches
-        reason = "transfer" if "warm_transfer_to_human" in names else ("end_call" if conv.stopped_reason == "user_ends" else conv.stopped_reason)
+        reason = "transfer" if "warm_transfer_to_human" in names else ("end_call" if conv.stopped_reason == "user_ends" else conv.stopped_reason)  # stop_when fires on the transfer
         return await env.finish(reason)
 
 
@@ -254,6 +275,7 @@ class EpisodeResult:
     dataset_version: str = ""
     method_version: str = ""
     turn_scores: Optional[Dict[str, Any]] = None  # per-judge summary over the agent's turns, logged, never in reward
+    chaos: Optional[List[str]] = None  # the task's knobs, so `scorecard --knobs` works from a `--json-out` file too
 
 
 async def run_episode(env: EhrSchedulingEnv, policy, *, seed: int, family: str, tier: int = 1, trial: int = 0,
@@ -281,7 +303,7 @@ async def run_episode(env: EhrSchedulingEnv, policy, *, seed: int, family: str, 
                       diffs=list(env.result.diffs) if env.result else [], turns=env.turn, tool_calls=env.tool_calls,
                       stopped_reason=env.stopped_reason, seconds=time.perf_counter() - t0, error=error,
                       dataset_version=meta["dataset_version"], method_version=meta["method_version"],
-                      turn_scores=meta["turn_scores"]["summary"])
+                      turn_scores=meta["turn_scores"]["summary"], chaos=list(meta.get("chaos") or []))
     await env.close()
     return r
 
@@ -408,6 +430,33 @@ class OpenAICompatiblePolicy:
         return last
 
 
+PILOT_LIMIT = 36  # episodes a sweep may run without --full: one seed × six families × k ≤ 6, or a pilot
+
+
+def pilot_digest(results: List[EpisodeResult], out: Optional[Path], run_id: str) -> str:
+    """Every miss of a pilot, readable in one screen: the task, its knobs, the named diffs and the agent's last line,
+    so a harness or product defect is seen BEFORE a 500-episode sweep repeats it."""
+    import json as _json
+
+    lines = [f"PILOT: {sum(1 for r in results if r.reward == 1)}/{len(results)} passed; {sum(1 for r in results if r.error)} errors"]
+    for r in results:
+        if r.reward == 1 and not r.error:
+            continue
+        lines.append(f"- {r.policy_id} {r.task_id} tier {r.tier}: {'ERROR ' + r.error[:120] if r.error else 'reward 0'}")
+        for d in r.diffs:
+            lines.append(f"    {d[:160]}")
+        if out is not None:
+            steps = Path(out) / run_id / r.policy_id / f"{r.task_id}-t{r.tier}" / f"{r.trial}.jsonl"
+            if steps.exists():
+                says = [_json.loads(l) for l in steps.read_text().splitlines()[1:]]
+                says = [s for s in says if (s.get("action") or {}).get("kind") == "say" and (s["action"].get("text") or "")]
+                if says:
+                    lines.append(f"    last agent line: {says[-1]['action']['text'][:160]}")
+    if len(lines) == 1:
+        lines.append("- no misses: read the transcripts of two passes anyway before --full")
+    return "\n".join(lines)
+
+
 def make_policy(name: str, max_turns: int = 16, *, voice: bool = False, policy_id: Optional[str] = None, **kw):
     """`voice=True` wraps the policy in the ASR cascade (env/audio/cascade.py): the policy hears the caller through a
     local Whisper and its id gets `+voice`; the sweep must then run the env in audio mode. `policy_id` relabels the
@@ -459,6 +508,16 @@ def make_policy(name: str, max_turns: int = 16, *, voice: bool = False, policy_i
     return policy
 
 
+INFRASTRUCTURE_ERRORS = ("ProviderUnavailableError", "upstream chat returned 5", "401 Unauthorized", "ConnectError", "ReadTimeout",
+                         "RemoteProtocolError", "ConnectionResetError")
+
+
+def is_infrastructure_error(error: str) -> bool:
+    """An episode error the environment or the model host caused (upstream 5xx, dead token, dropped connection) — worth one
+    automatic retry; a verifier diff or a policy exception is not."""
+    return bool(error) and any(marker in error for marker in INFRASTRUCTURE_ERRORS)
+
+
 def _is_scripted_by_default(policy) -> bool:
     inner = getattr(policy, "inner", policy)
     return inner.id in ("oracle", "random")
@@ -479,6 +538,12 @@ async def sweep(policies, families, seeds, *, k=1, tier=1, out=None, run_id="run
                                                audio=audio or hasattr(policy, "transcriber"), tts_prefer=tts_prefer)
                         r = await run_episode(env, policy, seed=seed, family=family, tier=tier, trial=trial, out=out,
                                               run_id=run_id, chaos=chaos)
+                        if is_infrastructure_error(r.error):  # an upstream 500 / dead token is not the policy's doing: one retry
+                            logger.warning("[SWEEP] %s trial %d hit %s — retrying once", r.task_id, trial, r.error[:80])
+                            env = EhrSchedulingEnv(medplum, scripted_caller=scripted or _is_scripted_by_default(policy),
+                                                   audio=audio or hasattr(policy, "transcriber"), tts_prefer=tts_prefer)
+                            r = await run_episode(env, policy, seed=seed, family=family, tier=tier, trial=trial, out=out,
+                                                  run_id=run_id, chaos=chaos)
                         results.append(r)
                         if progress:
                             progress(r)
@@ -504,6 +569,9 @@ def main(argv: Optional[List[str]] = None) -> int:
     p.add_argument("--backend-endpoint", default="", help="personaplex: OpenAI-compatible endpoint of the text LLM that runs the tools")
     p.add_argument("--backend-model", default="", help="personaplex: model name at --backend-endpoint")
     p.add_argument("--policy-id", default=None, help="relabel the policy (one --policy only), e.g. candidate-<checkpoint> for a shadow run")
+    p.add_argument("--pilot", action="store_true", help="the proof-of-concept run before any sweep: one held-out seed per family, k=1, "
+                                                       "every miss printed with its diffs and last agent line")
+    p.add_argument("--full", action="store_true", help=f"allow a sweep of more than {PILOT_LIMIT} episodes (run --pilot first and read every miss)")
     p.add_argument("--families", default=",".join(FAMILIES))
     p.add_argument("--split", choices=["train", "heldout", "all"], default="heldout")
     p.add_argument("--seeds", type=int, default=2)
@@ -530,14 +598,20 @@ def main(argv: Optional[List[str]] = None) -> int:
         from .audio.cascade import Transcriber
 
         transcriber = Transcriber()  # one ASR for every policy in the sweep
+    if a.pilot:
+        a.seeds, a.k, a.split = 1, 1, "heldout"
+    families = [f for f in a.families.split(",") if f]
     names = a.policy or ["oracle", "random"]
+    planned = len(names) * len(families) * a.seeds * a.k
+    if planned > PILOT_LIMIT and not a.full and not all(n in ("oracle", "random") for n in names):
+        raise SystemExit(f"{planned} episodes planned: run `--pilot` first and read every miss, then pass --full "
+                         f"(limit without it: {PILOT_LIMIT}; a sweep that is wrong in the harness wastes hours and money)")
     if a.policy_id and len(names) != 1:
         raise SystemExit("--policy-id relabels exactly one --policy")
     policies = [make_policy(n, a.max_turns, voice=a.voice, policy_id=a.policy_id, transcriber=transcriber, endpoint=a.endpoint, model=a.model,
                             api_key=os.environ.get(a.api_key_env, ""), think=not a.no_think, speak=a.speak,
                             backend_endpoint=a.backend_endpoint, backend_model=a.backend_model)
                 for n in names]
-    families = [f for f in a.families.split(",") if f]
     chaos = [c for c in a.chaos.split(",") if c] or None
 
     def _progress(r: EpisodeResult) -> None:
@@ -552,6 +626,9 @@ def main(argv: Optional[List[str]] = None) -> int:
 
         prune_agent_audio(a.out, keep_runs=a.keep_audio_runs)
     table = summarize(results)
+    if a.pilot:
+        print()
+        print(pilot_digest(results, a.out, a.run_id))
     if a.json_out:
         a.json_out.parent.mkdir(parents=True, exist_ok=True)
         a.json_out.write_text(json.dumps({"summary": table, "results": [asdict(r) for r in results]}, indent=2, default=str))
