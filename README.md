@@ -32,6 +32,9 @@ the data is synthetic.
 | oracle hearing the caller through a local Whisper (the ear's own loss) | 60/60 | 57/60 |
 | random | 0/60 | 0/60 |
 | Qwen3-8B, untrained, over the environment's tools | text 0.172 / voice 0.200 (only emergency_redirect passes) | — |
+| the production agents (hosted LLM through LiteLLM), text, k=3 | 0.944 (0.90–0.97) | 0.978 (0.94–0.99) |
+
+Every production miss is read and becomes either a task fix or a numbered product bug (B-137 … B-142 in the roadmap's P0-14 row) — the environment found six real defects in the agents it was built to train against.
 
 Dataset `tasks-v3+gen-c605a9eb4c`, verifier `verify-b4440d9c68`, methodology v1 — see the docs for what each means.
 
